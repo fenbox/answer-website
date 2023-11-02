@@ -1,10 +1,10 @@
 ---
-sidebar_label: 所依赖的开源项目
+sidebar_label: Notice
 ---
 
-# 所依赖的开源项目
+# Open-Source Software Notice
 
-该项目建立在以下开源项目的基础上并得到其帮助。我们向这些项目致以敬意。
+该项目建立在以下开源项目的基础上并得到其帮助。 我们向这些项目致以敬意。
 
 ## Apache-2.0
 
