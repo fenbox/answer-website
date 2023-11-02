@@ -7,7 +7,7 @@ sidebar_position: 2
 
 UI 插件与 [标准插件](/docs/development/extending/) 或 React 组件并没有太大的区别，只需要一些配置和包装即可。
 
-在学习了上述文档中的标准插件开发，并且理解了 React 组件之后，让我们来看一下开发 UI 插件的逐步指南。
+在学习了上述文档中的标准插件开发，并且理解了 React 组件之后，让我们来看一下开发 UI 插件的逐步指南。 let's move on to a step-by-step guide to developing a ui plugin.
 
 ---
 
@@ -17,8 +17,7 @@ UI 插件与 [标准插件](/docs/development/extending/) 或 React 组件并没
 
 * 为 `Demo` 组件创建入口文件 `index.tsx`。
 
-* 在入口文件旁创建插件信息文件 `info.yaml`。常用字段如下
-
+* 在入口文件旁创建插件信息文件 `info.yaml`。 常用字段如下
 ```yaml
 # info.yaml
 slug_name: ui_plugin_demo
@@ -27,7 +26,6 @@ author:  Answer.dev
 ```
 
 * 在 `index.tsx` 文件中编写所需的任何 React 组件，并导出如下
-
 ```ts
 // plugins/index.ts
 export default {
@@ -37,30 +35,26 @@ export default {
 ```
 
 :::caution
+- 必须以这种方式导出。 `pluginInfo` 的类型定义可以在下面的 [类型定义](#type-definitions) 部分中找到。
 
-* 必须以这种方式导出。`pluginInfo` 的类型定义可以在下面的 [类型定义](#type-definitions) 部分中找到。
-
-* 文件名必须为 `index.tsx` 和 `info.yaml`，否则会影响组件的使用。
+- 文件名必须为 `index.tsx` 和 `info.yaml`，否则会影响组件的使用。
 :::
 
 * 在插件列表文件 `plugins/index.ts` 中导出你刚刚定义的插件
-
 ```ts
 export { default as Demo } from './Demo';
 ```
 
 * 现在，你可以在需要它的地方使用 `PluginRender` 组件来渲染刚刚定义的插件！
-
 ```tsx
 <PluginRender slug_name="ui_plugin_demo" />
 ```
-
 通过以上步骤，如果你的插件功能已经完成，那么你准备进入发布阶段了。
+
 
 ## 发布阶段
 
-* F首先，为组件定义发布注册文件。以 `Demo` 为例，我们编写一个 `demo.go`
-
+* F首先，为组件定义发布注册文件。 以 `Demo` 为例，我们编写一个 `demo.go`
 ```go
 // demo.go
 package demo
@@ -84,7 +78,6 @@ func (d DemoPlugin) Info() plugin.Info {
  }
 }
 ```
-
 :::info
 有关详细定义，请参见 [扩展](/docs/development/extending/) 部分。
 :::
@@ -93,12 +86,11 @@ func (d DemoPlugin) Info() plugin.Info {
 
 ---
 
-## 插件的国际化
+## I18n for plug-ins
 
 * 在 `Demo` 目录下创建一个 `i18n` 目录，并添加一个语言文件，格式为 `yaml`，例如 `en_US.yaml`。
-  * `plugin` 和 `ui` 字段是固定的，并且必须使用这两个名称。
-  * `ui_plugin_demo` 部分是插件的 `slug_name`，它是在 `info.yaml` 中定义的 `slug_name` 字段的值。
-
+    - `plugin` 和 `ui` 字段是固定的，并且必须使用这两个名称。
+    - `ui_plugin_demo` 部分是插件的 `slug_name`，它是在 `info.yaml` 中定义的 `slug_name` 字段的值。
 ```yaml
 # en_US.yaml
 plugin:
@@ -108,7 +100,6 @@ plugin:
 ```
 
 * 在 `i18n` 目录中创建 `index.ts` 文件，并使用 `pluginKit` 工具初始化语言资源。
-
 ```ts
 import pluginKit from '@/utils/pluginKit';
 
@@ -121,8 +112,7 @@ pluginKit.initI18nResource({
 });
 ```
 
-* 在插件的 `index.tsx` 文件中导入语言资源文件，并使用 `pluginKit` 初始化 `t`函数。然后你可以像正常的 `t` 函数一样使用 `t` 函数。
-
+* 在插件的 `index.tsx` 文件中导入语言资源文件，并使用 `pluginKit` 初始化 `t`函数。 然后你可以像正常的 `t` 函数一样使用 `t` 函数。
 ```tsx
 import pluginKit, { PluginInfo } from '@/utils/pluginKit';
 import './i18n';
@@ -139,7 +129,6 @@ const Index: FC = () => {
 详细信息请参考 [示例](#example) 部分
 
 ## 类型定义
-
 ```ts
 export type PluginType = 'Connector';
 
