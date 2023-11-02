@@ -6,17 +6,15 @@ sidebar_position: 0
 # 插件配置架构
 
 ## 功能
->
 > 对于插件，我们通常需要一些配置项来记录插件所需的信息。
->
+> 
 > 例如，OAuth 插件需要配置密钥。
->
+> 
 > 这些配置需要由开发人员描述并由用户使用。
->
+> 
 > 因此，以下内容介绍如何描述插件所需的配置。
 
 ### 后端和插件开发人员
-
 :::note
 
 对于后端或插件开发人员，我们使用以下结构来描述插件配置。
@@ -50,7 +48,6 @@ type ConfigFieldOption struct {
 ```
 
 ### 前端
-
 :::note
 
 在前端，我们使用 JSON 描述和呈现插件的配置项。
@@ -101,11 +98,9 @@ type ConfigFieldOption struct {
 ]
 ```
 
-以下是在管理页面上所展现的情况。
-![plugin-github-connector-config](/img/docs/plugin-github-connector-config.png)
+以下是在管理页面上所展现的情况。 ![plugin-github-connector-config](/img/docs/plugin-github-connector-config.png)
 
 ### 支持的配置类型
->
 > 不同的类型将呈现为不同的 UI。
 
 - input
@@ -118,7 +113,6 @@ type ConfigFieldOption struct {
 - switch
 
 ### 支持的配置输入类型
->
 > 支持不同格式的输入类型
 
 - text
