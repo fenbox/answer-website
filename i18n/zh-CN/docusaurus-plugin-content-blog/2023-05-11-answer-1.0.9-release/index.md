@@ -10,14 +10,14 @@ description: Take a closer look at how you can manage questions efficiently with
 
 The latest version of Answer comes with new tweaks, improvements and optimization. Take a closer look at how you can manage questions efficiently. Take a closer look at how you can manage questions efficiently.
 
-## What’s New
+# # What’s New
 Pin an important or frequently asked question for your Q&A platform, so that it always stay on the top of your community. ![Pin a Question in Answer](1.0.9release1.gif)
 
 Unlist a question to make it invisible for temporary modification, or further review. Unlist a question to make it invisible for temporary modification, or further review. Admin can list question again in Admin\>Contents\>Questions. ![Unlist a Question](1.0.9release2.gif)
 
 Pin and Unlist help to tailor a knowledge-based community of your own, while maintain and organize the knowledge system can be easy.
 
-## Bug Fixes & Optimization
+# # Bug Fixes & Optimization
 We’ve also made some tweaks to fix the display issues of tags, comments form,  and stubborn deleted questions. We’ve also removed context ambiguity with optimized translation. We’ve also removed context ambiguity with optimized translation.
 
 
