@@ -1,11 +1,10 @@
 ---
-sidebar_position: 1
 slug: /installation
 ---
 
-# 安装流程
+#  安装流程
 
-## 🚀 启动 Answer
+# # 🚀 启动 Answer
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -13,34 +12,37 @@ import TabItem from '@theme/TabItem';
 有多种方法可以启动 Answer，你可以选择最适合你的一种。
 
 <Tabs>
-  <TabItem value="docker-compose" label="Docker Compose" default>
+  <TabItem value="docker-compose" label="Docker compose" default>
 
 我们推荐使用 Docker Compose 运行 Answer。 这是开始使用 Answer 的最简单方法。
 
-:::tip
-如果你在 Windows 或 Mac 上使用 [Docker Desktop](https://www.docker.com/products/docker-desktop)，则已经包含了 docker-compose。 如果你使用的是 Linux，则需要单独安装 docker-compose。
+如果你使用的是 Linux，则需要单独安装 docker-compose。 :::tip  
+如果你在 Windows 或 Mac 上使用 [Docker Desktop](https://www.docker.com/products/docker-desktop)，则已经包含了 docker-compose。
+
+你可以在 http://localhost:9080 访问它。
 :::  
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/answerdev/answer/main/docker-compose.yaml | docker compose -p answer -f - up
+curl -fsSL https://raw.githubusercontent.com/apache/incubator-answer/main/docker-compose.yaml | docker compose -p answer -f - up
 ```
 
-Answer 的默认端口为 `9080`。 你可以在 <http:>.
+Answer 的默认端口为 `9080`。
 
   </TabItem>
   <TabItem value="docker" label="Docker">
 
-你可以在 [Docker Hub](https://hub.docker.com/r/answerdev/answer/tags) 上找到所有可用的 Docker 镜像。 `latest` 标签指的是 Answer 的最新稳定版本。
+你可以在 [Docker Hub](https://hub.docker.com/r/apache/answer/tags) 上找到所有可用的 Docker 镜像。 `latest` 标签指的是 Answer 的最新稳定版本。
 
 ```bash
-docker run -d -p 9080:80 -v answer-data:/data --name answer answerdev/answer:latest
+docker run -d -p 9080:80 -v answer-data:/data --name answer apache/answer:latest
 ```
 
-运行该命令后，请前往 <http:> 继续安装流程。
+运行该命令后，请前往 http://localhost:9080/install 继续安装流程。
 
 :::tip
 如果你无法访问安装页面，可以使用命令 `docker logs answer` 查看日志。 它可能有助于你找到具体的问题
 :::
+
 :::  
 
   </TabItem>
@@ -52,7 +54,7 @@ docker run -d -p 9080:80 -v answer-data:/data --name answer answerdev/answer:lat
 INSTALL_PORT=80 ./answer init -C ./answer-data/
 ```
 
-运行该命令后，请前往 <http:> 继续安装流程。
+运行该命令后，请前往 http://localhost:80/install 继续安装流程。
 
 按照 [安装步骤](#install-steps) 完成安装。 **之后**运行以下命令再次启动 Answer。
 
@@ -71,15 +73,15 @@ INSTALL_PORT=80 ./answer init -C ./answer-data/
   </TabItem>
 </Tabs>
 
-## 安装步骤
+# # 安装步骤
 
 > 在你启动 Answer 后，你可以按照以下步骤完成有关基本配置的初始化。
 
-### 第一步：选择语言
+# ## 第一步：选择语言
 
 ![install-choose-language](/img/docs/install-choose-language.png)
 
-### 第二步：配置数据库
+# ## 第二步：配置数据库
 
 :::tip
 Answer 支持 MySQL、PostgreSQL 和 SQLite 作为数据库后端。 最小的环境是 SQLite，不需要任何额外的配置。 如果你想使用 MySQL 或 PostgreSQL，则需要先设置数据库，然后在此步骤中配置数据库连接。 在这里，我们建议使用 SQLite3 完成你的第一次体验。
@@ -87,20 +89,23 @@ Answer 支持 MySQL、PostgreSQL 和 SQLite 作为数据库后端。 最小的�
 
 ![install-database](/img/docs/install-database.png)
 
-### 第三步：创建配置文件
+# ## 第三步：创建配置文件
 
 单击“下一步”按钮以创建配置文件。
 
 ![install-create-config-file](/img/docs/install-create-config-file.png)
 
-### 第四步：填写基本信息
+# ## 第四步：填写基本信息
 
 :::caution
 Site URL is the browser address you will use to access answers after installation.  
 **Don't forget the admin Email and password.**
-:::  
+:::
+
 ![install-site-info](/img/docs/install-site-info.png)
 
-### 第五步：完成
+# ## 第五步：完成
 
-🎉 恭喜你，单击“完成”按钮即可开始 Answer 之旅！ ![install-complete](/img/docs/install-complete.png)
+🎉 恭喜你，单击“完成”按钮即可开始 Answer 之旅！
+
+![install-complete](/img/docs/install-complete.png)
