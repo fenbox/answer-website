@@ -2,7 +2,7 @@
 title: Answer Turns 1, and is Now Apache Answer
 authors:
   - Anne
-category: Company
+category: Community
 featured: true
 image: 2023-10-31-cover@4x.png
 description: "Celebrate Answer’s first anniversary with a wrap-up, and stay tuned for new features coming next year."
@@ -34,11 +34,11 @@ For the past year, we’ve released 19 versions, and formed a compact but powerf
 
 Behind the GitHub stars, we are honored to be the companion to help more teams unleash collective wisdom.
 
-## Proudly Incubated at Apache Incubator
+# # Proudly Incubated at Apache Incubator
 We realized that a long-term healthy community is important for an open-source project, and becoming an [Apache project](https://answer.apache.org/blog/2023/10/24/answer-enters-apache-incubator/) will guide us there. Nurtured in the Apache Way, we will build a fair, diverse and inclusive community, while ship great features with the community. Nurtured in the Apache Way, we will build a fair, diverse and inclusive community, while ship great features with the community.
 
 
-## Big Thanks and Big Hugs
+# # Big Thanks and Big Hugs
 We are truly thankful to contributors and volunteers for their time and effort spent with us to make Apache Answer a better place for questions, answers, discussions, etc.
 
 Working with the community that consists of a group of product users, lovers, and helpers is wonderful, we cannot tell how amazing it is. Gear up, here comes a new episode. Gear up, here comes a new episode.
