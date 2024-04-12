@@ -2,9 +2,9 @@
 slug: /permission
 ---
 
-#  权限
+# 权限
 
-# # 权限
+## 权限
 
 The number is the minimum reputation required for a privilege. There are three options available for your community. You can change this in Admin settings.
 
@@ -34,7 +34,7 @@ The number is the minimum reputation required for a privilege. There are three o
 | 无需审核即可编辑标签描述  | 1               | 10000        | 20000        |
 | 管理标签同义词       | 1               | 10000        | 20000        |
 
-# # 用户角色
+## 用户角色
 
 | 权限 \ 角色                                   | 用户 | Moderator | 管理员 |
 | ----------------------------------------- | -- | --------- | --- |
