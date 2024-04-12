@@ -14,7 +14,7 @@ That's when open-source software — offering a collaborative, effective, and se
 
 Before knowing why Answer is open-source, we will take a nibble on open-source, and examples beforehand.
 
-# # What is Open-source?
+## What is Open-source?
 
 [Open source](https://opensource.com/article/18/2/coining-term-open-source-software) refers to a type of software or technology that comes with its source code which is accessible to the public for free. This means that anyone can view, modify, and distribute the code, following the guidelines outlined in the open-source license. For example, programmers can add features or fix a bug with the access to the source code. This means that anyone can view, modify, and distribute the code, following the guidelines outlined in the open-source license. For example, programmers can add features or fix a bug with the access to the source code.
 
@@ -22,7 +22,7 @@ Before knowing why Answer is open-source, we will take a nibble on open-source, 
 
 It promotes collaboration, transparency, and community-driven development, often maintained by volunteers working together to create reliable and innovative solutions.
 
-# # Open-source Software
+## Open-source Software
 
 We might have already met or used open-source software before, and here are them.
 
@@ -35,7 +35,7 @@ We might have already met or used open-source software before, and here are them
 7. [VLC](https://www.videolan.org/): a media player that can play a wide range of video and audio formats.
 8. [WordPress](https://wordpress.com/): a content management system (CMS) for creating websites and blogs.
 
-# # Answer: Open-source is in Essence
+## Answer: Open-source is in Essence
 
 Lately, B2B enterprises have been looking for solutions on building their own Q&A community or a corporate community. A dedicated section or subsection cannot meet their needs because they wish to customize content, have control of data, rather than “being a guest” in a public community. ![Answer Interface](opensource2.png) That’s the moment we decided to build Answer. A dedicated section or subsection cannot meet their needs because they wish to customize content, have control of data, rather than “being a guest” in a public community.
 
@@ -43,7 +43,7 @@ Lately, B2B enterprises have been looking for solutions on building their own Q&
 
 That’s the moment we decided to build Answer.
 
-# ## We Wish Answer to be …
+### We Wish Answer to be …
 
 **Easy to use**  
 We hope everyone can set up and run Answer at ease — well, maybe with a little guidance and documentation from us :)
@@ -52,7 +52,7 @@ We hope everyone can set up and run Answer at ease — well, maybe with a little
 
 **Open-source** You can find all the source code of Answer in [GitHub Repo](https://github.com/apache/incubator-answer), free for everybody. We love the spirit of how open source encourages collaboration and transparency, and we always welcome contributions ;) We love the spirit of how open source encourages collaboration and transparency, and we always welcome contributions ;)
 
-# # Where Can I Find More about Answer
+## Where Can I Find More about Answer
 
 No matter you are a Q&A lover, self-host expert, or want-to-give-it-try person, you can always get connected with us, share new ideas, or simply for chatting.
 
