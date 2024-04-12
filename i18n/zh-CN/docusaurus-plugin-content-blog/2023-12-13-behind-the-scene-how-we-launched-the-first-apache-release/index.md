@@ -17,7 +17,7 @@ Joining the incubator was more than a new beginning, but a new way of collaborat
 
 To the future incubator projects: Consider this blog post your guide as you embark on your own first Apache release. Have a smooth release!
 
-# # How Do We Collaborate
+## How Do We Collaborate
 
 The driving force behind this release are the 4 PMC members: [LinkinStars](https://github.com/LinkinStars), [shuashuai](https://github.com/shuashuai), [fenbox](https://github.com/fenbox), and [AnnaPrimma](https://github.com/PrimmaAnna), and here’s how they collaborate:
 fenbox: the architect, planing and crafting the new features.
@@ -25,11 +25,11 @@ LinkinStars: guardian of compliance, meticulous source code and binary package m
 shuashuai: front-end developer, fix bugs, iterate new features, keep flawless user experience, etc.
 AnnaPrimma: the doc searcher, translator, and past project experience capturer.
 
-# # New Changes
+## New Changes
 
 There are basically two significant changes: **compliance and the voting process**, and we’ve spent plenty of time on them.
 
-# ## Compliance
+### Compliance
 
 Apache releases are required to comply with the Apache Software Foundation's (ASF) policies and procedures. One of the most important compliance requirements is that all **dependencies must also be compliant**.
 
@@ -41,7 +41,7 @@ Before we officially launch the release vote, we focused on compliance, as these
 
 We also checked on docs, seemed help from mentors via emails, and traced back to other project’s releases.
 
-# ## Process
+### Process
 
 The release process was extended because of the need of [Apache voting process](https://www.apache.org/foundation/voting.html).
 
@@ -53,44 +53,44 @@ We were in a bit of a rush to close the voting when we received 3 votes of appro
 
 Besides the release version number, don’t forget to specify the commit ID of the last commit for the current version and the build node that was used to build the current version.
 
-# # Things We Would Love to Share
+## Things We Would Love to Share
 
 Here are some takeaways from the release process. Hope it helps ;)
 
-# ## Email. Email. Email.
+### Email. Email. Email.
 
 Apache projects use mailing lists to coordinate development of their software and administer their organization. Mailing lists also serve as a primary support channel where users can help each other learn to use the software.
 
 We spent a bit of time getting used to email communication, since we were used to instant communication tools. Email is a great way to reduce the information gap for current community members and new members.
 
-# ## Try First, Ask Later.
+### Try First, Ask Later.
 
 For uncertain questions, try them first and then ask for your mentor's help if needed. Your mentors are here to guide and support, not to do all the work for you.
 
-# ## Be Patient and Seek Help from the Mentors
+### Be Patient and Seek Help from the Mentors
 
 If you’ve tried but failed to find a solution, reach out to your mentor by email.
 In the initial phase of the release, one of the obstacles we faced was the format of the license. We first looked at some graduated projects, but turned out that each project had its format. Then, we decided to display the following information for each license: We sent an email for mentors’ advice, and in the end we replaced the LICENSE application URL with the URL we have sorted out.
 
-We heard the voice of the [community](https://github.com/apache/incubator-answer/issues/565), and valued the privacy and security of a Q\&A platform. As you can see, classifying and organising licenses is something that takes a lot of patience.
+We heard the voice of the [community](https://github.com/apache/incubator-answer/issues/565), and valued the privacy and security of a Q&A platform. As you can see, classifying and organising licenses is something that takes a lot of patience.
 
-# ## Careful with the Assignment
+### Careful with the Assignment
 
 In the past, we simply assigned an issue to the person in charge. However, this approach is not community-driven today. Always remind yourself that: **Issues and pull requests should only be assigned to users who have volunteered to take them on**.
 
-# ## Community Over Code
+### Community Over Code
 
 Community is the key to a project's success in graduating from Apache, and we’re building our community. For an easy and smooth contribution experience, we collect everything a contributor needs on the [Community page](https://answer.apache.org/community/contributing), providing a central hub for information and simplifies the contribution process for everyone.
 
-# # Recommended Docs for Release
+## Recommended Docs for Release
 
-https\://incubator.apache.org/guides/releasemanagement.html\
-https\://linkis.apache.org/community/how-to-release/
+https://incubator.apache.org/guides/releasemanagement.html\
+https://linkis.apache.org/community/how-to-release/
 
 Dive into the [update](https://github.com/apache/incubator-answer/releases/tag/v1.2.1) and experience the latest Answer for yourself, and you're always welcome to [join the community](https://answer.apache.org/community/about).
 
-# # Ready to shape the future of Q\&A Software?
+## Ready to shape the future of Q&A Software?
 
-We always have new ideas for Q\&A, and plan to release a new version every month. You can find our upcoming plans and join the discussion on our [roadmap](https://github.com/apache/incubator-answer/projects?query=is%3Aopen).
+We always have new ideas for Q&A, and plan to release a new version every month. You can find our upcoming plans and join the discussion on our [roadmap](https://github.com/apache/incubator-answer/projects?query=is%3Aopen).
 
-If you’re a Q\&A enthusiast, a developer, or a multilingual speaker, we welcome your contributions, and there’s always a way you can [get involved](https://answer.apache.org/community/contributing). See you soon.
+If you’re a Q&A enthusiast, a developer, or a multilingual speaker, we welcome your contributions, and there’s always a way you can [get involved](https://answer.apache.org/community/contributing). See you soon.
