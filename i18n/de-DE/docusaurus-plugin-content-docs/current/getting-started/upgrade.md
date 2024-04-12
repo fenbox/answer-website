@@ -2,7 +2,7 @@
 slug: /upgrade
 ---
 
-#  Upgrade
+# Upgrade
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -41,12 +41,12 @@ docker run -d -p 9080:80 -v answer-data:/data --name answer apache/answer:latest
   </TabItem>
   <TabItem value="binary" label="Binary">
 
-If you are using a binary installation of answer, the upgrade steps are as follows.
+Wenn du eine binäre Installation von Answer verwendest, sind die Upgrade-Schritte wie folgt.
 
-1. Download the [latest binary version](https://github.com/apache/incubator-answer/releases) for your system.
+1. Lade die [neueste Binärversion](https://github.com/apache/incubator-answer/releases) für dein System herunter.
 2. Stop old version
 3. Execute the upgrade command `./answer upgrade -C ./answer-data/`
-4. Run the latest version `./answer run -C ./answer-data/`
+4. Führe die neueste Version `./answer run -C ./answer-data/` aus.
 
 
   </TabItem>
@@ -54,6 +54,6 @@ If you are using a binary installation of answer, the upgrade steps are as follo
 
 :::tip
 
-When there are other unexpected cases such as upgrade exceptions, we provide a command to manually force the upgrade the Answer. `answer upgrade -f v1.1.0` Executing this command will force upgrade from the specified version, even if your Answer is already up to date. If you encounter an upgrade exception, you can try to execute this command or pull the latest docker image again and execute this command inside the container.
+When there are other unexpected cases such as upgrade exceptions, we provide a command to manually force the upgrade of Answer. `answer upgrade -f v1.1.0` Wenn du diesen Befehl ausführst, wird ein Upgrade von der angegebenen Version erzwungen, auch wenn dein Answer bereits auf dem neuesten Stand ist. Wenn du auf eine Upgrade-Ausnahme stößt, kannst du versuchen, diesen Befehl auszuführen oder das neueste Docker-Image erneut zu ziehen und diesen Befehl innerhalb des Containers auszuführen.
 
 :::
