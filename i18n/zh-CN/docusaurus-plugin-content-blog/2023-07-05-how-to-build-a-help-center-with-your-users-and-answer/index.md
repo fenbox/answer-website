@@ -12,7 +12,7 @@ You have to admit that, your customers always have and will ask questions even i
 
 In today’s blog, we will build a help center from the scratch with a bit of community sprit in Answer.
 
-# # What’s a Help Center
+## What’s a Help Center
 
 A Help Center serves as a valuable resource for users. A Help Center serves as a valuable resource for users. It provides customers immediate help by helping them find answers and resolve issues independently.
 
@@ -22,7 +22,7 @@ When building a help center, here are 2 common questions you need to address:
 
 No worries, we will resolve these problems one by one and build a help center from the scratch together in the coming part of this blog.
 
-# # Why Answer for a Help Center?
+## Why Answer for a Help Center?
 
 Here’s how a traditional help center works: users come and seek answers, administrators provide answers constantly, and everything goes over again.
 
@@ -32,11 +32,11 @@ As the content in the help center becomes abundant, things change. For users, fi
 
 However, in Answer, everything is entirely different from traditional help center. In Answer, **everyone can ask and respond**, creating a mutual way interaction. Every user can ask a question, contribute, vote for an answer, etc. Here, the user is no longer waiting for answers passively, but becomes a part of help center management. This also alleviates the pressure of administrators, allowing them to focus on the roadmap of the help center.
 
-# # Build a Help Center with Answer (Tutorials and Tips)
+## Build a Help Center with Answer (Tutorials and Tips)
 
 The essence of a help center is to provide the right answer to the problems occurring already, and Answer is born for this. Here’s how, and you’ll know why. Here’s how, and you’ll know why.
 
-# ## 01. 01. Start with the FAQs
+### 01. 01. Start with the FAQs
 
 It’s hard to immediately categorize questions in the beginning, why not start with the frequently asked questions? It not only makes sure your content is right for the help center, but also solves the most common issues for your customers at the moment. It not only makes sure your content is right for the help center, but also solves the most common issues for your customers at the moment.
 
@@ -48,7 +48,7 @@ You can also [Pin recent FAQs](https://answer.apache.org/blog/2023/05/11/answer-
 
 ![Pin an FAQ in Answer](Pin.png)
 
-# ## 02. 02. Make Content Consistent
+### 02. 02. Make Content Consistent
 
 In Answer, help center is not just about self-service, but also about helping each other. Customers can also write answers to others, then admin and moderator will read and accept the best answers. If the question is answered perfectly in content, but not consistent with your style guide, you can have an admin or moderator to tune and make it looks shining again. Customers can also write answers to others, then admin and moderator will read and accept the best answers. If the question is answered perfectly in content, but not consistent with your style guide, you can have an admin or moderator to tune and make it looks shining again.
 
@@ -58,7 +58,7 @@ There are tips and notice to assist users deliver a concise question, while keep
 
 ![Tips and Notice in Answer](TipsandNotice.png)
 
-# ## 03. 03. Organize Categories with Tags
+### 03. 03. Organize Categories with Tags
 
 Time to make informative content easy to store and manage. Time to make informative content easy to store and manage. In Answer, you can create new tags freely: add one in the Tag page, or build a new one right after a post.
 
@@ -68,7 +68,7 @@ Add a description for your users to know what the tag is about, and what content
 
 ![Tag and Description in Answer](TagandDescription.png)
 
-# ## 04. 04. Keep the Answers Fresh and Ready
+### 04. 04. Keep the Answers Fresh and Ready
 
 Don’t make your help center end up with outdated answers. Though users are actively becoming a part of the community, moderators still need regular review and edit. Don’t make your help center end up with outdated answers. Though users are actively becoming a part of the community, moderators still need regular review and edit. Keep an eye on product launch, tweaks and updates, and you’ll notice how effective tags can be when updating the content.
 
@@ -76,7 +76,7 @@ When updating or editing a post, use [Unlist](https://answer.apache.org/blog/202
 
 ![Unlist a Question in Answer](UnlistQuestion.gif)
 
-# ## 05. 05. Make Sure Users Can Access Answers Easily
+### 05. 05. Make Sure Users Can Access Answers Easily
 
 Answer provides various ways for users to access the content they are searching for. Besides browsing in the help center, users can also get answers in the following ways: Besides browsing in the help center, users can also get answers in the following ways:
 
@@ -100,13 +100,13 @@ Answer also provides advanced search tips to boost search efficiency, offering a
 
 ![Customize Sidebar in Answer](Sidebar.png)
 
-# # What's More
+## What's More
 
 You might also be concerned about having numerous similar questions, which increases the workload for the administrators. Answer got it covered for you. When users fill a title, Answer automatically displays similar questions which are existed in the community. User can click and jump right to that question. Answer got it covered for you. When users fill a title, Answer automatically displays similar questions which are existed in the community. User can click and jump right to that question.
 
 ![Related Questions](RelatedQuestions.png)
 
-# # It’s Your Turn to Build Your Answer Help Center
+## It’s Your Turn to Build Your Answer Help Center
 
 With the tutorials and tips in this blog, we believe you can now build a help center that your users will love. You are always welcome to check this guide when working on your help center, and we will also keep it updated too. With the tutorials and tips in this blog, we believe you can now build a help center that your users will love. You are always welcome to check this guide when working on your help center, and we will also keep it updated too. It’s time to kick-start a help center for your product, and here’s a complete [Answer guide](https://answer.apache.org/docs/installation).
 
