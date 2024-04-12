@@ -2,9 +2,9 @@
 slug: /installation
 ---
 
-#  安装流程
+# 安装流程
 
-# # 🚀 启动 Answer
+## 🚀 启动 Answer
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -73,15 +73,15 @@ INSTALL_PORT=80 ./answer init -C ./answer-data/
   </TabItem>
 </Tabs>
 
-# # 安装步骤
+## 安装步骤
 
 > 在你启动 Answer 后，你可以按照以下步骤完成有关基本配置的初始化。
 
-# ## 第一步：选择语言
+### 第一步：选择语言
 
 ![install-choose-language](/img/docs/install-choose-language.png)
 
-# ## 第二步：配置数据库
+### 第二步：配置数据库
 
 :::tip
 Answer 支持 MySQL、PostgreSQL 和 SQLite 作为数据库后端。 最小的环境是 SQLite，不需要任何额外的配置。 如果你想使用 MySQL 或 PostgreSQL，则需要先设置数据库，然后在此步骤中配置数据库连接。 在这里，我们建议使用 SQLite3 完成你的第一次体验。
@@ -89,13 +89,13 @@ Answer 支持 MySQL、PostgreSQL 和 SQLite 作为数据库后端。 最小的�
 
 ![install-database](/img/docs/install-database.png)
 
-# ## 第三步：创建配置文件
+### 第三步：创建配置文件
 
 单击“下一步”按钮以创建配置文件。
 
 ![install-create-config-file](/img/docs/install-create-config-file.png)
 
-# ## 第四步：填写基本信息
+### 第四步：填写基本信息
 
 :::caution
 Site URL is the browser address you will use to access answers after installation.  
@@ -104,7 +104,7 @@ Site URL is the browser address you will use to access answers after installatio
 
 ![install-site-info](/img/docs/install-site-info.png)
 
-# ## 第五步：完成
+### 第五步：完成
 
 🎉 恭喜你，单击“完成”按钮即可开始 Answer 之旅！
 
