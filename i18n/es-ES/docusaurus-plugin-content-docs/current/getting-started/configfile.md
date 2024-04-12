@@ -2,7 +2,7 @@
 slug: /configfile
 ---
 
-#  Config File
+# Config File
 
 :::tip
 
@@ -10,7 +10,7 @@ We use `yaml` configuration file. It will be created automatically after `answer
 
 :::
 
-# # config.yaml description
+## config.yaml description
 
 ```yaml title="/data/conf/config.yaml"
 server:
@@ -30,6 +30,5 @@ swaggerui:
   host: 127.0.0.1 # An accessible IP address or domain name
   address: ':80'  # accessible port number
 service_config:
-  secret_key: "answer" # encryption key
   upload_path: "/data/uploads" # upload directory
 ```
