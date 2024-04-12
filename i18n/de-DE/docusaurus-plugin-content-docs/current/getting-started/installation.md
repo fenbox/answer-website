@@ -2,23 +2,23 @@
 slug: /installation
 ---
 
-#  Installation
+# Installation
 
-# # Start Answer
+## Answer starten
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-There are multiple ways to start Answer, you can choose the one that suits you best.
+Es existieren mehrere Möglichkeiten, mit der Antwort zu beginnen. Du kannst diejenige wählen, die dir am besten passt.
 
 <Tabs>
   <TabItem value="docker-compose" label="Docker compose" default>
 
-We recommend using Docker Compose to run Answer. This is the easiest way to get started with Answer.
+Wir empfehlen die Verwendung von Docker Compose, um Answer auszuführen. Das ist der einfachste Weg, um mit Answer anzufangen.
 
 :::tip
 
-If you are using [Docker Desktop](https://www.docker.com/products/docker-desktop) on Windows or Mac, docker-compose is already included. If you are using Linux, you will need to install docker-compose separately.
+If you are using [Docker Desktop](https://www.docker.com/products/docker-desktop) on Windows or Mac, docker-compose is already included. Wenn du Linux verwendest, musst du docker-compose separat installieren.
 
 :::  
 
@@ -26,12 +26,12 @@ If you are using [Docker Desktop](https://www.docker.com/products/docker-desktop
 curl -fsSL https://raw.githubusercontent.com/apache/incubator-answer/main/docker-compose.yaml | docker compose -p answer -f - up
 ```
 
-The default port for Answer is `9080`. You can access it at http://localhost:9080.
+The default port for Answer is `9080`. Du kannst es unter http://localhost:9080 aufrufen.
 
   </TabItem>
   <TabItem value="docker" label="Docker">
 
-You can find all the available Docker images on [Docker Hub](https://hub.docker.com/r/apache/answer/tags). The `latest` tag refers to the latest stable version of Answer.
+Du findest alle verfügbaren Docker-Images auf [Docker Hub](https://hub.docker.com/r/apache/answer/tags). Der "latest"-Tag bezieht sich auf die letzte stabile Version von Answer.
 
 ```bash
 docker run -d -p 9080:80 -v answer-data:/data --name answer apache/answer:latest
@@ -41,14 +41,14 @@ After running the command, heading to http://localhost:9080/install to continue 
 
 :::tip
 
-If you can't access the installation page, you can use the command `docker logs answer` to view the logs. It may help you find the specific problem.
+If you can't access the installation page, you can use the command `docker logs answer` to view the logs. Dies kann dir helfen, das spezifische Problem zu finden.
 
 :::  
 
   </TabItem>
   <TabItem value="binary" label="Binary">
 
-As a golang project, Answer can be compiled into a binary file. You can download the binary file that matches your operating system from the [release page](https://github.com/apache/incubator-answer/releases).
+Als Golang-Projekt kann Answer in eine Binärdatei kompiliert werden. Du kannst die Binärdatei, die zu deinem Betriebssystem passt, von der [Release-Seite](https://github.com/apache/incubator-answer/releases) herunterladen.
 
 ```bash
 INSTALL_PORT=80 ./answer init -C ./answer-data/
@@ -73,15 +73,15 @@ We use `-C` flag to indicate the directory where saved answer data.
   </TabItem>
 </Tabs>
 
-# # Install steps
+## Install steps
 
 > After you start the answer, you can follow the steps below to complete the initialization about the basic configuration.
 
-# ## Step 1: Choose the language
+### Step 1: Choose the language
 
 ![install-choose-language](/img/docs/install-choose-language.png)
 
-# ## Step 2: Config database
+### Step 2: Config database
 
 :::tip
 Answer supports MySQL, PostgreSQL, and SQLite as the database backend. The smallest environment is SQLite, which does not require any additional configuration. If you want to use MySQL or PostgreSQL, you need to setup the database first and then configure the database connection in this step. Here we recommend using sqlite3 to complete your first experience.
@@ -89,13 +89,13 @@ Answer supports MySQL, PostgreSQL, and SQLite as the database backend. The small
 
 ![install-database](/img/docs/install-database.png)
 
-# ## Step 3: Create configuration file
+### Step 3: Create configuration file
 
 Click Next button to create the configuration file.
 
 ![install-create-config-file](/img/docs/install-create-config-file.png)
 
-# ## Step 4: Fill in basic information
+### Step 4: Fill in basic information
 
 :::caution
 Site URL is the browser address you will use to access answers after installation.  
@@ -104,7 +104,7 @@ Site URL is the browser address you will use to access answers after installatio
 
 ![install-site-info](/img/docs/install-site-info.png)
 
-# ## Step 5: Complete
+### Step 5: Complete
 
 Congratulations, you can click the done button to start your answer journey!
 
