@@ -10,36 +10,36 @@ description: Got your Answer server up and running? Now, let's take it to the ne
 
 > I am already running Answer on my server, but I want to access it using HTTPS. How can I do that?
 
-# # Background
+## Background
 
 When you already have a server, you may want to deploy Answer on it. After deploying Answer, you will realize that you can only access it using HTTP. However, you may want to access it using HTTPS. So how can you do that?
 
 Some questions:
 
-- https\://meta.answer.dev/questions/D1G3/how-to-configure-ssl
-- https\://meta.answer.dev/questions/D1wh/how-to-enable-ssl
-- https\://meta.answer.dev/questions/D1XG2/how-to-deploy-answer-image-in-aws-in-docker-with-ssl-and-nginx
-- https\://meta.answer.dev/questions/D136/how-to-deploy-an-ssl-certificate-using-docker-and-how-to-access-it-without-using-a-port
-- https\://meta.answer.dev/questions/D1Oe/i-have-set-up-ssl-on-cloudflare-but-still-can-t-access-via-https
+- https://meta.answer.dev/questions/D1G3/how-to-configure-ssl
+- https://meta.answer.dev/questions/D1wh/how-to-enable-ssl
+- https://meta.answer.dev/questions/D1XG2/how-to-deploy-answer-image-in-aws-in-docker-with-ssl-and-nginx
+- https://meta.answer.dev/questions/D136/how-to-deploy-an-ssl-certificate-using-docker-and-how-to-access-it-without-using-a-port
+- https://meta.answer.dev/questions/D1Oe/i-have-set-up-ssl-on-cloudflare-but-still-can-t-access-via-https
 - ...
 
 I found that many people have this question. Deploying Answer is easy, but deploying it with HTTPS is a bit difficult. So I decided to write this article to help you deploy Answer with HTTPS.
 
-# # Easy way
+## Easy way
 
 This blog aims to introduce the easiest way to deploy Answer with HTTPS. You can use [Caddy](https://caddyserver.com/) to deploy Answer with HTTPS. Caddy is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go. Of course, you can use other tools to deploy Answer with HTTPS, such as Nginx, etc.
 
-# # Preparation
+## Preparation
 
-1. You can follow the [installation guide](https://answer.apache.org/docs/installation/) to install Answer. After installing Answer, you can access it using HTTP. The default port for Answer is 9080. You can access it at http\://localhost:9080. In the following steps, we will use 9080 as the default port for Answer.
+1. You can follow the [installation guide](https://answer.apache.org/docs/installation/) to install Answer. After installing Answer, you can access it using HTTP. The default port for Answer is 9080. You can access it at http://localhost:9080. In the following steps, we will use 9080 as the default port for Answer.
 
 2. You need a domain that **DNS resolution is already configured to point to your server**.
 
 3. In this blog we will use docker-compose to install Caddy. So we need docker and docker-compose. You can follow the [official guide](https://docs.docker.com/engine/install/) to install docker and docker-compose.
 
-# # Deploy
+## Deploy
 
-# ## Step 1
+### Step 1
 
 ```shell
 $ mkdir caddy-docker
@@ -67,7 +67,7 @@ services:
     network_mode: host
 ```
 
-# ## Step 2
+### Step 2
 
 The `Caddyfile` is the configuration file for Caddy. It is used to configure how Caddy should serve your site. This file will be mounted into the container at `/etc/caddy/Caddyfile`.
 
@@ -83,7 +83,7 @@ your.answer.domain {
 }
 ```
 
-# ## Step 3
+### Step 3
 
 Run the following command to start Caddy. Wait a few seconds, and then you can access Answer using HTTPS.
 
@@ -97,7 +97,7 @@ If you can't access it, you can check the logs of Caddy.
 $ docker-compose logs
 ```
 
-# # Advanced
+## Advanced
 
 If you don't want to use `network_mode: host` in `docker-compose.yml`, you can put Answer and Caddy in the same docker compose. Then Caddy and Answer can use the same network. So you can configure Caddy like this:
 
