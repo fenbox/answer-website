@@ -16,29 +16,29 @@ October also marks the 10th anniversary of Hacktoberfest, an annual month-long e
 
 We are so glad that to participate in our first Hacktoberfest as a partner of [ILLA Cloud](https://www.illacloud.com/hacktoberfest2023/?utm_source=newsletter&utm_medium=email&utm_campaign=newsletter-email-hacktoberfest2023-answer-0925), and here’s everything you need to know to be a part of our event.
 
-# # Hacktoberfest Kickoff Streaming ILLA with Answer and More
+## Hacktoberfest Kickoff Streaming ILLA with Answer and More
 
 Answer will make an entrance in [Hacktoberfest kickoff](https://www.youtube.com/live/qSZ9JhjZ7HM?si=yYLZDMa60tJJJNgv) event hosted by ILLA. There will be a gift giveaway for every viewer during streaming. We will introduce Answer, how you can contribute to Answer, and present the swags. There will be a gift giveaway for every viewer during streaming. We will introduce Answer, how you can contribute to Answer, and present the swags.
 
 [![Answer and ILLA Cloud](ILLA%20Cloud%20x%20Answer.png)](https://www.illacloud.com/hacktoberfest2023?utm_medium=email&utm_source=newsletter&utm_campaign=newsletter-email-hacktoberfest2023-answer-0925)
 
-# # Contribute and Earn Digital Swag with Pride
+## Contribute and Earn Digital Swag with Pride
 
 Celebrate Answer’s first birthday with contributions, the more the better, no matter, it’s a bug report, typo fixing, a new plugin, etc. There are 3 ways you can contribute to Answer, and how you can win exclusive swags for Hacktoberfest 2023. There are 3 ways you can contribute to Answer, and how you can win exclusive swags for Hacktoberfest 2023.
 
-# ## Hunt a Bug/Enhancement
+### Hunt a Bug/Enhancement
 
 * Build a Q&A community with Answer [here](https://github.com/apache/incubator-answer).
 * Report a bug or bring up a feature request in [issues](https://github.com/apache/incubator-answer/issues/new/choose). ![Issues](Issues.png)
 * Add Hacktoberfest in the title so that we can identify it quickly. ![Add Hacktoberfest in the Title](Title.png)
 * Follow the template and submit it. ![Template](Template.png)
 
-# ## Plugin
+### Plugin
 
 * Build a plugin and merge PR [here](https://github.com/apache/incubator-answer-plugins).
 * Find a bug in current plugins and report it with [issues](https://github.com/apache/incubator-answer-plugins/issues/new).
 
-# ## Vaunt Your Contribution
+### Vaunt Your Contribution
 
 We are partnering with [Vaunt](https://github.com/VauntDev) during Hacktoberfest to reward contributions. Our team will have an initial review of the submitted issues, and tag it with **hacktoberfest-accepted** first. Then, we will have a closer look to see whether it shares the same goals or visions with our[roadmap](https://github.com/apache/incubator-answer/projects). If it’s a yes, we will add **LGTM** tag to it, and congratulations you’ll get a digital badge from us! Here's a group photo of all the badges, from top to bottom and left to right, in order: Plugin Maestro, Bug Hunter, and Visionary Architect. Earn it and show them with pride. Our team will have an initial review of the submitted issues, and tag it with **hacktoberfest-accepted** first. Then, we will have a closer look to see whether it shares the same goals or visions with our[roadmap](https://github.com/apache/incubator-answer/projects). If it’s a yes, we will add **LGTM** tag to it, and congratulations you’ll get a digital badge from us! Here's a group photo of all the badges, from top to bottom and left to right, in order: Plugin Maestro, Bug Hunter, and Visionary Architect. Earn it and show them with pride.
 
@@ -48,7 +48,7 @@ Bonus: for the top 3 accepted plugins contributions, you’ll also receive a bag
 
 ![Answer Swags](DSC07756.png)
 
-# # Resources and FAQ
+## Resources and FAQ
 
 Here's the gear you need before making a contribution, and we are always here to help ;)
 
