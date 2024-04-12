@@ -2,24 +2,51 @@
 slug: /
 ---
 
-#  介绍
+# 介绍
 
 Answer 可帮助你在用户或团队之间建立问答社区。 你可以在这里分享知识并帮助用户解决问题。
 
-# # 功能
-
-- **提问和回答** - 提出问题并从你的用户和团队那里获得答案。
-- **组织内容** - 将你的内容组织为分类和标签。
-- **集成** - 与你现有的工具和服务集成。
-- **游戏化** - 奖励用户的贡献。
-- **现代用户界面** - 现代且响应式的用户界面。
-- **可扩展** - 使用插件扩展 Answer。
-- **开源** - 免费且开源。
-
-# # 架构
-
-前后端分离： Answer 是一个单体库，包含前端和后端。
-
-# # 截图
-
 ![screenshot](/img/screenshot.png)
+
+## 功能
+
+### Streamlined Q&A Experience
+
+- **Question & Answer**: Submit and answer questions effortlessly.
+- **Real-time Preview with Markdown**: Create your content and see formatting as you type with intuitive Markdown side by side, compatible with CommonMark.
+- **Ping an Expert**: Notify relevant users in the community who might have the answer for a quicker response.
+- **Advanced Search**: Find the content you’re looking for quickly with filtering options and tag, username, score, etc.
+- **Real-Time Suggestions**: Discover relevant questions as you type, and jump right to it.
+
+### Hassle-free Community Management
+
+- **Admin/Moderator/User Roles**: Manage user access levels for optimal control.
+- **Add Bulk Users**: Add multiple users at once and expand the community efficiently.
+- **Tagging System**: Organize the content with the tags for both efficient categorization and easy navigation.
+- **Open Editing and Collaboration**: Everyone can edit existing questions, answers, and tags to keep the content accurate and up-to-date.
+- **Transparent Revision History**: Every edit made can be tracked and stored for reference, allowing users to see how the content has evolved over time.
+
+### Cultivate a Thriving Community
+
+- **Voting System**: Build a better community with your voice: upvote the great answers, and downvote those doesn’t.
+- **Reputation System**: Earn recognition with contributions and unlock privileges in the community.
+- **Notification**: Always get notified of new comments, answers, invites, votes, and more.
+- **Follow Tags**: Follow tags and stay in the loop of your favorite Q&A.
+- **User Profile**: Show expertise, interests, and contributions to the community with pride.
+
+### Customization and Plugins
+
+- **Themes and Layouts**: Customize the online community to match your identity.
+- **Plugins**: Empower your Answer with plugins built by the community, such as third-party login, cache, search, etc.
+
+### Privacy and Security
+
+- **Login Access Control**: Take control of registrations, login methods, and allowed email domains to create a secure environment for the community.
+- **Content Access Control**: Content is accessible to the community members only, keeping the community discussions safe.
+
+### More
+
+- **Multilingual**: Build and host your community in different languages translated by the community.
+- **Responsive Layout**: Join the community conversation seamlessly from any device.
+- **Dark Mode**: Personalize community experience to stay concentrated.
+- **Separation of front-end and back-end**: It is a monorepo that contains both the frontend and the backend.
