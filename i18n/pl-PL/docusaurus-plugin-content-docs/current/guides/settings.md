@@ -1,0 +1,7 @@
+---
+slug: /settings
+---
+
+# Ustawienia
+
+TODO
