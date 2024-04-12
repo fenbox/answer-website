@@ -2,9 +2,13 @@
 slug: /users
 ---
 
-#  Users
+# Users
 
-# # Top users
+## User status
+
+![User state diagram](/img/docs/users-user-status.drawio.svg)
+
+## Top users
 
 Show top users in the platform.
 
@@ -18,38 +22,11 @@ Show top users in the platform.
   - Show all moderators, administrators
   - Ordered by reputation
 
-# # Sign up
+## Sign up
 
-A user wants to sign up from email.
+A user sign up process with email.
 
-```mermaid
----
-title: Sign up process
----
-stateDiagram
-    direction LR
-    A1 : Fill sign up form
-    B1 : Send confirm email
-    B2 : Visit activation link
-    %% B3 : Click active button
-    Z : Active successful
-    inactivate : Inactive user
-    normal : Normal user
-
-    [*] --> A1
-    state Guest {
-      A1 --> B1
-    }
-    state inactivate {
-      direction LR
-      B1 --> B2
-      B2 --> Z
-    }
-    state normal {
-      Z
-    }
-    Z --> [*]
-```
+![Sign up process](/img/docs/users-signup.drawio.svg)
 
 - Display name (abbreviated as "name"):
   - Less than 30 characters.
@@ -63,15 +40,15 @@ stateDiagram
 - Record the time of registration and the IP address.
 - The activation link is valid for 14 days.
 
-# # Log in
+## Log in
 
 A user wants to log in. The user's login permissions are related to the status.
 
-| User status | Normal | Inactive | Suspended | Deleted |
-| ----------- | ------ | -------- | --------- | ------- |
-| Log in      | Allow  | Denied   | Denied    | Denied  |
+| User status | Normal  | Inactive | Suspended | Deleted |
+| ----------- | ------- | -------- | --------- | ------- |
+| Log in      | Allowed | Denied   | Denied    | Denied  |
 
-# ## Log in with email and password
+### Log in with email and password
 
 - Fill email and password to log in.
   - If the user does not exist, the message "Invalid email or password" is displayed to prevent the account from being attacked.
@@ -80,44 +57,34 @@ A user wants to log in. The user's login permissions are related to the status.
 - Login status is remembered for 14 days by default.
 - Click "Forgot password" to reset password if someone forgot their password.
 
-# ## Log in from thridy-party OAuth
+### Log in from thridy-party OAuth
 
-```mermaid
----
-title: Thirdy-party OAuth process
----
-flowchart TD
-  A([Start]) -- OAuth authorization --> record{"Authorization already exists?"}
-  record -- No --> get_email{Can get email}
-  record -- Yes --> Z([Login successful])
+![Thirdy-party OAuth process](/img/docs/users-oauth.drawio.svg)
 
-
-```
-
-# # Reset password
+## Reset password
 
 TODO
 
-# # Notification
+## Notification
 
 TODO
 
-# ## Inbox
+### Inbox
 
 TODO
 
-# ## Achievement
+### Achievement
 
 TODO
 
-# # Profile
+## Profile
 
 TODO
 
-# # Settings
+## Settings
 
 TODO
 
-# ## Unsubscribe email
+### Unsubscribe email
 
 TODO
