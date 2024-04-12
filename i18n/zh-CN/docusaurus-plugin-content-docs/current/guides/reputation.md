@@ -2,11 +2,11 @@
 slug: /reputation
 ---
 
-#  Reputation
+# Reputation
 
 声望用于自动化社区生态管理。
 
-# # 声望变化规则
+## 声望变化规则
 
 | 条件        | 变化  |
 | --------- | --- |
@@ -19,7 +19,7 @@ slug: /reputation
 | 你的问题被踩    | -2  |
 | 你的回答被踩    | -2  |
 
-# # 额外规则
+## 额外规则
 
 - The initial reputation is `0`, after activation the reputation becomes `1`
 - 如果有某项操作导致用户的声望 `< 1`，那么任何后续降低声望的操作都不会降低用户的声望。
