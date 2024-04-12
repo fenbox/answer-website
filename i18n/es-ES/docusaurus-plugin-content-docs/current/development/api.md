@@ -2,7 +2,7 @@
 slug: /api
 ---
 
-#  API Document
+# API Document
 
 :::tip
 
@@ -10,17 +10,17 @@ Answer using swagger to generate API document automatically. Swagger can display
 
 :::
 
-# # Where is the API document?
+## Where is the API document?
 
-# ## Quick Look
+### Quick Look
 
 If you want to quickly view the API document, you can visit the following link:
-https\://meta.answer.dev/swagger/index.html
+https://meta.answer.dev/swagger/index.html
 
-# ## View your own API document
+### View your own API document
 
 If you already have an Answer instance, you can view the API document of your own instance by visiting the following link:
-https\://example.com/swagger/index.html
+`https://example.com/swagger/index.html`
 
 If you can't access the above link, please check the following configuration items whether they are configured correctly.
 
@@ -32,17 +32,17 @@ swaggerui:
   address: ':9080' # leave blank to use the 80 port number
 ```
 
-# # Generate API document
+## Generate API document
 
 Answer using [swag](https://github.com/swaggo/swag) to generate API document json/yaml file automatically according to the comments in the code. You can use the following steps to generate API document.
 
 ```bash
-#  install swag cli
+# install swag cli
 $ go install github.com/swaggo/swag/cmd/swag@latest
 
-#  enter the project root directory and execute the following command
+# enter the project root directory and execute the following command
 $ cd script
 $ ./gen-api.sh
 
-#  the generated documentation is in the docs/api directory
+# the generated documentation is in the docs/api directory
 ```
