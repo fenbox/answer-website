@@ -2,7 +2,7 @@
 slug: /command-line
 ---
 
-#  命令行
+# 命令行
 
 :::tip
 
@@ -10,7 +10,7 @@ Answer 二进制文件支持一些命令行选项
 
 :::
 
-# # 用法
+## 用法
 
 `answer command [command or global options] [arguments...]`
 
@@ -41,7 +41,7 @@ Answer 二进制文件支持一些命令行选项
 使用 "answer [command] --help" 获取有关命令的更多信息。
 ```
 
-# # 全局选项
+## 全局选项
 
 所有全局选项都可以放置在命令级别。
 
@@ -49,9 +49,9 @@ Answer 二进制文件支持一些命令行选项
 - `--version`，`-v`：显示版本信息并退出。可选。 Optional.
 - `--data-path` 路径，`-C` 路径：数据保存路径。可选（默认值为 /data/）。 可选. (default: /data/)
 
-# # 命令
+## 命令
 
-# ## init
+### init
 
 > init 命令将初始化应用程序所需的环境，包括：默认配置文件、数据目录、初始化数据库等。
 
@@ -61,21 +61,21 @@ Answer 二进制文件支持一些命令行选项
   - 如果 answer 已经初始化，此命令将不会执行。例如，如果配置文件已经存在，则不会创建或覆盖它。 For example, if config file is already exist so it will not be created or overwritten.
   - 如果 answer 初始化失败，则无法执行 run 命令。
 
-# ## check
+### check
 
 > check command will check the application whether it can run or not. check the config file if exist. check 命令将检查应用程序是否可以运行。检查配置文件是否存在，检查数据库是否可以建立连接等。
 
 - 示例
   - `answer check -C ./data/`
 
-# ## run
+### run
 
 > run 命令将运行应用程序。
 
 - 示例
   - `answer run -C ./data/`
 
-# ## upgrade
+### upgrade
 
 > upgrade 命令将升级应用程序。
 
@@ -85,7 +85,7 @@ Answer 二进制文件支持一些命令行选项
   - `answer upgrade -C ./data/`
   - `answer upgrade -f v1.1.0 -C ./data/`
 
-# ## dump
+### dump
 
 > dump command will dump the database data to sql file.
 
@@ -94,7 +94,7 @@ Answer 二进制文件支持一些命令行选项
 - 示例
   - `answer dump -p /tmp/`
 
-# ## build
+### build
 
 > build a new Answer with plugins.
 
@@ -103,14 +103,14 @@ Answer 二进制文件支持一些命令行选项
 - 示例
   - `answer build --with plugin1 --with plugin2`
 
-# ## plugin
+### plugin
 
 > 打印打包在二进制文件中的所有插件。
 
 - 示例
   - `answer plugin`
 
-# ## config
+### config
 
 > 将某些配置值恢复为默认值。
 
