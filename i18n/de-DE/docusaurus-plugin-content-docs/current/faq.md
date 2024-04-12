@@ -2,21 +2,21 @@
 slug: /faq
 - - -
 
-#  FAQ
+# HGF
 
-# # How do I access the installation page?
+## Wie komme ich auf die Installationsseite?
 
-Heading to http://localhost:9080/install to access installation page.
+Gehe auf http://localhost:9080/install, um die Installationsseite aufzurufen.
 
-# # Why can't I receive the registration email?
+## Weshalb kann ich die Registrierungs-E-Mail nicht erhalten?
 
-You should configure you own SMTP in `Admin -> Settings -> SMTP`.
+Du solltest dein eigenes SMTP unter `Admin -> Einstellungen -> SMTP` festlegen.
 
-# # How do I switch the default language?
+## Wie kann ich die Standardsprache ändern?
 
-- Site's default language can be switched in `Admin -> Settings -> Interface`.
-- Users can switch languages in their own `Settings -> Interface`.
+- Die Standardsprache der Website kann in der `Admin -> Einstellungen -> Oberfläche` festgelegt werden.
+- Die Benutzer können die Sprache in ihrer eigenen `Einstellungen -> Oberfläche` wechseln.
 
-# # What are the currently supported database types? Is migration supported?
+## Welche Datenbanktypen werden derzeit unterstützt? Wird Migration unterstützt?
 
-We support MySQL, PostgreSQL, SQLite3. Unfortunately, we **do not** currently support data migration. So we recommend using SQLite3 **just for the experience** and MySQL for actual use.
+Wir unterstützen MySQL, PostgreSQL und SQLite3. Leider **unterstützen wir derzeit keine Datenmigration**. Wir empfehlen daher, SQLite3 **nur für die Erfahrung** und MySQL für den tatsächlichen Gebrauch zu verwenden.
