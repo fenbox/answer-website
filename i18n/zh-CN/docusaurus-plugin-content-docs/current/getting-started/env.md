@@ -2,14 +2,14 @@
 slug: /env
 ---
 
-#  环境变量
+# 环境变量
 
-# # 安装
+## 安装
 
 - INSTALL_PORT：指定安装时启动的端口，默认为80。
 - AUTO_INSTALL：如果设置为 `true`，则安装将通过环境变量自动完成。
 
-# ## 对于自动安装
+### 对于自动安装
 
 - DB_TYPE：数据库类型，支持 [`sqlite3`  `mysql`  `postgres`]。
 - DB_USERNAME：数据库用户名。
@@ -25,7 +25,7 @@ slug: /env
 - ADMIN_PASSWORD：管理员密码。
 - ADMIN_EMAIL：管理员电子邮件。
 
-# # 日志
+## 日志
 
 - LOG_LEVEL：日志级别，支持 [`DEBUG`  `INFO`  `WARN`  `ERROR`]
 - LOG_PATH：日志存储位置。
