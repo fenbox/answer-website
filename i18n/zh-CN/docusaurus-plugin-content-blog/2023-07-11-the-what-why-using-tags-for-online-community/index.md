@@ -14,13 +14,13 @@ Organizing content is the key for the community, and using tags to categorize an
 
 Discover more about tags, benefits, and how vital they are for organizing content in Answer.
 
-# # What are Tags
+## What are Tags
 
 Tags are descriptive labels or keywords assigned to posts. Tags are descriptive labels or keywords assigned to posts. Moderators can use tags to classify and group related posts together, making it easier for members to find and browse relevant content.
 
 ![Tags in Answer](Tags.png)
 
-# # Benefits of Using Tags
+## Benefits of Using Tags
 
 Tags are popular, you can find it in different forms of content, such as articles, posts, images, etc. They are not only just tools for effective content organization, but also play a vital role to engage and retain your audience. Here’s why. They are not only just tools for effective content organization, but also play a vital role to engage and retain your audience. Here’s why.
 
@@ -32,7 +32,7 @@ Tags are popular, you can find it in different forms of content, such as article
 
 4. Recommend Relevant Content Content system can suggest related content for users based on the tags, improving both engagement and user experience.
 
-# # How are Tags Used in Answer
+## How are Tags Used in Answer
 
 In Answer, tag is a thread that connects users, content, and moderator. With more tags, the community becomes a big net. Community members can add one or more tags to the post as an initial step for content organization, while moderators can check and fix it later. Here are common examples of how tags are used in Answer. With more tags, the community becomes a big net. Community members can add one or more tags to the post as an initial step for content organization, while moderators can check and fix it later. Here are common examples of how tags are used in Answer.
 
@@ -56,6 +56,6 @@ In Answer, tag is a thread that connects users, content, and moderator. With mor
 
 ![Analyze Trends](AnalyzeTrends.png)
 
-# # Conclusion
+## Conclusion
 
 Use tags to weave a web of content as well as better content management, searchability, and user experience. Use tags to weave a web of content as well as better content management, searchability, and user experience. You can start tagging, and gradually build a tagging system to manage your content efficiently. In Answer, everything about tagging is ready and easy to start. Both users and admins will love it for sure. Start a wonderful content management journey [with Answer](https://answer.apache.org/docs/installation) from today. In Answer, everything about tagging is ready and easy to start. Both users and admins will love it for sure. Start a wonderful content management journey [with Answer](https://answer.apache.org/docs/installation) from today.
