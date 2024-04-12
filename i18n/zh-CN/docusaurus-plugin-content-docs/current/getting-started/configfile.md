@@ -2,7 +2,7 @@
 slug: /configfile
 ---
 
-#  配置文件
+# 配置文件
 
 :::tip
 
@@ -10,7 +10,7 @@ We use `yaml` configuration file. It will be created automatically after `answer
 
 :::
 
-# # config.yaml 描述
+## config.yaml 描述
 
 ```yaml title="/data/conf/config.yaml"
 server:
@@ -30,7 +30,6 @@ swaggerui:
   host: 127.0.0.1 # 可访问的 IP 地址或域名
   address: ':80'  # 可访问的端口号
 service_config:
-  secret_key: "answer" # 加密密钥
   upload_path: "/data/uploads" # 上传目录
 
 ```
