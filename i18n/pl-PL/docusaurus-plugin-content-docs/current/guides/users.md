@@ -6,7 +6,7 @@ slug: /users
 
 ## Status użytkownika
 
-![User state diagram](/img/docs/users-user-status.drawio.svg)
+![Diagram statusu użytkowniak](/img/docs/users-user-status.drawio.svg)
 
 ## Najaktywniejsi użytkownicy
 
@@ -24,9 +24,9 @@ Pokaż najlepszych użytkowników.
 
 ## Zarejestruj się
 
-A user sign up process with email.
+Rejestracja użytkownika za pomocą adresu email.
 
-![Sign up process](/img/docs/users-signup.drawio.svg)
+![Proces rejestracji](/img/docs/users-signup.drawio.svg)
 
 - Nazwa wyświetlana (w skrócie "nazwa"):
   - Mniej niż 30 znaków.
@@ -44,9 +44,9 @@ A user sign up process with email.
 
 Użytkownik chce się zalogować. Uprawnienia logowania użytkownika są powiązane z jego statusem.
 
-| User status | Normalny | Nieaktywny | Zawieszony | Usunięty   |
-| ----------- | -------- | ---------- | ---------- | ---------- |
-| Logowanie   | Allowed  | Denied     | Zabronione | Zabronione |
+| Status Użytkowanika | Normalny  | Nieaktywny | Zawieszony | Usunięty   |
+| ------------------- | --------- | ---------- | ---------- | ---------- |
+| Logowanie           | Dozwolone | Zabronione | Zabronione | Zabronione |
 
 ### Zaloguj się używając emaila i hasła
 
@@ -59,7 +59,7 @@ Użytkownik chce się zalogować. Uprawnienia logowania użytkownika są powiąz
 
 ### Zaloguj się używając dostawców zewnętrznych OAuth
 
-![Thirdy-party OAuth process](/img/docs/users-oauth.drawio.svg)
+![Procesy komunikacji OAuth](/img/docs/users-oauth.drawio.svg)
 
 ## Resetuj hasło
 
