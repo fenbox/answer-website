@@ -19,7 +19,7 @@ https://meta.answer.dev/swagger/index.html
 
 ### Zobacz swóją własną dokumentacje API
 
-If you already have an Answer instance, you can view the API document of your own instance by visiting the following link:
+Jeśli już posiadasz własną instancję Answer to możesz podejrzeć dokumentację API pod adrersem:
 `https://example.com/swagger/index.html`
 
 Jeśli nie możesz uzyskać dostępu do powyższego linku to sprawdź następujące elementy konfiguracji, czy są poprawnie skonfigurowane.
