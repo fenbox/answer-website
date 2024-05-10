@@ -6,7 +6,7 @@ slug: /permission
 
 ## 权限
 
-The number is the minimum reputation required for a privilege. There are three options available for your community. You can change this in Admin settings.
+数字表示获得特权所需的最小声望。 社区中有三个选项， 您可以在管理员设置中更改选项。
 
 | 权限            | 级别 1            | 级别 2（默认）     | 级别 3         |
 | ------------- | --------------- | ------------ | ------------ |
@@ -36,8 +36,8 @@ The number is the minimum reputation required for a privilege. There are three o
 
 ## 用户角色
 
-| 权限 \ 角色                                   | 用户 | Moderator | 管理员 |
-| ----------------------------------------- | -- | --------- | --- |
-| 默认无特殊访问权限                                 | ✓  | ✓         | ✓   |
-| Has access to all posts except site admin | -  | ✓         | ✓   |
-| Have the full power to access the site    | *  | -         | ✓   |
+| 权限 \ 角色                                   | 用户 | 版主 | 管理员 |
+| ----------------------------------------- | -- | -- | --- |
+| 默认无特殊访问权限                                 | ✓  | ✓  | ✓   |
+| Has access to all posts except site admin | -  | ✓  | ✓   |
+| Have the full power to access the site    | *  | -  | ✓   |
