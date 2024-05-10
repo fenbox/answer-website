@@ -1,24 +1,24 @@
 ---
-title: "Have a Closer Look at Answer 1.0.9: New Features, and More"
+title: "深入了解 Answer 1.0.9：新特性以及更多"
 authors:
   - Anne
 category: Release
-featured: faulse
+featured: "false"
 image: 2023-05-11-cover@4x.png
-description: Take a closer look at how you can manage questions efficiently with Answer v1.0.9.
+description: 深入了解如何利用 Answer v1.0.9 有效地管理问题。
 ---
 
-The latest version of Answer comes with new tweaks, improvements and optimization. Take a closer look at how you can manage questions efficiently. Take a closer look at how you can manage questions efficiently.
+最新版本的 Answer 进行了新的调整、改进和优化， 请深入了解如何有效地管理问题。
 
-## What’s New
-Pin an important or frequently asked question for your Q&A platform, so that it always stay on the top of your community. ![Pin a Question in Answer](1.0.9release1.gif)
+## 最新动态
+在您的 Q&A 平台中，将重要或常见的问题置顶，这样它总会出现在你的社区的顶部。 ![在 Answer 中置顶问题](1.0.9release1.gif)
 
-Unlist a question to make it invisible for temporary modification, or further review. Unlist a question to make it invisible for temporary modification, or further review. Admin can list question again in Admin\>Contents\>Questions. ![Unlist a Question](1.0.9release2.gif)
+您可以将一个问题设为不可见，以便暂时进行修改或进一步审查。 管理员可以在 Admin > Contents > Questions 里再次公开这个问题。 ![隐藏问题](1.0.9release2.gif)
 
-Pin and Unlist help to tailor a knowledge-based community of your own, while maintain and organize the knowledge system can be easy.
+使用置顶和隐藏功能，您可以更好地定制自己的知识型社区，同时维护和组织知识系统也更加简单。
 
-## Bug Fixes & Optimization
-We’ve also made some tweaks to fix the display issues of tags, comments form,  and stubborn deleted questions. We’ve also removed context ambiguity with optimized translation. We’ve also removed context ambiguity with optimized translation.
+## Bug 修复和优化
+我们做了一些调整来修复标签显示问题、评论表单和难以删除的问题， 我们还通过优化翻译消除了上下文歧义。
 
 
-We strongly recommend you to build and manage a Q&A platform [Answer v1.0.9](https://github.com/apache/incubator-answer/releases/tag/v1.0.9). You are always welcome to contribute your ideas (feature requests, or hunt a but) in [https://meta.answer.dev/](https://meta.answer.dev/). So what will you pin first? You are always welcome to contribute your ideas (feature requests, or hunt a but) in [https://meta.answer.dev/](https://meta.answer.dev/). So what will you pin first?
+我们强烈推荐您构建并管理一个 Q&A 平台 —— Answer v1.0.9。 非常欢迎您在 https://meta.answer.dev/ 上提出您的想法（比如新的功能需求或是寻找 bug）。 那么，您会首先置顶哪个问题呢？
