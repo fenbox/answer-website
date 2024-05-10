@@ -6,7 +6,7 @@ slug: /configfile
 
 :::tip
 
-We use `yaml` configuration file. It will be created automatically after `answer init` command. 我们使用 `yaml` 配置文件。它将在执行 `answer init` 命令后自动生成。默认路径为 `/data/conf/config.yaml`。
+我们使用 yaml 配置文件， 它将在执行 `answer init` 命令后自动生成， 默认路径为 `/data/conf/config.yaml`。
 
 :::
 
