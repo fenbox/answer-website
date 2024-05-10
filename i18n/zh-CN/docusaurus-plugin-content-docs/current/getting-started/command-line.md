@@ -45,9 +45,9 @@ Answer 二进制文件支持一些命令行选项
 
 所有全局选项都可以放置在命令级别。
 
-- `--help`，`-h`：显示帮助文本并退出。可选。 Optional.
-- `--version`，`-v`：显示版本信息并退出。可选。 Optional.
-- `--data-path` 路径，`-C` 路径：数据保存路径。可选（默认值为 /data/）。 可选. (default: /data/)
+- `--help`，`-h`：显示帮助文本并退出， 可选。
+- `--version`，`-v`：显示版本信息并退出， 可选。
+- `--data-path` 路径，`-C` 路径：数据保存路径， 可选。 （默认：/data/）
 
 ## 命令
 
@@ -58,12 +58,12 @@ Answer 二进制文件支持一些命令行选项
 - 示例
   - `answer init -C ./data/`
 - 注意
-  - 如果 answer 已经初始化，此命令将不会执行。例如，如果配置文件已经存在，则不会创建或覆盖它。 For example, if config file is already exist so it will not be created or overwritten.
-  - 如果 answer 初始化失败，则无法执行 run 命令。
+  - 如果 answer 已经初始化，此命令将不会执行。 例如，如果配置文件已经存在，则不会创建或覆盖它。
+  - 如果 answer 初始化失败，则无法执行 `run` 命令。
 
 ### check
 
-> check command will check the application whether it can run or not. check the config file if exist. check 命令将检查应用程序是否可以运行。检查配置文件是否存在，检查数据库是否可以建立连接等。
+> check 命令将检查应用程序是否可以运行， 检查配置文件是否存在， 检查数据库是否可以建立连接等。
 
 - 示例
   - `answer check -C ./data/`
@@ -90,7 +90,7 @@ Answer 二进制文件支持一些命令行选项
 > dump command will dump the database data to sql file.
 
 - 选项
-  - `--path` 路径，`-p` 路径：转储数据的路径。可选（默认值为 ./）。 Optional. (default: ./)
+  - `--path` 路径，`-p` 路径：转储数据的路径。 可选。 (默认: ./)
 - 示例
   - `answer dump -p /tmp/`
 
@@ -99,7 +99,7 @@ Answer 二进制文件支持一些命令行选项
 > build a new Answer with plugins.
 
 - 选项
-  - `--with` 插件的字段名。必需。 Required.
+  - `--with` 插件的字段名。 必填。
 - 示例
   - `answer build --with plugin1 --with plugin2`
 
@@ -115,6 +115,6 @@ Answer 二进制文件支持一些命令行选项
 > 将某些配置值恢复为默认值。
 
 - 选项
-  - `--with` 配置的字段名。必需。 Required.
+  - `--with` 配置的字段名。 必填。
 - 示例
   - `answer config -C ./data/ --with allow_password_login`
