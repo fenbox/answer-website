@@ -98,8 +98,7 @@ Answer 支持 MySQL、PostgreSQL 和 SQLite 作为数据库后端。 最小的�
 ### 第四步：填写基本信息
 
 :::caution
-Site URL is the browser address you will use to access answers after installation.  
-**Don't forget the admin Email and password.**
+站点 URL 是你在安装后用于访问 Answer 的浏览器地址。请不要忘记管理员电子邮件和密码。  
 :::
 
 ![install-site-info](/img/docs/install-site-info.png)
