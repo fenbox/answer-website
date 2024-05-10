@@ -1,5 +1,5 @@
 ---
-title: What is Q&A Platform and How to Use it
+title: Q&A 平台是什么以及如何使用
 authors:
   - Anne
 category: Tutorials
@@ -7,7 +7,7 @@ tags:
   - tutorials
 featured: true
 image: 2023-05-12-cover@4x.png
-description: Learn Q&A platform, explore poplular Q&A platforms, and find out how to get the most out of it.
+description: 了解 Q&A 平台，探索热门的 Q&A 平台，并弄清如何充分发挥其作用。
 ---
 
 We all have question and need answer in this fast-paced world. Whether it's for work or personal purposes, having a reliable source of information can be crucial. That's where Q&A (Question and Answer) platforms come in.
