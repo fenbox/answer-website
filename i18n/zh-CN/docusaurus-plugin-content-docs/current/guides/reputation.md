@@ -2,7 +2,7 @@
 slug: /reputation
 ---
 
-# Reputation
+# 声望
 
 声望用于自动化社区生态管理。
 
@@ -21,7 +21,7 @@ slug: /reputation
 
 ## 额外规则
 
-- The initial reputation is `0`, after activation the reputation becomes `1`
+- 初始声望为 0，激活后声望变为 1。
 - 如果有某项操作导致用户的声望 `< 1`，那么任何后续降低声望的操作都不会降低用户的声望。
 - 每天最多获得 200 声望。
 - 如果某项操作导致用户一天内获得 `> 200` 声望，那么任何后续增加声望的操作都不会增加用户的声望。
