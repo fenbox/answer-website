@@ -20,9 +20,9 @@ We made our debut and announced [2 projects](https://summer-ospp.ac.cn/org/orgde
 
 Apache Answer 是一款问答社区软件，由中国领先的技术问答社区 SegmentFault 思否开发并开源。项目于 2022 年 10 月上线并开源，并于 2023 年进入 Apache 软件基金孵化器。目前，我们收获了 400+ PR，60k+ 下载量，平均每月一次发版，并构建起了一个小型的活跃社区。今年 1 月，我们在 GitHub 上解锁了 10k+ Stars，你可以通过[视频](https://www.bilibili.com/video/BV1KT421171S/)了解了解更多关于社区和项目相关的内容。 Launched in October 2022, entered Apache Software Foundation in 2023, Apache Answer has received over 400 PRs, 60,000+ downloads, and carried an average monthly release. In January 2024, we’ve achieved 10,000 GitHub Stars.
 
-Find out more about us with the links below:
-[Homepage](https://answer.dev/)
-[GitHub](https://github.com/apache/incubator-answer)
+Find out more about us with the links below:\
+[Homepage](https://answer.apache.org/)\
+[GitHub](https://github.com/apache/incubator-answer)\
 [Blog: Why Open Source Matters to Answer](https://answer.apache.org/blog/2023/05/23/why-open-source-is-the-essence-of-answer)
 
 ## Our Projects for OSPP 2024
