@@ -2,7 +2,7 @@
 slug: /command-line
 ---
 
-#  Command Line
+# Command Line
 
 :::tip
 
@@ -10,7 +10,7 @@ Answer binary support some command-line options
 
 :::
 
-# # Usage
+## Usage
 
 `answer command [command or global options] [arguments...]`
 
@@ -41,7 +41,7 @@ Flags:
 Use "answer [command] --help" for more information about a command.
 ```
 
-# # Global options
+## Global options
 
 All global options can be placed at the command level.
 
@@ -49,9 +49,9 @@ All global options can be placed at the command level.
 - `--version`, `-v`: Show version and exit. Optional.
 - `--data-path` path, `-C` path: data saved path. Optional. (default: /data/)
 
-# # Commands
+## Commands
 
-# ## init
+### init
 
 > init command will initialize the application required environment, contains: default config-file, data directory, initialize database etc.
 
@@ -61,21 +61,21 @@ All global options can be placed at the command level.
   - if answer already initialized, this command will not be executed. For example, if config file is already exist so it will not be created or overwritten.
   - if answer initialized failed, run command can not be executed.
 
-# ## check
+### check
 
 > check command will check the application whether it can run or not. check the config file if exist. check the database if connection can be established etc.
 
 - Examples
   - `answer check -C ./data/`
 
-# ## run
+### run
 
 > run command will run the application.
 
 - Examples
   - `answer run -C ./data/`
 
-# ## upgrade
+### upgrade
 
 > upgrade command will upgrade the application.
 
@@ -85,7 +85,7 @@ All global options can be placed at the command level.
   - `answer upgrade -C ./data/`
   - `answer upgrade -f v1.1.0 -C ./data/`
 
-# ## dump
+### dump
 
 > dump command will dump the database data to sql file.
 
@@ -94,7 +94,7 @@ All global options can be placed at the command level.
 - Examples
   - `answer dump -p /tmp/`
 
-# ## build
+### build
 
 > build a new Answer with plugins.
 
@@ -103,14 +103,14 @@ All global options can be placed at the command level.
 - Examples
   - `answer build --with plugin1 --with plugin2`
 
-# ## plugin
+### plugin
 
 > prints all plugins packed in the binary.
 
 - Examples
   - `answer plugin`
 
-# ## config
+### config
 
 > restore some config value to default.
 
