@@ -10,15 +10,15 @@ description: Ask and answer better with the latest Answer at the beginning of 20
 
 Happy new year, everyone. We all have new questions or new answers at the beginning of the year, and feel free to raise your hand in the first release of Answer in 2024.
 
-In this version, we pack up new features and improvements to make finding answers easier, reduce duplicate content, and an efficient way of organizing your Q\&A knowledge from the very start.
+In this version, we pack up new features and improvements to make finding answers easier, reduce duplicate content, and an efficient way of organizing your Q&A knowledge from the very start.
 
-# # One Answer. One Question.
+## One Answer. One Question.
 
 Answer focuses on clear and concise answers to each question. However, you can find new answers or scattered answers from one person in several responses, making it hard for the admin to pick the best answer, and maintain the content afterwards.
 
 We've streamlined things so everyone can write or edit one, top-notch answer to each question. This helps users focus on contributing their expertise, and lets the best answer shine.
 
-# ## How to
+### How to
 
 This feature is on by default, and admin can switch it off anytime.
 
@@ -33,11 +33,11 @@ If the button is switched off, there'll be 2 options provided. Once user clicked
 
 ![Switch off Button](switched-off-options.gif)
 
-# # Admin Takes Control of Access
+## Admin Takes Control of Access
 
-We heard the voice of the [community](https://github.com/apache/incubator-answer/issues/565), and valued the privacy and security of a Q\&A platform. Now, admins have the access to disable the default password login form, having more control over who can and how to access the platform.
+We heard the voice of the [community](https://github.com/apache/incubator-answer/issues/565), and valued the privacy and security of a Q&A platform. Now, admins have the access to disable the default password login form, having more control over who can and how to access the platform.
 
-# ## How to
+### How to
 
 1. Admin - Settings - Login
 2. Switch off the Password login.
@@ -45,17 +45,17 @@ We heard the voice of the [community](https://github.com/apache/incubator-answer
 
 ![Reminder](turn-off-reminder.png)
 
-# # Tweaks. Fixes. Improvements.
+## Tweaks. Fixes. Improvements.
 
 Sometimes, a small change can make a difference to your knowledge journey, and here they are.
 
-# ## Clearer Space for Comment and Answer
+### Clearer Space for Comment and Answer
 
 The comment used to be blending in a bit before. Now with the grey shadow behind, you can easily identify the answer and comment.
 
 ![Clearer Space for Answer and Comment](clearer-answer-comment.png)
 
-# ## Synonym Support for Tag Search
+### Synonym Support for Tag Search
 
 We all have abbreviations or nicknames for some tags, and now you can add synonyms for a single tag.
 
@@ -63,19 +63,19 @@ We all have abbreviations or nicknames for some tags, and now you can add synony
 
 Next time, feel free to search for the tag in the tag page, or the post page easily without recalling the exact names of the tag.
 
-# ## Powered Up Dashboard
+### Powered Up Dashboard
 
 Share or tuck your Answer away by choosing the running **Public/Private** mode. Database version and size info are ready for your glance, while you can easily access different resources in Answer links.
 
 ![New Dashboard](new-dashboard.jpeg)
 
-# ## Faster Discovery of Similar Questions
+### Faster Discovery of Similar Questions
 
 We're refining how you experience similar questions. To bring you more focused answers, we'll wait until you've typed at least 10 characters. Then we'll showcase fresh results when any appear. Hit the existing questions and get the answer without repetitive editing. Set both users and admins' hands free.
 
 ![Search Similar Question](search-similar-question.png)
 
-# # Cheers. Contributors.
+## Cheers. Contributors.
 
 We stand with the community, and received lots of support. Whether a bug reporting, solution discussion, or hands up for a task, this update gathers the power of the community.
 
