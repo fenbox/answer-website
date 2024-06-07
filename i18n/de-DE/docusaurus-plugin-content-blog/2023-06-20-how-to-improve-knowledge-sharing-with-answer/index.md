@@ -14,7 +14,7 @@ Answer was inspired by the inherent openness of Q&A platforms and communities. A
 
 In this blog, we will explore types of knowledge, ways of knowledge sharing, and strategies to improve knowledge sharing for your team with Answer.
 
-# # What is Knowledge Sharing?
+## What is Knowledge Sharing?
 
 [![Knowledge Sharing](knowledgesharing1.jpeg)](https://www.pinterest.com/pin/140596819595429978/)
 
@@ -22,7 +22,7 @@ In this blog, we will explore types of knowledge, ways of knowledge sharing, and
 
 Answer is a platform for knowledge sharing, and the form of asking and answering is a natural way of knowledge sharing. The information in Answer can be documented for every user to check. Admins can modify them for keeping them up-to-date.
 
-# # 3 Types and Ways of Knowledge Sharing
+## 3 Types and Ways of Knowledge Sharing
 
 01. Explicit Knowledge Also known as expressive knowledge. It is the knowledge that can be formalized, easily articulated, and can be written down or shared in documents and manuals. Explicit knowledge includes: user manuals, case studies, SOPs, etc. Explicit knowledge is absolute and ready for sharing so that you can share it with confidence. ![Explicit Knowledge](knowledgesharing2.png)
 
@@ -30,7 +30,7 @@ Answer is a platform for knowledge sharing, and the form of asking and answering
 
 03. Tacit Knowledge Tacit knowledge is gained through experience and practice, which makes it hard to articulate or transfer explicitly. It is personal, subjective, and hard to put into words. Tacit knowledge sharing is through direct interactions, observation, and mentorship. ![Tacit Knowledge](knowledgesharing4.png)
 
-# # Effective Knowledge Sharing with Answer
+## Effective Knowledge Sharing with Answer
 
 No matter which type of knowledge your company or team has, it never goes wrong to capture, store and share them effectively for everyone on the team.
 
@@ -49,7 +49,7 @@ Effective knowledge sharing involves sharing information, expertise, and insight
 5. Feedback and Evaluation  
    Encouraging feedback loops and continuous improvement for your community. Once you've obtained a sufficient reputation score, you can start voting for questions or answers, providing feedback to enhance its quality and relevance.
 
-# # Conclusion
+## Conclusion
 
 Understand three types of knowledge and find an effective way to share in the team. Answer is always here to help. Discover a new era of knowledge sharing with Answer, and there are more features waiting for you. By harnessing the power of this dynamic Q&A platform, you can unlock exchange expertise, foster collaboration, and sharing knowledge effectively like never before.
 
