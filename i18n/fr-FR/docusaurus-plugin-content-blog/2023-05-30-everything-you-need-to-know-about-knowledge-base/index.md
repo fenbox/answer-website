@@ -12,17 +12,17 @@ We’ve discussed knowledge retention is the challenge of today, since knowledge
 
 If you’re considering having a knowledge base, you’re in the right place. In today’s read, we’ll explain knowledge base, benefits, and a self-host knowledge base built with Answer.
 
-# # What is Knowledge Base
+## What is Knowledge Base
 
 In a simple way: a knowledge base is an online library where you can store, organize, and retrieve information easily.
 
 Sounds big, right? In fact, you must use one of them for sure since a knowledge base takes various forms, such as databases, wikis, documents, articles, FAQs (Frequently Asked Questions), manuals, tutorials, or any other structured or unstructured format.
 
-# # Why You Need it
+## Why You Need it
 
 We expect to retrieve the right information at the moment, and the process must be quick. That’s why we need a knowledge base that contains a wide range of information and easy-to-search, and check the benefits.
 
-# # Benefits
+## Benefits
 
 1. Easy Access to Information A knowledge base provides a structured and organized system for storing information, making it easily accessible to users. It allows quick retrieval of relevant data, reducing the time and effort required to search for information.
 
@@ -34,7 +34,7 @@ We expect to retrieve the right information at the moment, and the process must 
 
 5. Customer Self-service and Support Knowledge bases are commonly used in [customer support](../2023-07-05-how-to-build-a-help-center-with-your-users-and-answer/index.md) to provide self-service options. By offering a comprehensive collection of FAQs, troubleshooting guides, and instructional materials, customers can find solutions to their problems without the need to contact support, reducing support costs and improving customer satisfaction.
 
-# # Build Knowledge Base with Answer
+## Build Knowledge Base with Answer
 
 Make sure you have the right tools for hosting and managing your knowledge base. Answer is the tool you can give it a go, it’s open-source and for free. Here are some delighted features in Answer that help you to build an efficient knowledge base at ease.
 
@@ -54,6 +54,6 @@ Make sure you have the right tools for hosting and managing your knowledge base.
 
 ![Search Post in Answer](knowledgebase4.png)
 
-# # Don’t Take Our Words for Answer. Take His
+## Don’t Take Our Words for Answer. Take His
 
 One of our users, [David Filed](https://blog.safewebbox.com/author/david/) have built a self-hosted knowledge base with Answer. He also shared a [blog](https://blog.safewebbox.com/a-self-hosted-knowledgebase-which-feels-much-like-stackoverflow/) about why he chose Answer, and a step-by-step tutorial of installing and running Answer. ![Screenshot of Davids Knowledgebase](knowledgebase5.png) Follow his tutorial or our [Docs](https://answer.apache.org/docs) to build a knowledge base of your own now, and embrace the power of knowledge base today.
