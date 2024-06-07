@@ -2,6 +2,6 @@
 slug: /moderation
 ---
 
-#  Moderation
+# Moderation
 
 TODO
