@@ -14,9 +14,9 @@ As a 1-year-old project, we started our journey with the dream of making everyon
 
 We welcome new contributors to join our open-source journey. No matter your skill level or background, there's always a place for you in our community. Whether you want to code, write documentation, share your expertise, or simply offer feedback, your contributions will help us shine even brighter.
 
-# # Why Apache Answer
+## Why Apache Answer
 
-We are a group of Q\&A enthusiasts, and it’s lovely to deliver a product that we truly love. Answer is an open-source Q\&A software aiming to help people find the right answers, while unleashing collective wisdom for every team.
+We are a group of Q&A enthusiasts, and it’s lovely to deliver a product that we truly love. Answer is an open-source Q&A software aiming to help people find the right answers, while unleashing collective wisdom for every team.
 
 We’ve tagged different issues for novices and veterans to get hands on in the [repository](https://github.com/apache/incubator-answer/issues).
 
@@ -26,7 +26,7 @@ We know how important it is to have well-written and complete documentation to g
 
 ![Answer Docs](Docs%20Screenshot.png)
 
-# # Not Sure Answer is a Good Fit?
+## Not Sure Answer is a Good Fit?
 
 We know it takes courage to take the first step into the open-source world, and knowing what are the options out there is a must. These are some useful resources for you to explore and filter the project that matches your expertise.
 
@@ -38,7 +38,7 @@ We know it takes courage to take the first step into the open-source world, and 
    It helps developers find open-source projects that align with their skills and interests, making it easier to get involved in the open-source community. You can locate projects or issues via skills, topics, repo stars, etc.
    [![Answer on Ovio](Ovio.png)](https://ovio.org/project/apache/incubator-answer)
 
-# # What You can Do
+## What You can Do
 
 A lot! More than coding.
 ![Discussion in GitHub](Discussion.png)
@@ -49,7 +49,7 @@ Share Answer on social media is also a great way of contribution.
 
 No matter big or small, every contribution makes a difference. Here’s the [cookbook](https://answer.apache.org/community/contributing) you need, and just raise your hand!
 
-# # We Got Your Back
+## We Got Your Back
 
 Need help? Our community is always here for you!
 
