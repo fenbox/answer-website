@@ -14,13 +14,13 @@ We’ve stepped into the world of Q&A platform, and let’s dive in to tackle th
 
 In this article, we will figure out what is knowledge retention for both individuals and businesses, understand why it’s important, strategies that help you to prevent the collective wisdom of your business, and how Answer can help you with this.
 
-# # What is Knowledge Retention
+## What is Knowledge Retention
 
  [Memory is an ongoing process of information retention over time](https://bokcenter.harvard.edu/how-memory-works), so for individuals, knowledge retention is to capture, remember and retrieve critical information. As for business, knowledge retention involves capturing, storing, preserving, and sharing knowledge within an organization.
 
 ![what is knowledge retention](knowledgeretention1.jpg) Photo by [Scott Graham](https://unsplash.com/@homajob?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/5fNmWej4tAA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-# # Why it is Important
+## Why it is Important
 
 For individuals, knowledge retention reflects one’s learning ability because you’ve retained the knowledge in your long-term memory. The ability to retrieve information is essential for one’s continued personal growth, career advancement, and professional success, etc.
 
@@ -34,11 +34,11 @@ Knowledge retention is crucial to helping companies run efficiently and maintain
 
 ![knowledge rention is crucial for companies](knowledgeretention2.jpg) Photo by [Annie Spratt](https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/QckxruozjRg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-# # Effective Knowledge Retention Strategies
+## Effective Knowledge Retention Strategies
 
 With the significance of knowledge retention in mind, how can companies and teams make effective knowledge retention?
 
-# ## Build a Knowledge Sharing Platforms
+### Build a Knowledge Sharing Platforms
 
 To make knowledge sharing and access easier within the organization, set up platforms and tools that facilitate the process. This can be achieved through the use of intranets, collaboration software, or knowledge management systems.
 
@@ -46,7 +46,7 @@ Answer is an [open-source Q&A platform](https://github.com/apache/incubator-answ
 
 ![Interface of Answer](knowledgeretention3.png)
 
-# ## Identify and Prioritize the Knowledge
+### Identify and Prioritize the Knowledge
 
 Obviously, it’s impossible to retain all the information, since there are different roles and departments in a company, and each plays a different role in the business.
 
@@ -60,13 +60,13 @@ You can also Pin the most important knowledge to make sure everyone can access i
 
 ![Pin a Question in Answer](knowledgeretention5.gif)
 
-# ## Encourage Knowledge Sharing with Award
+### Encourage Knowledge Sharing with Award
 
 Create a pleasant, easy-to-share process for everyone and keep sharing going with awards. Encourage employees with expertise to contribute with an internal reward system, which is similar to the achievement system of games. It adds a sense of competition as well as fun, which makes sharing more engaging.
 
 Stay tuned for Answer’s coming reward system, we promise it will make knowledge sharing exciting.
 
-# ## Keep Knowledge Staying Alive
+### Keep Knowledge Staying Alive
 
 The core knowledge is ready, and the award system for enthusiasms with expertise is on board, now what? Keep the documents always up-to-date.
 
@@ -76,7 +76,7 @@ In Answer, you can use Unlist to prevent temporary access to a question. This al
 
 ![Unlist a Question in Answer](knowledgeretention6.gif)
 
-# # Ready to Grow Your Business with Answer?
+## Ready to Grow Your Business with Answer?
 
 After reading the post, you must be aware of the significance of knowledge retention for both individuals and businesses. Let Answer be your company so that you can kick-start building a smooth knowledge sharing process for everyone, and every scenario.
 
