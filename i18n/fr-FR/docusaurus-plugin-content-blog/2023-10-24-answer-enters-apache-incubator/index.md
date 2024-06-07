@@ -18,7 +18,7 @@ After entering the Apache Incubator, Answer is committed to embracing the Apache
 
 > https://incubator.apache.org/projects/answer.html
 
-# # About Answer
+## About Answer
 
 Answer is a knowledge-based Q&A platform software suitable for teams of any size. It was open-sourced by the SegmentFault team on October 24, 2022. You can use Answer for free to create your Q&A platform, whether it's for a community forum, a help center, or a knowledge management platform. You can always rely on Answer.
 
@@ -26,28 +26,28 @@ As the largest developer Q&A community in China, SegmentFault has accumulated ye
 
 We aim to help every team create their Q&A community, gather collective intelligence, and drive industry progress.
 
-# ## Milestones
+### Milestones
 - October 24, 2022 - Answer was released and open-sourced on GitHub.
 - October 27, 2022 - Answer topped on GitHub Trending.
 - December 2022 - Answer 1.0 is officially released.
 - October 2023 - Answer successfully passes the vote and officially enters the ASF Incubator.
 
-# ## Features
-# ### Easy and Intuitive Q&A Community
+### Features
+#### Easy and Intuitive Q&A Community
 Answer is user-friendly, every newcomer can set up a Q&A platform quickly with the help of our documentation. In Answer, asking and answering a question is intuitive, which lets every community member become a part of the community effortlessly and boosts community engagement. Enjoy the seamless experience of Answer on your mobile devices, as good as the desktop.
 
-# ### Efficient Content Management
+#### Efficient Content Management
 Administrators can categorize all the questions and content with tags, while community members can find the content they need by searching a tag. By following tags, users can always stay updated on their interested content and display them in the way they need.
 
-# ### Add Wings with Plugin
+#### Add Wings with Plugin
 Add or extend features in Answer with plugins, and empower your Q&A community. With plugins, users can customize their Answer based on their needs, making it flexible and adaptable to their workflows.
 
-# ### Reputation Scores and Incentives
+#### Reputation Scores and Incentives
 Engage users with Answer's reputation system. In Answer, users can gain reputation scores by contributing high-quality content, accepting the best answers, and receiving others' votes, etc. This not only helps to ensure the quality of content and keep it up-to-date, but also motivates users to establish credibility with their professional background. Community members can find collaborative enjoyment and accomplishment.
 
 ![Screenshot of Answer](product-screenshot.gif)
 
-# # Answer Community
+## Answer Community
 Over the past year, Answer has gradually built a small community for user interaction and developer collaboration.
 
 Since the first release, Answer has had a total of 19 releases, 7.9K+ GitHub Stars, and over 10,000 downloads. We have worked in collaboration with 37 code contributors and 59 volunteers from around the world, receiving a total of 221 pull requests. Answer has also been translated into 15 different languages.
@@ -65,7 +65,7 @@ The Initial Committers of the Answer project are listed as follows, and big than
 - Bo Jiang  https://github.com/jiangbonadia
 - Anna Primma https://github.com/PrimmaAnna
 
-# # About Apache Incubator [^1]
+## About Apache Incubator [^1]
 
 ![Apache Incubator](apache-incubator-logo.png)
 
@@ -79,13 +79,13 @@ Answer will embrace the Apache way with the guidance of the 4 Incubator Mentors:
 - Justin Mclean, Apache Software Foundation VP, and Board Member.
 - Christofer Dutz, Board Member of the Apache Software Foundation and Incubator Mentor.
 
-# # Acknowledgement
+## Acknowledgement
 Joining Apache Incubator is a significant milestone of Answer and marks new challenges and beginnings. We would love to express our profound gratitude to our Champion Willem Jiang, as well as our mentors tison, Justin Mclean, and Christofer Dutz, for their support and encouragement during the proposal.
 
 We would also love to give a big applause and thank you to contributors and volunteers around the world for the contributions and support.
 
 
-# # Join Answer Community
+## Join Answer Community
 Answer's power comes from the talented contributers in its community. While we celebrate this moment, we would also like to invite more contributors to be a part of our Apache journey. If you are interested in this project, please check out and join us.
 
 Visit Answer's official website: http://answer.apache.org/     
