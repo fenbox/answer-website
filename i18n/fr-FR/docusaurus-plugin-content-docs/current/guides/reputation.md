@@ -2,11 +2,11 @@
 slug: /reputation
 ---
 
-#  Reputation
+# Reputation
 
 Reputation used to automate the management of community ecology.
 
-# # Reputation change rules
+## Reputation change rules
 
 | Condition                     | Change |
 | ----------------------------- | ------ |
@@ -19,7 +19,7 @@ Reputation used to automate the management of community ecology.
 | Your question was downvoted   | -2     |
 | Your answer was downvoted     | -2     |
 
-# # Additional rules
+## Additional rules
 
 - The initial reputation is `0`, after activation the reputation becomes `1`
 - If there is an action that causes the user's reputation to be `< 1`, any subsequent actions that reduce the reputation will not reduce the user's reputation
