@@ -2,6 +2,6 @@
 slug: /flags
 ---
 
-#  Flags
+# Flags
 
 User can flag the spam post.
