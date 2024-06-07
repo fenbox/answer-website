@@ -2,14 +2,14 @@
 slug: /env
 ---
 
-#  Environment Variables
+# Environment Variables
 
-# # Installation
+## Installation
 
 - `INSTALL_PORT`: specifies the port to boot when installation, default is `80`.
 - `AUTO_INSTALL`: if set to `true`, the installation will be completed automatically by environment variable.
 
-# ## For auto install
+### For auto install
 
 - `DB_TYPE`: database type, support [`sqlite3`  `mysql`  `postgres`]
 - `DB_USERNAME`: database username
@@ -25,7 +25,7 @@ slug: /env
 - `ADMIN_PASSWORD`: admin password
 - `ADMIN_EMAIL`: admin email
 
-# # Log
+## Log
 
 - `LOG_LEVEL`: log level support [`DEBUG`  `INFO`  `WARN`  `ERROR`]
 - `LOG_PATH`: log storage location
