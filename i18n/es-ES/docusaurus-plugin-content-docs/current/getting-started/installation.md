@@ -2,9 +2,9 @@
 slug: /installation
 ---
 
-#  Installation
+# Installation
 
-# # Start Answer
+## Start Answer
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -73,15 +73,15 @@ We use `-C` flag to indicate the directory where saved answer data.
   </TabItem>
 </Tabs>
 
-# # Install steps
+## Install steps
 
 > After you start the answer, you can follow the steps below to complete the initialization about the basic configuration.
 
-# ## Step 1: Choose the language
+### Step 1: Choose the language
 
 ![install-choose-language](/img/docs/install-choose-language.png)
 
-# ## Step 2: Config database
+### Step 2: Config database
 
 :::tip
 Answer supports MySQL, PostgreSQL, and SQLite as the database backend. The smallest environment is SQLite, which does not require any additional configuration. If you want to use MySQL or PostgreSQL, you need to setup the database first and then configure the database connection in this step. Here we recommend using sqlite3 to complete your first experience.
@@ -89,13 +89,13 @@ Answer supports MySQL, PostgreSQL, and SQLite as the database backend. The small
 
 ![install-database](/img/docs/install-database.png)
 
-# ## Step 3: Create configuration file
+### Step 3: Create configuration file
 
 Click Next button to create the configuration file.
 
 ![install-create-config-file](/img/docs/install-create-config-file.png)
 
-# ## Step 4: Fill in basic information
+### Step 4: Fill in basic information
 
 :::caution
 Site URL is the browser address you will use to access answers after installation.  
@@ -104,7 +104,7 @@ Site URL is the browser address you will use to access answers after installatio
 
 ![install-site-info](/img/docs/install-site-info.png)
 
-# ## Step 5: Complete
+### Step 5: Complete
 
 Congratulations, you can click the done button to start your answer journey!
 
