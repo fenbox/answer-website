@@ -10,14 +10,14 @@ description: Echa un vistazo a cómo puedes gestionar preguntas eficientemente c
 
 La última versión de Answer llega con nuevos ajustes, mejoras y optimización. Mira cómo puedes gestionar preguntas de forma eficiente.
 
-# # Novedades
+## Novedades
 Fija una pregunta importante o frecuente para tu plataforma de Q&A, para que siempre esté al frente de tu comunidad. ![Fijar una Pregunta en Answer](1.0.9release1.gif)
 
 Deslista una pregunta para ocultarla para modificarla temporalmente, o revisiones. Los administradores pueden enlistar la pregunta otra vez en Admin\>Content\>Questions. ![Deslistar una Pregunta](1.0.9release2.gif)
 
 Fijar y Deslistar ayuda a diseñar tu propia comunidad de conocimiento, mientras que mantener y organizar el sistema de conocimiento puede ser sencillo.
 
-# # Corrección de errores y Optimización
+## Corrección de errores y Optimización
 Hemos hecho algunos ajustes para cambiar los problemas de visualización de etiquetas, la caja de comentarios y preguntas eliminadas tediosas. También hemos eliminado ambigüedades contextuales con una traducción optimizada.
 
 
