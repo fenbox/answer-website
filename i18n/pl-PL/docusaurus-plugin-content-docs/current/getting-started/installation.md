@@ -4,17 +4,17 @@ slug: /installation
 
 # Instalacja
 
-## Uruchomienie Answer
+## Start Apache Answer
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Istnieje wiele sposobów, aby uruchomić Answer, możesz wybrać ten, który najbardziej Ci odpowiada.
+There are multiple ways to start Apache Answer, you can choose the one that suits you best.
 
 <Tabs>
   <TabItem value="docker-compose" label="Docker compose" default>
 
-Zalecamy użycie Docker Compose do uruchomienia Answer. Jest to najłatwiejszy sposób, aby uruchomić Answer.
+We recommend using Docker Compose to run Apache Answer. This is the easiest way to get started with Apache Answer.
 
 ::tip  
 
@@ -26,12 +26,12 @@ Jeśli używasz [Docker Desktop](https://www.docker.com/products/docker-desktop)
 curl -fsSL https://raw.githubusercontent.com/apache/incubator-answer/main/docker-compose.yaml | docker compose -p answer -f - up
 ```
 
-Domyślnym portem Answer jest `9080`. Można uzyskać dostęp do Answer wpisując a http://localhost:9080.
+The default port for Apache Answer is `9080`. Można uzyskać dostęp do Answer wpisując a http://localhost:9080.
 
   </TabItem>
   <TabItem value="docker" label="Docker">
 
-Wszystkie dostępne obrazy Dockera można znaleźć na [Docker Hub](https://hub.docker.com/r/apache/answer/tags). Tag `latest` odnosi się do najnowszej stabilnej wersji Answer.
+Wszystkie dostępne obrazy Dockera można znaleźć na [Docker Hub](https://hub.docker.com/r/apache/answer/tags). The `latest` tag refers to the latest stable version of Apache Answer.
 
 ```bash
 docker run -d -p 9080:80 -v answer-data:/data --name answer apache/answer:latest
@@ -48,7 +48,7 @@ Jeśli nie masz dostępu do strony instalacji, możesz użyć polecenia `docker 
   </TabItem>
   <TabItem value="binary" label="Binary">
 
-Jest to projekt golang, Answer może zostać skompilowany do pliku binarnego. Możesz pobrać plik binarny pasujący do systemu operacyjnego z [release page](https://github.com/apache/incubator-answer/releases).
+As a golang project, Apache Answer can be compiled into a binary file. Możesz pobrać plik binarny pasujący do systemu operacyjnego z [release page](https://github.com/apache/incubator-answer/releases).
 
 ```bash
 INSTALL_PORT=80 ./answer init -C ./answer-data/
@@ -84,7 +84,7 @@ Używamy flagi `-C` do wskazania katalogu, w którym zapisano dane.
 ### Krok 2: Konfiguracja bazy danych
 
 :::tip
-Answer obsługuje bazy danych: MySQL, PostgreSQLi SQLite. Dla małych i testowych środowisk używamy bazy danych SQLite, która nie wymaga dodatkowej konfiguracji. Jeśli chcesz użyć MySQL lub PostgreSQL, musisz najpierw skonfigurować bazę danych, a następnie skonfigurować połączenie z bazą danych w tym kroku. Tutaj zalecamy użycie SQLite3, aby zebrać doświadczenie podczas pierwszej instalacji.
+Apache Answer supports MySQL, PostgreSQL, and SQLite as the database backend. Dla małych i testowych środowisk używamy bazy danych SQLite, która nie wymaga dodatkowej konfiguracji. Jeśli chcesz użyć MySQL lub PostgreSQL, musisz najpierw skonfigurować bazę danych, a następnie skonfigurować połączenie z bazą danych w tym kroku. Tutaj zalecamy użycie SQLite3, aby zebrać doświadczenie podczas pierwszej instalacji.
 :::
 
 ![install-database](/img/docs/install-database.png)
