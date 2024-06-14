@@ -18,7 +18,7 @@ We recommend that you back up database and configuration files before upgrading.
 <Tabs>
   <TabItem value="docker-compose" label="Docker Compose" default>
 
-如果你使用 Docker Compose 安装 Answer，升级非常简单。
+如果你使用 Docker Compose 安装 Apache Answer，升级非常简单。
 
 ```bash
 docker-compose pull
@@ -29,7 +29,7 @@ docker-compose up -d
   </TabItem>
   <TabItem value="docker" label="Docker">
 
-如果你使用 Docker 安装 Answer，升级步骤如下。
+如果你使用 Docker 安装 Apache Answer，升级步骤如下。
 
 ```bash
 docker pull apache/answer:latest
@@ -57,6 +57,6 @@ docker run -d -p 9080:80 -v answer-data:/data --name answer apache/answer:latest
 
 :::tip
 
-When there are other unexpected cases such as upgrade exceptions, we provide a command to manually force the upgrade of Answer. `answer upgrade -f v1.1.0` 执行该命令会强制从指定版本开始升级，即使你当前的 Answer 已经是最新版本。 如果遇到升级异常可尝试执行该命令或重新拉取最新 docker 镜像后并进入容器内执行该命令。
+当出现升级异常等其他的意外情况，我们提供了手动强制升级 Apache Answer 的命令。 `answer upgrade -f v1.1.0` 执行该命令会强制从指定版本开始升级，即使你当前的 Apache Answer 已经是最新版本。 如果遇到升级异常可尝试执行该命令或重新拉取最新 docker 镜像后并进入容器内执行该命令。
 
 :::
