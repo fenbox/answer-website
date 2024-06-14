@@ -4,7 +4,7 @@ slug: /
 
 # 介绍
 
-Answer 可帮助你在用户或团队之间建立问答社区。 你可以在这里分享知识并帮助用户解决问题。
+Apache Answer 可帮助你在用户或团队之间建立问答社区。你可以在这里分享知识并帮助用户解决问题。 你可以在这里分享知识并帮助用户解决问题。
 
 ![screenshot](/img/screenshot.png)
 
@@ -12,7 +12,7 @@ Answer 可帮助你在用户或团队之间建立问答社区。 你可以在这
 
 ### Streamlined Q&A Experience
 
-- **Question & Answer**: Submit and answer questions effortlessly.
+- **提问和回答** - 提出问题并从你的用户和团队那里获得答案。
 - **Real-time Preview with Markdown**: Create your content and see formatting as you type with intuitive Markdown side by side, compatible with CommonMark.
 - **Ping an Expert**: Notify relevant users in the community who might have the answer for a quicker response.
 - **Advanced Search**: Find the content you’re looking for quickly with filtering options and tag, username, score, etc.
@@ -37,7 +37,7 @@ Answer 可帮助你在用户或团队之间建立问答社区。 你可以在这
 ### Customization and Plugins
 
 - **Themes and Layouts**: Customize the online community to match your identity.
-- **Plugins**: Empower your Answer with plugins built by the community, such as third-party login, cache, search, etc.
+- **可扩展** - 使用插件扩展 Apache Answer。
 
 ### Privacy and Security
 
