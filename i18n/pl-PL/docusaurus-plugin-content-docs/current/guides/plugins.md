@@ -6,7 +6,7 @@ slug: /plugins
 
 :::tip
 
-Gdy musimy dodać pewne rozszerzenia do zwiększenia funkcjonalności Answer, na przykład logowanie OAuth, realizujemy to za pomocą wtyczek (pluginów) w których implementujemy funkcji.
+When we need to do some extensions to Apache Answer's functionality, for example, OAuth login, we design a way to use plugins to implement these functions.
 
 :::
 
@@ -14,7 +14,7 @@ Gdy musimy dodać pewne rozszerzenia do zwiększenia funkcjonalności Answer, na
 
 ### Oficjalne wtyczki
 
-Możesz znaleźć listę oficjalnie wspieranych wtyczek dla Answer [tutaj](https://github.com/apache/inubator-answer-plugins).
+You can find a list of officially supported plugins for Apache Answer [here](https://github.com/apache/incubator-answer-plugins).
 
 ### Rodzaje wtyczek
 
@@ -29,11 +29,11 @@ Klasyfikujemy wtyczki wg typów. Poszczególne typy wtyczek mają inne funkcje. 
 
 ## Budowanie
 
-Answer obsługuje pakowanie różnych wymaganych wtyczek w wersji binarnej.
+Apache Answer binary supports packaging different required plugins into the binary.
 
 ### Wymagania
 
-- Oryginalny plik binarny Answer
+- Original Apache Answer binary
 - [Golang](https://go.dev/) `>=1.18`
 - [Node.js](https://nodejs.org/) `>=16.17`
 - [pnpm](https://pnpm.io/) `>=7`
@@ -42,11 +42,11 @@ Answer obsługuje pakowanie różnych wymaganych wtyczek w wersji binarnej.
 
 :::tip
 
-Używamy komendy `build` dostarczonej wraz z binarką Answer, aby budować wersję Answer z wtyczkami.
+We use the `build` command provided with the Apache Answer binary to rebuild a version of Apache Answer with the plugin.
 
 :::
 
-Na przykład, zobaczmy, jak zbudować plik binarny Answer, który zawiera wtyczkę do logowania github.
+For example, let's see how to build an Apache Answer binary that includes the github third-party login plugin.
 
 ```shell
 # answer build --with [plugin@plugin_version=[replacement]] --output [file]
@@ -157,7 +157,7 @@ Zalecamy użycie [oficjalnych pluginów](https://github.com/apache/inubator-answ
 
 ## Użycie
 
-Answer z wersją wtyczki jest używana w taki sam sposób, jak wcześniej. Konfiguracja wtyczki można znaleźć na stronie administratora.
+The Apache Answer with the plugin version is used in the same way as before. Konfiguracja wtyczki można znaleźć na stronie administratora.
 
 ![plugin-config-admin-page](/img/docs/plugin-config-admin-page.png)
 
@@ -169,7 +169,7 @@ Zauważ, że jeśli aktualizujesz wtyczkę bez wersję do wskazanej wersji, musi
 
 :::
 
-Musisz zbudować nowy plik binarny Answer z nową wersją wtyczki, a następnie zastąpić starą wersję binarną Answer nową. Podobnie jak w przypadku standardowej aktualizacji, musisz wykonać różne [etapy aktualizacji](./upgrade) w zależności od metody wdrażania. Na przykład, jeżeli używasz aktualizacji binarki, musisz wykonać komendę `upgrade`.
+You need build a new Apache Answer binary with the new plugin version, then replace the old Apache Answer binary with the new one. Podobnie jak w przypadku standardowej aktualizacji, musisz wykonać różne [etapy aktualizacji](./upgrade) w zależności od metody wdrażania. Na przykład, jeżeli używasz aktualizacji binarki, musisz wykonać komendę `upgrade`.
 
 ## Rozwój i wkład
 
