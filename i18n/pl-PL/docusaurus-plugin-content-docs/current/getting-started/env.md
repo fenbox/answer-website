@@ -18,7 +18,7 @@ slug: /env
 - `DB_NAME`: nazwa bazy danych
 - `DB_FILE`: ścieżka do pliku bazy danych, tylko dla sqlite3
 - `LANGUAGE`: język, np.: `pl`
-- `SITE_NAME`: nazwa witryny `Answer`
+- `SITE_NAME`: site name `Apache Answer`
 - `SITE_URL`: adres URL witryny, `https://answer.apache.org`
 - `CONTACT_EMAIL`: email kontaktowy
 - `ADMIN_NAME`:  nazwa administratora
