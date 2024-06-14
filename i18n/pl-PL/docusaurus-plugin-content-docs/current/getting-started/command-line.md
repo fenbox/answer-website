@@ -6,7 +6,7 @@ slug: /command-line
 
 :::tip
 
-Answer obsługuje kilka opcji wiersza poleceń
+Apache Answer binary support some command-line options
 
 :::
 
@@ -31,7 +31,7 @@ Available Commands:
   init        init answer application
   plugin      prints all plugins packed in the binary
   run         Run the application
-  upgrade     upgrade Answer version
+  upgrade     upgrade Apache Answer version
 
 Flags:
   -C, --data-path string   data path, eg: -C ./data/ (default "/data/")
@@ -96,7 +96,7 @@ Wszystkie opcje globalne mogą być umieszczone na poziomie wiersza poleceń.
 
 ### build
 
-> zbuduj Answer z wtyczkami.
+> build a new Apache Answer with plugins.
 
 - Opcje
   - `--with` nazwę wtyczki. Wymagane.
