@@ -54,6 +54,6 @@ Jeśli używasz do instalacji Answer pliku binarnego, etapy aktualizacji są nas
 
 :::tip
 
-W przypadku nieoczekiwanych wyników takich jak problemy przy aktualizacji dostarczamy polecenia do ręcznego wymuszenia aktualizacji Answer. `answer upgrade -f v1.1.0` Wykonanie polecenia powoduje zaktualizowanie do wskazanej wersji nawet wtedy, gdy już posiadamy najnowszą. Jeśli napotkasz wyjątek dotyczący aktualizacji, możesz spróbować wykonać tą komendę lub ponownie pobrać najnowszy obraz dockera i wykonać to polecenie wewnątrz kontenera.
+When there are other unexpected cases such as upgrade exceptions, we provide a command to manually force the upgrade of Apache Answer. `answer upgrade -f v1.1.0` Executing this command will force upgrade from the specified version, even if your Apache Answer is already up to date. Jeśli napotkasz wyjątek dotyczący aktualizacji, możesz spróbować wykonać tą komendę lub ponownie pobrać najnowszy obraz dockera i wykonać to polecenie wewnątrz kontenera.
 
 :::
