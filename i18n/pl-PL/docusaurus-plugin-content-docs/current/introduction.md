@@ -37,7 +37,7 @@ Apache Answer pomaga zbudować społeczność pomiędzy użytkownikami a Twoim z
 ### Customization and Plugins
 
 - **Themes and Layouts**: Customize the online community to match your identity.
-- **Plugins**: Empower your Answer with plugins built by the community, such as third-party login, cache, search, etc.
+- **Plugins**: Empower your Apache Answer with plugins built by the community, such as third-party login, cache, search, etc.
 
 ### Privacy and Security
 
