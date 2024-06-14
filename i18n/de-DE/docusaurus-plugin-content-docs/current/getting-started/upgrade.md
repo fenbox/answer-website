@@ -54,6 +54,6 @@ Wenn du eine binäre Installation von Answer verwendest, sind die Upgrade-Schrit
 
 :::tip
 
-When there are other unexpected cases such as upgrade exceptions, we provide a command to manually force the upgrade of Answer. `answer upgrade -f v1.1.0` Wenn du diesen Befehl ausführst, wird ein Upgrade von der angegebenen Version erzwungen, auch wenn dein Answer bereits auf dem neuesten Stand ist. Wenn du auf eine Upgrade-Ausnahme stößt, kannst du versuchen, diesen Befehl auszuführen oder das neueste Docker-Image erneut zu ziehen und diesen Befehl innerhalb des Containers auszuführen.
+When there are other unexpected cases such as upgrade exceptions, we provide a command to manually force the upgrade of Apache Answer. `answer upgrade -f v1.1.0` Executing this command will force upgrade from the specified version, even if your Apache Answer is already up to date. Wenn du auf eine Upgrade-Ausnahme stößt, kannst du versuchen, diesen Befehl auszuführen oder das neueste Docker-Image erneut zu ziehen und diesen Befehl innerhalb des Containers auszuführen.
 
 :::
