@@ -98,8 +98,9 @@ Kliknij przycisk Dalej, aby utworzyć plik konfiguracyjny.
 ### Etap 4: Uzupełnij podstawowe informacje
 
 :::caution
-Adres URL witryny jest adresem, którego użyjesz do uzyskania dostępu do Answer po instalacji.  
-**Nie zapomnij adresu email i hasła administratora.**
+Site URL is the browser address you will use to access answers after installation. If you are deploying a subdirectory, the site url needs to include the subdirectory's path, eg: https://yourdoamin/{subdirectory}
+
+**Don't forget the admin Email and password.**
 :::
 
 ![install-site-info](/img/docs/install-site-info.png)
