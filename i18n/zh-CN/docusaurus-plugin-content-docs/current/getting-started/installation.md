@@ -105,7 +105,10 @@ Apache Answer 支持 MySQL、PostgreSQL 和 SQLite 作为数据库后端。 最�
 ### 第四步：填写基本信息
 
 :::caution
-站点 URL 是你在安装后用于访问 Apache Answer 的浏览器地址。 **不要忘记管理员电子邮件和密码**。
+Site URL is the browser address you will use to access answers after installation. If you are deploying a subdirectory, the site url needs to include the subdirectory's path, eg: https://yourdoamin/{subdirectory}
+
+**Don't forget the admin Email and password.**
+:::
 
 ![install-site-info](/img/docs/install-site-info.png)
 
