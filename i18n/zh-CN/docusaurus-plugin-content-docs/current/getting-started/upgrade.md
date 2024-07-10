@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 
 :::caution
 
-We recommend that you back up database and configuration files before upgrading. 通常情况下，我们保证升级不会影响现有数据。
+We recommend that you back up database and configuration files before upgrading. Generally, we guarantee that the upgrade does not affect the existing data. 通常情况下，我们保证升级不会影响现有数据。
 
 备份数据意味着即使升级失败或者你不想使用高级版本，你也有回滚的选择。
 
@@ -18,7 +18,13 @@ We recommend that you back up database and configuration files before upgrading.
 <Tabs>
   <TabItem value="docker-compose" label="Docker Compose" default>
 
-如果你使用 Docker Compose 安装 Apache Answer，升级非常简单。
+If you use docker-compose to install answer, it is very easy to upgrade.
+
+```bash
+docker-compose pull
+docker-compose down
+docker-compose up -d
+```
 
 ```bash
 docker-compose pull
@@ -30,6 +36,8 @@ docker-compose up -d
   <TabItem value="docker" label="Docker">
 
 如果你使用 Docker 安装 Apache Answer，升级步骤如下。
+
+If you are using docker to install answer, the upgrade steps are as follows.
 
 ```bash
 docker pull apache/answer:latest
@@ -57,6 +65,6 @@ docker run -d -p 9080:80 -v answer-data:/data --name answer apache/answer:latest
 
 :::tip
 
-当出现升级异常等其他的意外情况，我们提供了手动强制升级 Apache Answer 的命令。 `answer upgrade -f v1.1.0` 执行该命令会强制从指定版本开始升级，即使你当前的 Apache Answer 已经是最新版本。 如果遇到升级异常可尝试执行该命令或重新拉取最新 docker 镜像后并进入容器内执行该命令。
+When there are other unexpected cases such as upgrade exceptions, we provide a command to manually force the upgrade of Apache Answer. `answer upgrade -f v1.1.0` Executing this command will force upgrade from the specified version, even if your Apache Answer is already up to date. If you encounter an upgrade exception, you can try to execute this command or pull the latest docker image again and execute this command inside the container. `answer upgrade -f v1.1.0` 执行该命令会强制从指定版本开始升级，即使你当前的 Apache Answer 已经是最新版本。 如果遇到升级异常可尝试执行该命令或重新拉取最新 docker 镜像后并进入容器内执行该命令。
 
 :::
