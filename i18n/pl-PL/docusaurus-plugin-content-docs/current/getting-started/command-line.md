@@ -6,7 +6,7 @@ slug: /command-line
 
 :::tip
 
-Apache Answer binary support some command-line options
+Aplikacja Apache Answer obsługuje niektóre opcje wiersza polecenia
 
 :::
 
@@ -96,7 +96,7 @@ Wszystkie opcje globalne mogą być umieszczone na poziomie wiersza poleceń.
 
 ### build
 
-> build a new Apache Answer with plugins.
+> zbuduj Apache Answer z wtyczkami.
 
 - Opcje
   - `--with` nazwę wtyczki. Wymagane.
