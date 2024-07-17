@@ -8,7 +8,7 @@ slug: /configfile
 
 Używamy pliku konfiguracyjnego w formacie `yaml`. Jest on tworzony automatycznie po komendzie `answer init`. Domyślną ścieżką jest plik `/data/conf/config.yaml`
 
-The `ui` configuration first is used to configure React's environment variables, which generally don't need to be changed unless you want to configure a CDN or deploy the project in a subdirectory.
+Konfiguracja `ui` jest najpierw używana do skonfigurowania zmiennych środowiskowych Reacta, które na ogół nie muszą być zmieniane, chyba że chcesz skonfigurować CDN lub wdrożyć projekt w podkatalogu.
 
 :::
 
