@@ -6,8 +6,8 @@ slug: /questions
 
 ## Status pytania
 
-![Question state diagram](/img/docs/questions-question-status.drawio.svg)
+![Diagram stanów pytania](/img/docs/questions-question-status.drawio.svg)
 
-## Apache Answer status
+## Status Apache Answer
 
-![Apache Answer state diagram](/img/docs/questions-answer-status.drawio.svg)
+![Diagram stanów Apache Answer](/img/docs/questions-answer-status.drawio.svg)
