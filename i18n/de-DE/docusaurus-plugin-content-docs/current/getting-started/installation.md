@@ -73,11 +73,11 @@ We use `-C` flag to indicate the directory where saved answer data.
   </TabItem>
 </Tabs>
 
-## Install steps
+## Installationsschritte
 
 > After you start the answer, you can follow the steps below to complete the initialization about the basic configuration.
 
-### Step 1: Choose the language
+### Schritt 1: Sprache auswählen
 
 ![install-choose-language](/img/docs/install-choose-language.png)
 
@@ -89,9 +89,9 @@ Apache Answer supports MySQL, PostgreSQL, and SQLite as the database backend. Th
 
 ![install-database](/img/docs/install-database.png)
 
-### Step 3: Create configuration file
+### Schritt 3: Konfigurationsdatei erstellen
 
-Click Next button to create the configuration file.
+Klicken Sie auf Weiter, um die Konfigurationsdatei zu erstellen.
 
 ![install-create-config-file](/img/docs/install-create-config-file.png)
 
