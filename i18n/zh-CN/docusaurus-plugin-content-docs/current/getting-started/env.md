@@ -25,6 +25,12 @@ slug: /env
 - ADMIN_PASSWORD：管理员密码。
 - ADMIN_EMAIL：管理员电子邮件。
 
+### For overriding the config file
+
+- `SWAGGER_HOST` - address for the swagger to display, like `192.168.12.12` or `answer.apache.org`
+- `SWAGGER_ADDRESS_PORT` - port for the swagger to display, like `:3000`
+- `SITE_ADDR` - address that the site should run, like `0.0.0.0:3000`
+
 ## 日志
 
 - LOG_LEVEL：日志级别，支持 [`DEBUG`  `INFO`  `WARN`  `ERROR`]
