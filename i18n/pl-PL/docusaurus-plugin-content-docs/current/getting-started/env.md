@@ -25,6 +25,12 @@ slug: /env
 - `ADMIN_PASSWORD`: hasło administratora
 - `ADMIN_EMAIL`: email do administartora
 
+### For overriding the config file
+
+- `SWAGGER_HOST` - address for the swagger to display, like `192.168.12.12` or `answer.apache.org`
+- `SWAGGER_ADDRESS_PORT` - port for the swagger to display, like `:3000`
+- `SITE_ADDR` - address that the site should run, like `0.0.0.0:3000`
+
 ## Logi
 
 - `LOG_LEVEL`: poziomu wyświetlania szczegółowości informacji w logu [`DEBUG` `INFO` `WARN` `ERROR`]
