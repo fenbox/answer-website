@@ -10,7 +10,7 @@ description: Join Apache Answer's speeches in Incubator track, Community track, 
 
 CommunityOverCode Asia 2024 将于 7 月 26 日至 28 日在杭州举行。
 
-This year, the event features one main forum,15 sub-forums with over 150 experts and mentors. Attendees can learn about Apache's latest breakthrough, upcoming innovations, and insights from community-driven projects guided by the Apache way, while exploring Apache's ecosystem, business models, legal issues, and more. The full breakout session schedule can be viewed [here](https://asia.communityovercode.org/schedule.html).
+This year, the event features one main forum, 15 sub-forums with over 150 experts and mentors. Attendees can learn about Apache's latest breakthrough, upcoming innovations, and insights from community-driven projects guided by the Apache way, while exploring Apache's ecosystem, business models, legal issues, and more. The full breakout session schedule can be viewed [here](https://asia.communityovercode.org/schedule.html).
 
 As an incubating project, Apache Answer is always open to communication and collaboration. We started our CommunityOverCode Asia journey from a booth last year, and this year we’re back with not just the booth, but **two sessions, and one keynote**.
 
