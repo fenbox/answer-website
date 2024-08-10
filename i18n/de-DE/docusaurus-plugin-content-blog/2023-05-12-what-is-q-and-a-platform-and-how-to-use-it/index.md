@@ -2,9 +2,9 @@
 title: What is Q&A Platform and How to Use it
 authors:
   - Anne
-category: Tutorials
+category: Anleitung
 tags:
-  - tutorials
+  - Anleitungen
 featured: true
 image: 2023-05-12-cover@4x.png
 description: Learn Q&A platform, explore poplular Q&A platforms, and find out how to get the most out of it.
