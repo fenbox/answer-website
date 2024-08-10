@@ -45,8 +45,8 @@ Wenn du eine binäre Installation von Answer verwendest, sind die Upgrade-Schrit
 
 1. Lade die [neueste Binärversion](https://github.com/apache/incubator-answer/releases) für dein System herunter.
 2. Stop old version
-3. Execute the upgrade command `./answer upgrade -C ./answer-data/`
-4. Führe die neueste Version `./answer run -C ./answer-data/` aus.
+3. Führe den Upgrade-Befehl `./answer upgrade -C ./answer-data/`
+4 aus. Führe die neueste Version `./answer run -C ./answer-data/` aus.
 
 
   </TabItem>
