@@ -10,7 +10,7 @@ description: Join Apache Answer's speeches in Incubator track, Community track, 
 
 CommunityOverCode Asia 2024 将于 7 月 26 日至 28 日在杭州举行。
 
-This year, the event features one main forum, 15 sub-forums with over 150 experts and mentors. Attendees can learn about Apache's latest breakthrough, upcoming innovations, and insights from community-driven projects guided by the Apache way, while exploring Apache's ecosystem, business models, legal issues, and more. The full breakout session schedule can be viewed [here](https://asia.communityovercode.org/schedule.html).
+This year, the event features one main forum,15 sub-forums with over 150 experts and mentors. Attendees can learn about Apache's latest breakthrough, upcoming innovations, and insights from community-driven projects guided by the Apache way, while exploring Apache's ecosystem, business models, legal issues, and more. The full breakout session schedule can be viewed [here](https://asia.communityovercode.org/schedule.html).
 
 As an incubating project, Apache Answer is always open to communication and collaboration. We started our CommunityOverCode Asia journey from a booth last year, and this year we’re back with not just the booth, but **two sessions, and one keynote**.
 
@@ -34,11 +34,11 @@ _Click [here](https://asia.communityovercode.org/schedule.html) for more on the 
 
 ------
 
-### 社区新闻
+## 社区新闻
 
 Why does ASF believe in "Community over Code"? There is more to open-source than just code contribution. In this track, let’s explore topics like governance models, growing project communities, diversity and inclusion, community health metrics, management tools, project roadmaps, case studies, and sustaining open-source communities.
 
-#### 通过 Apache Answer 提升你和社区的互动
+### 通过 Apache Answer 提升你和社区的互动
 
 讲者：Anne Zhu ｜ 市场营销，Apache Answer PPMC 成员
 
@@ -48,11 +48,11 @@ _Click [here](https://asia.communityovercode.org/schedule.html) for more on the 
 
 ----
 
-### Keynote 专题
+## Keynote 专题
 
 Keynote is the place where you can see the latest breakthrough of open source, gain views of from different aspects of open source, and ways you can get involve.
 
-#### 去年，Apache Answer 通过投票，成功进入孵化器。在过去的一段时间里，我们收获了来自 Apache 社区不同方面的支持，包括但不限于文档、代码提交、和线下分享。&#xA;Apache Answer 一直秉持开放沟通和协作精神，希望通过今年的 CommunityOverCode Asia 大会，能够将我们的经历和思考回馈给社区。
+### 去年，Apache Answer 通过投票，成功进入孵化器。在过去的一段时间里，我们收获了来自 Apache 社区不同方面的支持，包括但不限于文档、代码提交、和线下分享。&#xA;Apache Answer 一直秉持开放沟通和协作精神，希望通过今年的 CommunityOverCode Asia 大会，能够将我们的经历和思考回馈给社区。
 
 讲者：Nadia Jiang 和 Anne Zhu ｜ Apache Answer PPMC 成员
 
