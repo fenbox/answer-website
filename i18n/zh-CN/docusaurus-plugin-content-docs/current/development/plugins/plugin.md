@@ -2,7 +2,7 @@
 slug: /development/plugins
 ---
 
-# Plugins Development Guide
+# 插件开发指南
 
 Plugins are a way to extend the functionality of the Answer project. You can create your own plugins to meet your own needs.
 
@@ -75,14 +75,14 @@ npx create-answer-plugin <pluginName>
      answercmd "github.com/apache/incubator-answer/cmd"
 
      // Import the plugins
-     _ "github.com/apache/incubator-answer-plugins/my-plugin"
+     _ "github.com/apache/incubator-answer/ui/src/plugins/my-plugin"
    )
    ```
 
 3. Use `go mod edit` to add the plugin to the `go.mod` file.
 
    ```shell
-   go mod edit -replace=github.com/apache/incubator-answer-plugins/my-plugin=./ui/src/plugins/my-plugin
+   go mod edit -replace=github.com/apache/incubator-answer/ui/src/plugins/my-plugin=../ui/src/plugins/my-plugin
    ```
 
 4. Update the dependencies.
