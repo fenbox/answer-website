@@ -8,9 +8,9 @@ image: 2024-07-11-cover@4x.png
 description: Join Apache Answer's speeches in Incubator track, Community track, Keynote. Talk to us at our booth in CoC Asia 2024.
 ---
 
-CommunityOverCode Asia 2024 will take place in Hangzhou, China, July 26-28, 2024.
+CommunityOver ode Asia 2024 will take place in Hangzhou, China, July 26-28, 2024.
 
-This year, the event features one main forum, 15 sub-forums with over 150 experts and mentors. Attendees can learn about Apache's latest breakthrough, upcoming innovations, and insights from community-driven projects guided by the Apache way, while exploring Apache's ecosystem, business models, legal issues, and more. The full breakout session schedule can be viewed [here](https://asia.communityovercode.org/schedule.html).
+This year, the event features one main forum,15 sub-forums with over 150 experts and mentors. Attendees can learn about Apache's latest breakthrough, upcoming innovations, and insights from community-driven projects guided by the Apache way, while exploring Apache's ecosystem, business models, legal issues, and more. The full breakout session schedule can be viewed [here](https://asia.communityovercode.org/schedule.html).
 
 As an incubating project, Apache Answer is always open to communication and collaboration. We started our CommunityOverCode Asia journey from a booth last year, and this year we’re back with not just the booth, but **two sessions, and one keynote**.
 
@@ -35,11 +35,11 @@ _Click [here](https://asia.communityovercode.org/schedule.html) for more on the 
 
 ------
 
-### Community Track
+## Community Track
 
 Why does ASF believe in "Community over Code"? There is more to open-source than just code contribution. In this track, let’s explore topics like governance models, growing project communities, diversity and inclusion, community health metrics, management tools, project roadmaps, case studies, and sustaining open-source communities.
 
-#### Enhance Your Community Engagement with Apache Answer
+### Enhance Your Community Engagement with Apache Answer
 
 Speaker: Anne Zhu\
 Apache Answer PPMC member, and marketing specialist.
@@ -50,11 +50,11 @@ _Click [here](https://asia.communityovercode.org/schedule.html) for more on the 
 
 ----
 
-### Keynote
+## Keynote
 
 Keynote is the place where you can see the latest breakthrough of open source, gain views of from different aspects of open source, and ways you can get involve.
 
-#### Beyond the Code: Growing in the Apache Community
+### Beyond the Code: Growing in the Apache Community
 
 Speaker: Nadia Jiang and Anne Zhu\
 PPMC member of Apache Answer
