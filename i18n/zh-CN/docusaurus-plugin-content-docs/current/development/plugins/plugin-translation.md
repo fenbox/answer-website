@@ -101,7 +101,7 @@ const (
 
 The `i18n.go` file is used to store the key of the translation file.
 
-The directory structure of the plugin is as follows:
+Finally, the directory structure of the plugin is as follows:
 
 ```bash
 .
