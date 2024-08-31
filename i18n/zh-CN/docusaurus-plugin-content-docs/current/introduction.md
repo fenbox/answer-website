@@ -8,45 +8,45 @@ Apache Answer 可帮助你在用户或团队之间建立问答社区。你可以
 
 ![screenshot](/img/screenshot.png)
 
-## 功能
+## 功能一览
 
-### Streamlined Q&A Experience
+### 问答体验，简洁流畅
 
-- **提问和回答** - 提出问题并从你的用户和团队那里获得答案。
-- **Real-time Preview with Markdown**: Create your content and see formatting as you type with intuitive Markdown side by side, compatible with CommonMark.
-- **Ping an Expert**: Notify relevant users in the community who might have the answer for a quicker response.
-- **Advanced Search**: Find the content you’re looking for quickly with filtering options and tag, username, score, etc.
-- **Real-Time Suggestions**: Discover relevant questions as you type, and jump right to it.
+- **提问与回答**：轻松提交和回答问题。
+- **实时 Markdown 预览**：使用 Markdown 编辑内容的同时，可同步预览样式，兼容 CommonMark。
+- **邀请回答**：邀请社区中相关领域的专家用户，以便更快速地获得回复。
+- **高级搜索**：通过过滤选项、标签、用户名、答案评分等快速找到您需要的内容。
+- **实时建议**：在输入时，发现相关问题，并直接跳转到该问题。
 
-### Hassle-free Community Management
+### 社区管理，轻松高效
 
-- **Admin/Moderator/User Roles**: Manage user access levels for optimal control.
-- **Add Bulk Users**: Add multiple users at once and expand the community efficiently.
-- **Tagging System**: Organize the content with the tags for both efficient categorization and easy navigation.
-- **Open Editing and Collaboration**: Everyone can edit existing questions, answers, and tags to keep the content accurate and up-to-date.
-- **Transparent Revision History**: Every edit made can be tracked and stored for reference, allowing users to see how the content has evolved over time.
+- **管理员/版主/用户**：通过多种社区角色管理用户访问级别，实现最佳控制。
+- **批量添加用户**：一次性添加多个用户，高效扩大社区。
+- **标签系统**：使用标签组织内容，实现高效分类和便捷导航。
+- **开放编辑与协作**：每个人都可以编辑现有的问题、答案和标签，以确保内容的准确性和时效性。
+- **透明的修订历史记录**：记录和存储每次编辑操作，用户可以查看内容的演变过程。
 
 ### Cultivate a Thriving Community
 
-- **Voting System**: Build a better community with your voice: upvote the great answers, and downvote those doesn’t.
-- **Reputation System**: Earn recognition with contributions and unlock privileges in the community.
-- **Notification**: Always get notified of new comments, answers, invites, votes, and more.
-- **Follow Tags**: Follow tags and stay in the loop of your favorite Q&A.
-- **User Profile**: Show expertise, interests, and contributions to the community with pride.
+- **投票机制**：社区建设，人人参与。点赞优质答案，点踩不合适的答案。
+- **声望值体系**：通过贡献获得认可和对应的声望值，解锁社区特权。
+- **通知**：不错过新评论、答案、邀请、投票等通知。
+- **关注标签**：关注你喜欢的标签，随时掌握相关问答动态。
+- **用户主页**：自豪地向社区展示你的专业知识、兴趣和对社区的贡献。
 
-### Customization and Plugins
+### 个性化定制和插件
 
-- **Themes and Layouts**: Customize the online community to match your identity.
-- **可扩展** - 使用插件扩展 Apache Answer。
+- **主题与布局**：自定义线上社区，符合你的社区定位。
+- **插件**：通过社区构建的插件增强你的 Apache Answer，例如第三方登录、缓存、搜索等。
 
-### Privacy and Security
+### 隐私与安全
 
-- **Login Access Control**: Take control of registrations, login methods, and allowed email domains to create a secure environment for the community.
-- **Content Access Control**: Content is accessible to the community members only, keeping the community discussions safe.
+- **登录访问控制**：通过管理注册、登录方式和允许的电子邮件域名，为社区创建一个安全的环境。
+- **内容访问控制**：设置成仅社区成员可以访问，确保社区讨论的安全性。
 
-### More
+### 更多内容
 
-- **Multilingual**: Build and host your community in different languages translated by the community.
-- **Responsive Layout**: Join the community conversation seamlessly from any device.
-- **Dark Mode**: Personalize community experience to stay concentrated.
-- **Separation of front-end and back-end**: It is a monorepo that contains both the frontend and the backend.
+- **多语言版本**：使用来自社区志愿者翻译的多语言版本，开始搭建和管理社区。
+- **响应式布局**：在任何设备上，随时加入社区讨论中。
+- **夜间模式**：个性化社区体验以保持专注。
+- **前端和后端分离**：Apache Answer 是一个单体库，包含前端和后端。
