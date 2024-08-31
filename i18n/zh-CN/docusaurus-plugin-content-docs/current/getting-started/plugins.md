@@ -14,13 +14,13 @@ slug: /plugins
 
 ### 官方插件
 
-你可以在这里找到官方支持的 Apache Answer 插件列表。
+你可以在[这里](https://github.com/apache/incubator-answer-plugins)找到 Apache Answer 官方支持的插件列表。
 
 ## 构建
 
-Apache Answer 二进制文件支持将不同的所需插件打包到二进制文件中。
+Apache Answer 的二进制文件支持将不同的所需插件打包到二进制文件中。
 
-### 先决条件
+### 前置要求
 
 - 原始的 Apache Answer 二进制文件
 - [Go](https://go.dev/) `>=1.18`
@@ -31,25 +31,25 @@ Apache Answer 二进制文件支持将不同的所需插件打包到二进制文
 
 :::tip
 
-我们使用 Apache Answer 二进制文件提供的`build`命令来使用插件重建 Apache Answer 的版本。
+我们使用 Apache Answer 二进制文件提供的 `build` 命令来重新构建包含插件的 Apache Answer 版本。
 
 :::
 
-例如，让我们看看如何构建包含 GitHub 第三方登录插件的 Apache Answer 二进制文件。
+例如，以下是如何构建包含 GitHub 第三方登录插件的 Apache Answer 二进制文件。
 
 #### 使用官方插件
 
-你可以指定与`--with`参数一起使用的插件：
+你可以使用 `--with` 参数来指定要使用的插件：
 
 ```shell
-# Build Answer with the GitHub connector plugin
+# 构建包含 GitHub 连接器插件的 Answer
 $ ./answer build --with github.com/apache/incubator-answer-plugins/connector-github
 ```
 
 你还可以指定插件版本：
 
 ```shell
-# Build Answer with the GitHub connector plugin version 1.0.0
+# 构建包含 GitHub 连接器插件版本 1.0.0 的 Answer
 $ ./answer build --with github.com/apache/incubator-answer-plugins/connector-github@1.0.0 --output ./new_answer
 ```
 
@@ -63,7 +63,7 @@ $ ./answer build \
 
 #### 使用本地插件
 
-如果你需要使用本地插件，你可以使用以下命令：
+如果你需要使用本地插件，可以使用以下命令：
 
 ```shell
 $ ./answer build --with github.com/apache/incubator-answer-plugins/connector-github@1.0.0=/my-local-space
@@ -77,9 +77,9 @@ $ ./answer build --with github.com/apache/incubator-answer-plugins/connector-git
 $ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 ./answer build --with github.com/apache/incubator-answer-plugins/connector-github
 ```
 
-#### 指定答案版本
+#### 指定 Answer 版本
 
-你可以使用`ANSWER_MODULE`环境变量来指定 Answer 版本：
+你可以使用 `ANSWER_MODULE` 环境变量来指定 Answer 版本：
 
 ```shell
 $ ANSWER_MODULE=github.com/apache/incubator-answer@v1.2.0-RC1 ./answer build --with github.com/apache/incubator-answer-plugins/connector-github
@@ -87,21 +87,21 @@ $ ANSWER_MODULE=github.com/apache/incubator-answer@v1.2.0-RC1 ./answer build --w
 
 :::tip
 
-你可以使用`plugin`命令列出当前包含插件的二进制文件。
+你可以使用 `plugin` 命令列出当前二进制文件中包含的插件。
 
 :::
 
 ```shell
 $ ./new_answer plugin
 
-# Output:
+# 输出：
 # github connector[0.0.1] made by answerdev
 # google connector[0.0.1] made by answerdev
 ```
 
 ### Docker 构建
 
-#### 使用答案基础图像的插件构建
+#### 从 answer 基础镜像构建包含插件的版本
 
 ```dockerfile title="Dockerfile"
 FROM apache/answer as answer-builder
@@ -150,19 +150,19 @@ EXPOSE 80
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
-> 你可以更新带有--的参数，以添加更多你需要的插件。
+> 你可以更新 --with 参数来添加更多你需要的插件。
 
 ```shell
-# Create a Dockerfile and copy the content above
+# 创建一个 Dockerfile 并复制以上内容
 $ vim Dockerfile
 $ docker build -t answer-with-plugin .
 $ docker run -d -p 9080:80 -v answer-data:/data --name answer answer-with-plugin
 ```
 
-#### 使用本地代码的插件构建
+#### 从本地代码构建
 
-1. **让你的代码保持在最新状态**: 确保你的本地代码与官方存储库同步，或至少与v1.3.5版本同步。
-2. **添加所需的插件**: 将所需的插件存储库添加到根目录中的`/script/plugin_list`文件中，每行一个。
+1. **保持代码更新**：确保你的本地代码与官方仓库同步，至少与 v1.3.5 版本保持一致。
+2. **添加所需插件**：将你需要的插件仓库添加到根目录的 `/script/plugin_list` 文件中，每行一个。
 
 ```
 github.com/apache/incubator-answer-plugins/connector-basic@latest  
@@ -171,12 +171,12 @@ github.com/apache/incubator-answer-plugins/captcha-basic@latest
 github.com/apache/incubator-answer-plugins/editor_formula@latest
 ```
 
-3. **构建Docker映像**: 运行`docker build -t <name[:tag]> . `命令开始构建映像。
-4. **verify image construction**: 运行`docker run -d -p 9080:80 -v answer-data:/data --name <container_name> <image_name>`命令以启动容器，并在本地验证映像是否构建成功。
+3. **构建 Docker 镜像**：运行 `docker build -t <name[:tag]> . ` 命令开始构建镜像。
+4. **验证镜像构建**: 运行 `docker run -d -p 9080:80 -v answer-data:/data --name <container_name> <image_name>` 命令启动容器，并在本地验证镜像是否构建成功。
 
-## Usage
+## 使用
 
-带有插件版本的 Apache Answer 的使用方式与以前相同。你可以在管理页面中找到插件的配置。 You can find the plugin's configuration in the admin page.
+带插件版本的 Apache Answer 的使用方式与之前相同。你可以在管理页面找到插件的配置。 You can find the plugin's configuration in the admin page.
 
 ![plugin-config-admin-page](/img/docs/plugin-config-admin-page.png)
 
@@ -184,27 +184,27 @@ github.com/apache/incubator-answer-plugins/editor_formula@latest
 
 :::caution
 
-请注意，如果你要从非插件版本升级到插件版本，你还需要执行升级命令（也被视为升级）。
+如果你从非插件版本升级到插件版本，还需要执行升级命令（这也被视为一次升级）。
 
 :::
 
-你需要使用新的插件版本构建一个新的Apache Answer二进制文件，然后用新的替换旧的Apache Answer二进制文件。与正常升级一样，你需要根据部署方法执行不同的[升级步骤](./upgrade)。例如，如果你正在使用二进制部署，则需要执行`upgrade`命令。 As with normal upgrades, you need to execute different [upgrade steps](./upgrade) depending on the deployment method. For example, if you are using binary deployment, you need to execute the `upgrade` command.
+你需要使用新插件版本构建新的 Apache Answer 二进制文件，然后将旧的 Apache Answer 二进制文件替换为新的。与普通升级一样，根据部署方式的不同，你需要执行不同的[升级步骤](./upgrade)。例如，如果你使用的是二进制部署，则需要执行 `upgrade` 命令。 As with normal upgrades, you need to execute different [upgrade steps](./upgrade) depending on the deployment method. For example, if you are using binary deployment, you need to execute the `upgrade` command.
 
 ## 第三方插件
 
 :::tip
 
-我们建议使用[官方插件](https://github.com/apache/incubator-answer-plugins)。如果你想使用第三方插件，请参考以下内容。 If you want to use third-party plugins, refer to the following.
+我们推荐使用[官方插件](https://github.com/apache/incubator-answer-plugins)。如果你想使用第三方插件，请参考以下内容。 If you want to use third-party plugins, refer to the following.
 
 :::
 
-- 如果第三方插件是公开可用的，你可以像官方插件一样使用它构建。
-- 如果第三方插件是私有的，你需要下载它，然后用它构建。
+- 如果第三方插件是公开的，你可以像使用官方插件一样与之一起构建。
+- 如果第三方插件是私有的，你需要下载它然后与之一起构建。
 
-## 开发和贡献
+## 开发与贡献
 
-可以在[文档](/docs/development)找到更多相关细节。
+请参考[文档](/docs/development)获取详细信息。
 
-## 设计与原则
+## 设计与原理
 
-由于 Go 是一种静态语言，因此没有友好的插件机制。我们使用重新编译进行部署，而不是动态方法。可以在[博客](/blog/2023/07/22/why-the-answer-plugin-system-was-designed-this-way)找到更多相关细节。 Instead of a dynamic approach, we use recompilation for deployment. Please refer to [the blog](/blog/2023/07/22/why-the-answer-plugin-system-was-designed-this-way) for details.
+由于 Go 是静态语言，没有友好的插件机制。我们采用重新编译的方式来进行部署，而非动态方式。详情请参考[博客](/blog/2023/07/22/why-the-answer-plugin-system-was-designed-this-way)。 Instead of a dynamic approach, we use recompilation for deployment. Please refer to [the blog](/blog/2023/07/22/why-the-answer-plugin-system-was-designed-this-way) for details.
