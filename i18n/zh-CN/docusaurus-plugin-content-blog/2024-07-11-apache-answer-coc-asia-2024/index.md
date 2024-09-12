@@ -34,7 +34,7 @@ _Click [here](https://asia.communityovercode.org/schedule.html) for more on the 
 
 ------
 
-## 社区新闻
+## Community 专题
 
 Why does ASF believe in "Community over Code"? There is more to open-source than just code contribution. In this track, let’s explore topics like governance models, growing project communities, diversity and inclusion, community health metrics, management tools, project roadmaps, case studies, and sustaining open-source communities.
 
