@@ -3,7 +3,7 @@ title: "Echa un vistazo a Answer 1.0.9: Nuevas características y más"
 authors:
   - Anne
 category: Release
-featured: faulse
+featured: false
 image: 2023-05-11-cover@4x.png
 description: Echa un vistazo a cómo puedes gestionar preguntas eficientemente con Answer v1.0.9.
 ---
