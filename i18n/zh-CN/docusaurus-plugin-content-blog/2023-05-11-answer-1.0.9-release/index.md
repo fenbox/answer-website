@@ -3,7 +3,7 @@ title: "深入了解 Answer 1.0.9：新特性以及更多"
 authors:
   - Anne
 category: Release
-featured: "false"
+featured: false
 image: 2023-05-11-cover@4x.png
 description: 深入了解如何利用 Answer v1.0.9 有效地管理问题。
 ---
