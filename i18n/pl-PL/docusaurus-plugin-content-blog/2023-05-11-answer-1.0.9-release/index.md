@@ -3,7 +3,7 @@ title: "Zobacz co się zmieniło w Answer w wersji 1.0.9: Nowe funkcje i wiele w
 authors:
   - Anne
 category: Release
-featured: faulse
+featured: false
 image: 2023-05-11-cover@4x.png
 description: Zobacz jak można skutecznie zarządzać pytaniami w Answer v1.0.9.
 ---
