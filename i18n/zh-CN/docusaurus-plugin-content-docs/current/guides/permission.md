@@ -40,4 +40,4 @@ slug: /permission
 | ----------------------------------------- | -- | -- | --- |
 | 默认无特殊访问权限                                 | ✓  | ✓  | ✓   |
 | Has access to all posts except site admin | -  | ✓  | ✓   |
-| Have the full power to access the site    | *  | -  | ✓   |
+| Have the full power to access the site    | -  | -  | ✓   |
