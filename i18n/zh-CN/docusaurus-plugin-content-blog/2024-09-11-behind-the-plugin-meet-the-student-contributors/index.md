@@ -3,7 +3,7 @@ title: "Behind the Plugin: Meet the Student Contributors"
 authors:
   - Anne
 category: Community
-featured: false
+featured: true
 image: 2024-09-11-cover-zh@4x.png
 description: Find out the process of building the plugin and reflection from the students.
 ---
