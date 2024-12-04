@@ -5,7 +5,7 @@ authors:
 category: Release
 featured: true
 image: 2024-11-27-cover@4x.png
-description: Link the questions/answer as easy as the connecting the dots.
+description: Link the questions/answer as easy as connecting the dots.
 ---
 
 The weather is getting cooler, and time to light up the knowledge fireplace. In this release, we add new features to provide context for your knowledge flow in an easy way. There're also improvements in different ways: display, color, SEO template, etc. Don't miss the 4 new plugins that streamline Answer with the tools you love.
@@ -32,7 +32,7 @@ A number of bug fixes have also been implemented, including resolving issues wit
 
 ## New Plugins: Level up with the Tools You Like
 
-There're four new plugins in this release too. Tecent Cloud Object Storage plugin lets users store and manage various types of content efficiently. Ding talk notification allows you to receive notification in Ding Talk webhook robot. Baidu reviewer plugin enables Apache Answer to integrate with Baidu's review system, helping to shape a safe environment for the community.
+There're four new plugins in this release too. Tencent Cloud Object Storage plugin lets users store and manage various types of content efficiently. Ding talk notification allows you to receive notification in Ding Talk webhook robot. Baidu reviewer plugin enables Apache Answer to integrate with Baidu's review system, helping to shape a safe environment for the community.
 
 Slack User Center is one of our OSPP projects and our PPMC member LinkinStar assisted Anan1225 to complete this task in the summer holiday. This plugin allows you to login and authorization with Slack, receive notification in Slack, etc.
 
