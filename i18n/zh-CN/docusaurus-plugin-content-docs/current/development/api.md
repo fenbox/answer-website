@@ -10,19 +10,19 @@ Apache Answer using swagger to generate API document automatically. Swagger can 
 
 :::
 
-## Where is the API document?
+## API 文档在哪里？
 
-### Quick Look
+### 概览
 
-If you want to quickly view the API document, you can visit the following link:
+如果您想快速查看 API 文档，您可以访问以下链接：
 https://meta.answer.dev/swagger/index.html
 
-### View your own API document
+### 查看您自己的 API 文档
 
-If you already have an Apache Answer instance, you can view the API document of your own instance by visiting the following link:
+如果您已经有一个 Apache Answer 实例，您可以通过访问以下链接查看您自己实例的 API 文档：
 `https://example.com/swagger/index.html`
 
-If you can't access the above link, please check the following configuration items whether they are configured correctly.
+如果您不能访问上面的链接，请检查以下配置项是否正确配置。
 
 ```yaml title="/data/conf/config.yaml"
 swaggerui:
@@ -32,7 +32,7 @@ swaggerui:
   address: ':9080' # leave blank to use the 80 port number
 ```
 
-## Generate API document
+## 生成 API 文档
 
 Apache Answer using [swag](https://github.com/swaggo/swag) to generate API document json/yaml file automatically according to the comments in the code. You can use the following steps to generate API document.
 
