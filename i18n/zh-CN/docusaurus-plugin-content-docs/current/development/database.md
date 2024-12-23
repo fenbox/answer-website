@@ -6,7 +6,7 @@ slug: /database
 
 :::note
 
-不同的数据库具有不同的数据类型。下表以 mysql/mariadb 为例。 The following table presumes use of mysql/mariadb as an example.
+不同的数据库具有不同的数据类型。 下表以 mysql/mariadb 为例。
 
 :::
 
@@ -322,7 +322,7 @@ slug: /database
 
 ## user_role_rel
 
-> The `user_role_rel` table records the relationship between users and roles.
+> `user_role_rel` 表记录用户和角色之间的关系。
 
 | COLUMN                          | DATA TYPE                     | NULLABLE | KEY | DEFAULT | COMMENT     |
 | ------------------------------- | ----------------------------- | -------- | --- | ------- | ----------- |
@@ -334,7 +334,7 @@ slug: /database
 
 ## version
 
-> 当前 Answer 的版本记录在版本表中以进行升级。
+> 当前答案的版本在版本表中记录以供升级使用。
 
 | COLUMN                              | DATA TYPE                  | NULLABLE | KEY | DEFAULT | COMMENT                             |
 | ----------------------------------- | -------------------------- | -------- | --- | ------- | ----------------------------------- |
