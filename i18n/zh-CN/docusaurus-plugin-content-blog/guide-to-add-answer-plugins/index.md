@@ -17,7 +17,7 @@ Plugins are like a set of building blocks that you can freely combine to create 
 
 1. 点击[此处](https://github.com/apache/incubator-answer-plugins/tree/main)从官方 Apache Answer 插件仓库下载所需插件。
 2. 放置插件：将下载的插件文件，放置到项目目录下的 `./ui/src/plugins` 中
-3. 插件类型参考： https://answer.apache.org/docs/development/plugins
+3. 插件类型参考：https://answer.apache.org/zh-CN/docs/development/plugins/
 
 _注意：文件夹应该是 plugins，而不是 plugin。_
 ![files](files.png)
@@ -73,4 +73,4 @@ go mod edit -replace="github.com/apache/incubator-answer-plugins/my-plugin"="./u
 
 Open the backend interface URL in your browser. Under the **Admin - Installed Plugins** section, you'll see the added plugins. Click the `⋮` in the Action column to activate or remove the plugin.
 
-Congratulations, you've successfully added a plugin! 在浏览器打开后端借口网址，可在 Admin - Installed Plugins 里看到添加的插件，点击 Action 列的 `⋮` 即可激活和移除该插件。 Additionally, we offer a detailed tutorial on [How to Package and Deploy Answer Plugins](https://answer.apache.org/blog/how-to-package-and-deploy-answer-plugins/) and a [Plugin Development Guide](https://answer.apache.org/docs/development/plugins/) to make your Apache Answer even more powerful.
+Congratulations, you've successfully added a plugin! 在浏览器打开后端借口网址，可在 Admin - Installed Plugins 里看到添加的插件，点击 Action 列的 `⋮` 即可激活和移除该插件。 你已经完成了插件添加，点击[此处](https://answer.apache.org/plugins/)可以了解更多社区构建的插件。此外，我们还提供了 [Apache Answer 使用插件的详细教程](https://answer.apache.org/zh-CN/blog/how-to-package-and-deploy-answer-plugins/)，以及[插件开发指南](https://answer.apache.org/zh-CN/docs/development/plugins/)，让你的 Apache Answer 变得更加强大。
