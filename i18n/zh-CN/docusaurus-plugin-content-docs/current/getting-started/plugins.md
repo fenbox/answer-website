@@ -176,7 +176,7 @@ github.com/apache/incubator-answer-plugins/editor_formula@latest
 
 ## 使用
 
-带插件版本的 Apache Answer 的使用方式与之前相同。你可以在管理页面找到插件的配置。 You can find the plugin's configuration in the admin page.
+带插件版本的 Apache Answer 的使用方式与之前相同。 你可以在管理页面找到插件的配置。
 
 ![plugin-config-admin-page](/img/docs/plugin-config-admin-page.png)
 
@@ -194,12 +194,12 @@ github.com/apache/incubator-answer-plugins/editor_formula@latest
 
 :::tip
 
-我们推荐使用[官方插件](https://github.com/apache/incubator-answer-plugins)。如果你想使用第三方插件，请参考以下内容。 If you want to use third-party plugins, refer to the following.
+我们推荐使用[官方插件](https://github.com/apache/incubator-answer-plugins)。 如果你想使用第三方插件，请参考以下内容。
 
 :::
 
 - 如果第三方插件是公开的，你可以像使用官方插件一样与之一起构建。
-- 如果第三方插件是私有的，你需要下载它然后与之一起构建。
+- 如果第三方插件是私有的，你需要将其下载下来，并和 Answer 项目一起构建。
 
 ## 开发与贡献
 
@@ -207,4 +207,4 @@ github.com/apache/incubator-answer-plugins/editor_formula@latest
 
 ## 设计与原理
 
-由于 Go 是静态语言，没有友好的插件机制。我们采用重新编译的方式来进行部署，而非动态方式。详情请参考[博客](/blog/2023/07/22/why-the-answer-plugin-system-was-designed-this-way)。 Instead of a dynamic approach, we use recompilation for deployment. Please refer to [the blog](/blog/2023/07/22/why-the-answer-plugin-system-was-designed-this-way) for details.
+因为 Go 是静态语言，因此没有友好的插件机制。 我们不得不采用重新编译的方式来进行部署，而非动态方式部署。 详情请参考[博客](/blog/2023/07/22/why-the-answer-plugin-system-was-designed-this-way)。
