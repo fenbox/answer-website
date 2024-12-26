@@ -4,44 +4,44 @@ slug: /development/plugins
 
 # 插件开发指南
 
-Plugins are a way to extend the functionality of the Answer project. You can create your own plugins to meet your own needs.
+插件是扩展 Answer 项目功能的一种方式。 您可以创建插件来满足自己的需求。
 
 :::tip
 
-Viewing the [**official plugin code**](https://github.com/apache/incubator-answer-plugins) will make you to quickly understand and learn plugin development.
+查看[**官方插件代码**](https://github.com/apache/incubator-answer-plugins)将使您能够快速理解和学习插件开发。
 
 :::
 
-## Introduction
+## 介绍
 
-### Plugin template types
+### 插件模板类型
 
-Currently we have three types of plugins:
+目前我们有三种类型的插件：
 
-- Backend plugin
-- Standard UI plugin
-- Builtin plugin
+- 后端插件
+- 标准 UI 插件
+- 内置插件
 
-### Plugin type
+### 插件类型
 
-We classify plugins into different types. Different types of plugins have different functions. Plugins of the same type have the same effect, but are implemented differently.
+We classify plugins into different types. 不同类型的插件具有不同的功能。 同一类型的插件具有相同的效果，但实现方式不同。
 
-| Plugin Name  | Template Type      | Description                                                                                            |
-| ------------ | ------------------ | ------------------------------------------------------------------------------------------------------ |
-| Connector    | Backend Plugin     | The Connector plugin helps us to implement third-party login functionality                             |
-| Storage      | Backend Plugin     | The Storage plugin helps us to upload files to third-party storage.                    |
-| Cache        | Backend Plugin     | Support for using different caching middleware.                                        |
-| Search       | Backend Plugin     | Support for using search engines to speed up the search for question answers.          |
-| User Center  | Backend Plugin     | Using the third-party user system to manage users.                                     |
-| Notification | Backend Plugin     | The Notification plugin helps us to send messages to third-party notification systems. |
-| Route        | Standard UI Plugin | Provides support for custom routing.                                                   |
-| Editor       | Standard UI Plugin | Supports extending the markdown editor's toolbar.                                      |
-| Captcha      | Standard UI Plugin | Provides support for captcha.                                                          |
-| Reviewer     | Backend Plugin     | Allows customizing the reviewer functionality.                                         |
-| Filter       | Backend Plugin     | Filter out illegal questions or answers. (coming soon)              |
-| Render       | Standard UI Plugin | Parsers for different content formats. (coming soon)                |
+| 插件名称    | 模板类型     | 描述                                                                                        |
+| ------- | -------- | ----------------------------------------------------------------------------------------- |
+| 连接器     | 后端插件     | 连接器插件帮助我们实现第三方登录功能                                                                        |
+| Storage | 后端插件     | 存储插件帮助我们上传文件到第三方存储。                                                                       |
+| 缓存      | 后端插件     | 支持使用不同的缓存中间件。                                                                             |
+| Search  | 后端插件     | 支持使用搜索引擎来加快问题答案的搜索。                                                                       |
+| 用户中心    | 后端插件     | 使用第三方用户系统来管理用户。                                                                           |
+| 通知      | 后端插件     | 通知插件帮助我们向第三方通知系统发送消息。                                                                     |
+| 路由      | 标准 UI 插件 | 提供对自定义路由的支持。                                                                              |
+| 编辑器     | 标准 UI 插件 | 支持扩展 Markdown 编辑器工具栏。                                                                     |
+| 验证码     | 标准 UI 插件 | 提供验证码支持。                                                                                  |
+| 审核者     | 后端插件     | 允许定制审核员功能。                                                                                |
+| 过滤器     | 后端插件     | Filter out illegal questions or answers. (coming soon) |
+| Render  | 标准 UI 插件 | 不同内容格式的解析器。 (coming soon)                                              |
 
-## Create a Plugin
+## 创建插件
 
 :::info
 
@@ -52,15 +52,15 @@ The **name** field in package.json is the name of the package we add dependencie
 
 :::
 
-1. Go to the `ui > src > plugin` directory of the project.
+1. 转到项目的 `ui > src > plugin` 目录。
 
-2. Execute the following commands in that directory:
+2. 在该目录中执行以下命令：
 
 ```shell
 npx create-answer-plugin <pluginName>
 ```
 
-3. Select the type of plugin you want to create.
+3. 选择您想要创建的插件类型。
 
 ## Run the Plugin
 
