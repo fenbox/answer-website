@@ -2,6 +2,6 @@
 slug: /tags
 ---
 
-# Tags
+# 标签
 
 TODO
