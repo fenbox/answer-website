@@ -2,6 +2,6 @@
 slug: /review
 ---
 
-# Review
+# 审查
 
 TODO
