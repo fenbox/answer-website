@@ -24,22 +24,22 @@ slug: /development/plugins
 
 ### 插件类型
 
-We classify plugins into different types. 不同类型的插件具有不同的功能。 同一类型的插件具有相同的效果，但实现方式不同。
+我们将插件分为不同的类型。 不同类型的插件具有不同的功能。 同一类型的插件具有相同的效果，但实现方式不同。
 
-| 插件名称    | 模板类型     | 描述                                                                                        |
-| ------- | -------- | ----------------------------------------------------------------------------------------- |
-| 连接器     | 后端插件     | 连接器插件帮助我们实现第三方登录功能                                                                        |
-| Storage | 后端插件     | 存储插件帮助我们上传文件到第三方存储。                                                                       |
-| 缓存      | 后端插件     | 支持使用不同的缓存中间件。                                                                             |
-| Search  | 后端插件     | 支持使用搜索引擎来加快问题答案的搜索。                                                                       |
-| 用户中心    | 后端插件     | 使用第三方用户系统来管理用户。                                                                           |
-| 通知      | 后端插件     | 通知插件帮助我们向第三方通知系统发送消息。                                                                     |
-| 路由      | 标准 UI 插件 | 提供对自定义路由的支持。                                                                              |
-| 编辑器     | 标准 UI 插件 | 支持扩展 Markdown 编辑器工具栏。                                                                     |
-| 验证码     | 标准 UI 插件 | 提供验证码支持。                                                                                  |
-| 审核者     | 后端插件     | 允许定制审核员功能。                                                                                |
-| 过滤器     | 后端插件     | Filter out illegal questions or answers. (coming soon) |
-| Render  | 标准 UI 插件 | 不同内容格式的解析器。 (coming soon)                                              |
+| 插件名称 | 模板类型     | 描述                    |
+| ---- | -------- | --------------------- |
+| 连接器  | 后端插件     | 连接器插件帮助我们实现第三方登录功能    |
+| 存储   | 后端插件     | 存储插件帮助我们上传文件到第三方存储。   |
+| 缓存   | 后端插件     | 支持使用不同的缓存中间件。         |
+| 搜索   | 后端插件     | 支持使用搜索引擎来加快问题答案的搜索。   |
+| 用户中心 | 后端插件     | 使用第三方用户系统来管理用户。       |
+| 通知   | 后端插件     | 通知插件帮助我们向第三方通知系统发送消息。 |
+| 路由   | 标准 UI 插件 | 提供对自定义路由的支持。          |
+| 编辑器  | 标准 UI 插件 | 支持扩展 Markdown 编辑器工具栏。 |
+| 验证码  | 标准 UI 插件 | 提供验证码支持。              |
+| 审核者  | 后端插件     | 允许定制审核员功能。            |
+| 过滤器  | 后端插件     | 过滤非法问题或答案。 （即将推出）     |
+| 渲染   | 标准 UI 插件 | 不同内容格式的解析器。 （即将推出）    |
 
 ## 创建插件
 
@@ -62,13 +62,13 @@ npx create-answer-plugin <pluginName>
 
 3. 选择您想要创建的插件类型。
 
-## Run the Plugin
+## 运行插件
 
-### Run the Backend Plugin
+### 运行后端插件
 
-1. First, execute `make ui` to compile the front-end code.
+1. 首先，执行 `make ui` 来编译前端代码。
 
-2. In the `cmd > answer > main.go` file, import your plugin.
+2. 在 `cmd > answer > main.go` 文件中, 引入你的插件
 
    ```go
    import (
@@ -79,47 +79,47 @@ npx create-answer-plugin <pluginName>
    )
    ```
 
-3. Use `go mod edit` to add the plugin to the `go.mod` file.
+3. 使用 `go mod edit` 将插件添加到 "go.mod" 文件。
 
    ```shell
    go mod edit -replace=github.com/apache/incubator-answer/ui/src/plugins/my-plugin=../ui/src/plugins/my-plugin
    ```
 
-4. Update the dependencies.
+4. 更新依赖项
 
    ```shell
    go mod tidy
    ```
 
-5. Start the project.
+5. 启动项目。
 
    ```shell
    go run cmd/answer/main.go run -C ./answer-data
    ```
 
-### Run the Standard UI Plugin
+### 安装标准 UI 插件（Standard UI Plugin）
 
-1. Go to the `ui` directory.
+1. 切换到 `ui` 目录。
 
-2. Install the dependencies.
+2. 更新依赖项
 
    ```shell
    pnpm pre-install
    ```
 
-3. Start the project.
+3. 启动项目。
 
    ```shell
    pnpm start
    ```
 
-4. Refer to the [Run the Backend Plugin](/docs/development/plugins#debugging-plugins) and add the plugin to the project.
+4. 请参阅 [运行后端插件](/docs/development/plugins#debugging-plugins)，并将插件添加到项目。
 
-## Backend Plugin Development
+## 后端插件开发
 
-### Implement the Base interface
+### 实现 Base 接口
 
-The `Base` interface contains basic information about the plugin and is used to display.
+`Base` 接口包含关于插件的基本信息并用于显示。
 
 ```go
 // Info presents the plugin information
@@ -141,17 +141,17 @@ type Base interface {
 
 :::caution
 
-The `SlugName` of the plugin must be unique. Two plugins with the same `SlugName` will panic when registering.
+插件的 `SlugName` 必须唯一。 两个具有相同 `SlugName` 的插件在注册时会触发 panic。
 
 :::
 
-### Implement the function interface
+### 实现函数接口
 
 :::note
 
-Different plugin types require different interfaces of implementation.
+不同的插件类型需要实现不同的接口。
 
-For example, following is the `Connector` plugin interface.
+比如，以下是`Connector`插件接口。
 
 :::
 
@@ -184,11 +184,11 @@ type Connector interface {
 
 :::tip
 
-`Translator` is a struct for translation. Please refer to [the documentation](/docs/development/plugins/plugin-translation) for details.
+`Translator` 是一个用于翻译的结构体。 请参阅 [文档](/docs/development/plugins/plugin-translation) 以获取详细信息。
 
 :::
 
-### Implement the configuration interface
+### 实施配置接口
 
 For details on the description of each configuration item, please refer to [the documentation](/docs/development/plugins/plugin-config).
 
@@ -219,9 +219,9 @@ func init() {
 }
 ```
 
-## Standard UI plugin Development
+## 标准 UI 插件开发
 
-The default configuration is as follows:
+默认配置如下：
 
 ```yaml
 slug_name: <slug_name> 
@@ -246,21 +246,21 @@ export default {
 };
 ```
 
-Among them, `type`、`slug_name` and `component` are required fields. `i18nConfig` and `hooks` are optional fields.
+`i18nConfig` 和 `hooks` 是选填字段。 `i18nConfig` 和 `hooks` 是选填字段。
 
-Currently the front end supports the following types of plugins:
+当前前端支持以下类型的插件：
 
-- editor
-- route
-- captcha
+- 编辑器
+- 路由
+- 验证码
 
-### Editor plugin
+### 编辑器插件
 
-Refer to [editor-chart](https://github.com/apache/incubator-answer-plugins/tree/main/editor-chart) for details.
+请参阅 [editor-chart](https://github.com/apache/incubator-answer-plugins/tree/main/editor-chart) 了解详情。
 
-### Route plugin
+### 路由插件
 
-The plugin configuration of the routing type adds the `route` field to the configuration file.
+插件配置的路由类型向配置文件中添加了 `route` 字段。
 
 ```yaml
 slug_name: <slug_name>
@@ -272,36 +272,29 @@ author:
 ```
 
 ```tsx
-import i18nConfig from './i18n';
-import Component from './Component';
-import info from './info.yaml';
+slug_name: <0>
+route: /<1>
+type: route
+version: 0.0.1
+author: 
 
-export default {
-  info: {
-    slug_name: info.slug_name,
-    type: info.type,
-    route: info.route,
-  },
-  i18nConfig,
-  component: Component,
-};
 ```
 
-### Captcha plugin
+### 验证码插件（Captcha plugin）
 
-Refer to [captcha-basic](https://github.com/apache/incubator-answer-plugins/tree/main/captcha-basic) for details.
+请参阅 [editor-chart](https://github.com/apache/incubator-answer-plugins/tree/main/captcha-basic) 了解详情。
 
-## Builtin plugin Development
+## 内置插件开发
 
-It is not so different from React component, this plugin is more suitable for the following scenarios:
+这与 React 组件并没有那么不同，这个插件更适合以下场景：
 
-1. There are complex business logics that cannot be separated from the code (such as Oauth).
-2. Some back-end plugins require UI support for business purposes (such as Search).
-3. This plugin has extremely low requirements for developers and requires no additional configuration work.
+1. 代码中不能分离出复杂的业务逻辑（例如 Oauth）。
+2. 一些后端插件需要 UI 支持以满足业务需求(例如搜索)。
+3. 这个插件对开发人员的要求非常低，不需要额外的配置工作。
 
-### How to develop builtin plugin
+### 如何开发内置插件
 
-1. **Get familiar with the directory structure**. Go to the `ui/src/plugins/builtin` directory and create a directory, such as Demo. Then refer to the existing plugins to create the necessary files to start development.
+1. **熟悉目录结构** Go to the `ui/src/plugins/builtin` directory and create a directory, such as Demo. Then refer to the existing plugins to create the necessary files to start development.
 
 ```txt
 // ui/src/plugins/builtin
@@ -328,7 +321,7 @@ export default {
 };
 ```
 
-3. Now you can use the PluginRender component to render the just-defined plugin where you want it!
+3. 现在您可以使用 PluginRender 组件将刚刚定义的插件渲染到您想要的位置！
 
 ```ts
   <PluginRender
@@ -337,4 +330,4 @@ export default {
   />
 ```
 
-4. **Publish plugin**: initiate the PR process normally and describe the plugin function and scope of influence in detail.
+4. **发布插件**：正常启动PR流程，并详细描述插件功能和影响范围。
