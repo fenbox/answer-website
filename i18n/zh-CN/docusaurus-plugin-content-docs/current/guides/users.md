@@ -2,89 +2,89 @@
 slug: /users
 ---
 
-# Users
+# 用户
 
-## User status
+## 用户状态
 
-![User state diagram](/img/docs/users-user-status.drawio.svg)
+![用户状态图](/img/docs/users-user-status.drawio.svg)
 
-## Top users
+## 顶级用户
 
-Show top users in the platform.
+在平台上显示顶级用户。
 
-- **Users with the highest reputation scores this week**
-  - Users who increased the most reputation this week
-  - Show top 20 users with their increased reputation (ordered)
-- **Users who voted the most this week**
-  - Number of votes cast for others
-  - Show top 20 users with their number of votes (ordered)
-- **Our community staff**
-  - Show all moderators, administrators
-  - Ordered by reputation
+- **本周声望最高的用户**
+  - 本周提高信誉积分最多的用户
+  - 显示最多20个用户的票数(排序)
+- **本周投票最多的用户**
+  - 给他人的投票数
+  - 显示最多20个用户的票数(排序)
+- **我们的社区工作人员**
+  - 显示所有版主、管理员
+  - 按信誉积分排序
 
-## Sign up
+## 注册
 
-A user sign up process with email.
+用户用电子邮件注册过程。
 
-![Sign up process](/img/docs/users-signup.drawio.svg)
+![注册过程](/img/docs/users-signup.drawio.svg)
 
-- Display name (abbreviated as "name"):
-  - Less than 30 characters.
-- Username:
-  - Unique.
-  - Less than 30 characters.
-  - Can only contain `0-9`, lowercase letters `a-z`, symbols `- . _`.
-  - Generated based on the display name, spaces are replaced with symbols `-`.
-  - If there is a repetition, add 4 random characters at the end, e.g. `joe-x7k2`.
-  - Reserve keywords are not allowed.
-- Record the time of registration and the IP address.
-- The activation link is valid for 14 days.
+- 显示名称 (缩写为“name”)：
+  - 少于30个字符。
+- 用户名:
+  - 唯一。
+  - 少于30个字符。
+  - 只能包含 `0-9`, 小写字母`a-z`, 符号`-'。 _`.
+  - 根据显示名称生成，空格被替换为符号`-`。
+  - 如果有重复，将会在结尾处添加4个随机字符，例如 `joe-x7k2`。
+  - 不允许设置为保留关键字。
+- 记录注册时间和 IP 地址。
+- 激活链接有效期为 14 天。
 
-## Log in
+## 登录
 
-A user wants to log in. The user's login permissions are related to the status.
+用户希望登录。 用户的登录权限与状态相关。
 
-| User status | Normal  | Inactive | Suspended | Deleted |
-| ----------- | ------- | -------- | --------- | ------- |
-| Log in      | Allowed | Denied   | Denied    | Denied  |
+| 用户状态 | 正常 | 未启用 | 已封禁 | 已删除 |
+| ---- | -- | --- | --- | --- |
+| 登录   | 允许 | 拒绝  | 拒绝  | 拒绝  |
 
-### Log in with email and password
+### 使用电子邮件和密码登录
 
-- Fill email and password to log in.
-  - If the user does not exist, the message "Invalid email or password" is displayed to prevent the account from being attacked.
-  - When an inactive user logs in, go to the page that asks for activation.
-  - When an suspended user logs in, go to the ban prompt page.
-- Login status is remembered for 14 days by default.
-- Click "Forgot password" to reset password if someone forgot their password.
+- 请填写电子邮件和密码登录。
+  - 如果用户不存在，则显示消息“无效的电子邮件或密码”，以防止帐户遭到攻击。
+  - 当非活动用户登录时，进入请求激活的页面。
+  - 当一个被暂停的用户登录时，转到禁止提示页面。
+- 默认情况下，登录状态将被保存 14 天。
+- 如果有人忘记密码，请点击"忘记密码"重置密码。
 
-### Log in from thridy-party OAuth
+### 从三方 OAuth 登录
 
-![Thirdy-party OAuth process](/img/docs/users-oauth.drawio.svg)
+![第三方 OAuth 过程](/img/docs/users-oauth.drawio.svg)
 
-## Reset password
-
-TODO
-
-## Notification
+## 重置密码
 
 TODO
 
-### Inbox
+## 通知
 
 TODO
 
-### Achievement
+### 收件箱
 
 TODO
 
-## Profile
+### 成就
 
 TODO
 
-## Settings
+## 个人资料
 
 TODO
 
-### Unsubscribe email
+## 设置
+
+TODO
+
+### 取消订阅电子邮件
 
 TODO
