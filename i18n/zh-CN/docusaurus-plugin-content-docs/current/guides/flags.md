@@ -2,6 +2,6 @@
 slug: /flags
 ---
 
-# Flags
+# 标识
 
-User can flag the spam post.
+用户可以标记垃圾帖子。
