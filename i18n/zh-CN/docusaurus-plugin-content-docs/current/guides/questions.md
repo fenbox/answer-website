@@ -2,12 +2,12 @@
 slug: /questions
 ---
 
-# Questions
+# 问题
 
-## Question status
+## 问题状态
 
-![Question state diagram](/img/docs/questions-question-status.drawio.svg)
+![问题状态图](/img/docs/questions-question-status.drawio.svg)
 
 ## Apache Answer 状态
 
-![Apache Answer state diagram](/img/docs/questions-answer-status.drawio.svg)
+![Apache Answer 状态图](/img/docs/questions-answer-status.drawio.svg)
