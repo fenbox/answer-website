@@ -2,16 +2,16 @@
 slug: /development/plugins/plugin-translation
 ---
 
-# Plugin Translation
+# 翻译插件
 
-Since answer supports multiple languages, the plugin also needs to support multiple languages.
-The following is an example of how to make your plugin support multiple languages.
+由于 answer 支持多种语言，该插件也需要支持多种语言。
+以下是如何使你的插件支持多语言的示例。
 
-## Translator structure
+## 翻译结构
 
-In some plugins interface, you can see the `Translator` structure, which is used to support multiple languages.
+在某些插件界面中，您可以看到 `Translator` 结构，该结构用于支持多种语言。
 
-For example, the `ConfigField` structure has a `Title` field of type `Translator`.
+例如，`ConfigField` 结构有一个 `Title` 字段类型为 `Translator` 。
 
 ```go
 type ConfigField struct {
@@ -26,7 +26,7 @@ type ConfigField struct {
 }
 ```
 
-It's easy to build a `Translator` structure, just like this:
+构建 Translator 结构很容易，就像这样：
 
 ```go
 import (
@@ -36,17 +36,17 @@ import (
 plugin.MakeTranslator("plugin.github_connector.backend.name")
 ```
 
-The `plugin.github_connector.backend.name` is the key of the translation file, which will be introduced later.
+'plugin.github_connector.backend.name'  是翻译文件的 key，稍后将会介绍。
 
-So, the first step is build a `Translator` structure for each field that needs to be translated.
+所以，第一步是为每个需要翻译的字段构建一个 `Translator` 结构。
 
-## Translation file
+## 翻译文件
 
-Make directory `i18n` in the root directory of your plugin, and then create a file named `en_US.yaml` in it.
+在您的插件根目录下创建名为 `i18n` 的目录，然后在其中创建一个名为 `en_US.yaml` 的文件。
 
-The `en_US.yaml` file is used to store the English translation of the plugin.
+`en_US.yaml` 文件用于存储插件的英文翻译。
 
-The content of the `en_US.yaml` file is as follows:
+`en_US.yaml` 文件的内容如下：
 
 ```yaml
 plugin:
@@ -77,9 +77,9 @@ plugin:
 ```
 
 - The `plugin` is the root key of the translation file.
-- The `github_connector` is the name of the plugin.
-- The `backend` is translation for the backend. The end of key like `other` is just for [go-i18n](https://github.com/nicksnyder/go-i18n) to recognize the translation file.
-- The `ui` is translation for the frontend.
+- `github_connector` 是插件的名称。
+- `backend` 是后端的翻译。 The end of key like `other` is just for [go-i18n](https://github.com/nicksnyder/go-i18n) to recognize the translation file.
+- `ui` 是前端的翻译。
 
 You can use the key like `plugin.github_connector.backend.name` or `plugin.github_connector.ui.login.title` for translation.
 
@@ -115,23 +115,22 @@ Finally, the directory structure of the plugin is as follows:
     └── zh_CN.yaml
 ```
 
-Finally, execute the following bash shell command to merge the plugin i18n files into the answer i18n runtime data.
+最后，执行以下 bash shell 命令将插件 i18n 文件合并到 answer i18n 运行时数据中。
 
-You can replace the environment variables with your own data or define them as needed.
+您可以用自己的数据替换环境变量或根据需要定义变量。
 
 ```bash
 go run ./cmd/answer/main.go i18n -s $PLUGIN_PATH -t $ANSWER_DATA_PATH
 ```
 
-Example:
+示例：
 
 ```bash
-go run ./cmd/answer/main.go i18n -s ../incubator-answer-plugins/ -t ./answer-data/i18n/
 ```
 
-## Backend translation
+## 后端翻译
 
-You just need to return `Translator` structure with the key of the translation file.
+您只需要返回带有 key 的翻译文件的 `Translator` 结构即可。
 
 ```go
 func (g *GitHubConnector) ConnectorName() plugin.Translator {
@@ -139,4 +138,4 @@ func (g *GitHubConnector) ConnectorName() plugin.Translator {
 }
 ```
 
-The `Answer` will automatically translate the key of the translation file into the corresponding language.
+`Answer` 将自动将翻译文件中的键转换为相应的语言。
