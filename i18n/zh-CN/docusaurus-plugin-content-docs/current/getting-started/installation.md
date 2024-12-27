@@ -93,38 +93,39 @@ INSTALL_PORT=80 ./answer init -C ./answer-data/
   </TabItem>
   <TabItem value="aapanel" label="aaPanel">
 
-To install Apache Answer on aaPanel, you need to install the aaPanel first. Go to the [aaPanel](https://www.aapanel.com/new/download.html?r=dk_answer) official website, download and install the script.
+若要在 aaPanel上安装 Apache Answer，您需要先安装 aPanel。 访问 [aaPanel](https://www.aapanel.com/new/download.html?r=dk_answer) 官方网站，下载并安装脚本。
 
-After the installation is complete, log in to the aaPanel, click the left menu bar `Docker`, enter `One-Click Install`, search for `Apache Answer`, click Install to configure:
+安装完成后，请点击左边的菜单栏 `Docker` 登录。 输入 `On-Click Install`，搜索 `Apache Answer`，点击安装配置：
 
 ![Search Apache Answer](/img/docs/aapanel-install.png)
 
 :::tip
 
-For the first time, you will be prompted to install the `Docker` and `Docker Compose` services. Click Install immediately. If you have already installed it, please ignore it.
+ 当你首次登录时，你将被提示安装 `Docker` 和 `Docker Compose` 服务。 点击立即安装。 如果您已经安装了它，请忽略它。
 
-![Install Docker service](/img/docs/aapanel-init-docker.png)
+![安装 Docker 服务](/img/docs/aapanel-init-docker.png)
 
-:::  
+:::
+:::
 
-You need to fill in the following information to complete the basic configuration initialization:
+你需要填写以下信息才能完成基本的配置初始化:
 
-- Name: Application name, default `answer_random characters`
-- Version selection: default `latest`
-- Allow external access: If you need to access directly through `IP+Port`, please check it. If you have already set up a domain name, please do not check here
-- Port: default `9080`, you can modify it yourself
-- Site name: Site name, such as `Apache Answer`
-- Site url: The browser address you will use to access Apache Answer after installation
-- Contact email: The email address of the main contact person responsible for this website
-- Admin name: Admin username
-- Admin password: Admin password
-- Admin email: Admin email. You need this email to log in, so be sure to remember the admin's email and password
+- 名称: 应用程序名称 默认为 `answer_random characters`
+- 版本选择：默认 'latest'
+- 允许外部访问：如果您需要直接通过 `IP+Port` 访问权限，请检查它。 如果您已经设置了域名，不需要在此处检查
+- 端口: 默认是 `9080` 你可以将其修改成为你想设置的
+- 站点名称: 站点名称 例如 `Apache Answer`
+- 网站地址：安装后您将使用浏览器地址访问 Apache Answer
+- 联系电子邮件：负责此网站的主要联系人的电子邮件地址
+- 管理员名称：管理员用户名
+- 管理员密码：管理员密码
+- 管理员电子邮件: 管理员电子邮件。 你需要邮件登录，所以请确保你可以记住管理员的邮箱和密码
 
 ![Install configuration information](/img/docs/aapanel-install-config.png)
 
-After filling in the information, click Confirm to submit. The panel will automatically initialize the application after you click OK to submit. You do not need to operate the installation steps below. Wait for the initialization to complete, and you can access it through the **site URL** you just set.
+在填写完成信息之后， 点击确定来提交 当你点击确定提交后，面板将自动初始化应用程序。 您无需操作下面的安装步骤。 等待初始化完成，您可以通过您刚刚设置的 **站点URL** 访问它。
 
-Congratulations, start your Apache Answer journey!
+恭喜，开始您的 Apache Answer 的旅程！
 
   </TabItem>
 </Tabs>
