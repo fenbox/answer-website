@@ -188,7 +188,7 @@ github.com/apache/incubator-answer-plugins/editor_formula@latest
 
 :::
 
-你需要使用新插件版本构建新的 Apache Answer 二进制文件，然后将旧的 Apache Answer 二进制文件替换为新的。与普通升级一样，根据部署方式的不同，你需要执行不同的[升级步骤](./upgrade)。例如，如果你使用的是二进制部署，则需要执行 `upgrade` 命令。 As with normal upgrades, you need to execute different [upgrade steps](./upgrade) depending on the deployment method. For example, if you are using binary deployment, you need to execute the `upgrade` command.
+你需要使用新插件版本构建新的 Apache Answer 二进制文件，然后将旧的 Apache Answer 二进制文件替换为新的。 与普通升级一样，根据部署方式的不同，你需要执行不同的[升级步骤](./upgrade)。 例如，如果你使用的是二进制部署，则需要执行 `upgrade` 命令。
 
 ## 第三方插件
 
