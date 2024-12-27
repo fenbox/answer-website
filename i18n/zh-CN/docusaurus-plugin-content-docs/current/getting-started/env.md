@@ -25,11 +25,11 @@ slug: /env
 - `ADMIN_PASSWORD`: 管理员密码
 - `ADMIN_EMAIL`: 管理员邮箱
 
-### For overriding the config file
+### 覆盖配置文件
 
-- `SWAGGER_HOST` - address for the swagger to display, like `192.168.12.12` or `answer.apache.org`
-- `SWAGGER_ADDRESS_PORT` - port for the swagger to display, like `:3000`
-- `SITE_ADDR` - address that the site should run, like `0.0.0.0:3000`
+- `SWAGER_HOST` - swagger 显示的地址，如 `192.168.12.12` 或 `answer.apache.org`
+- `SWAGER_ADDRES_PORT` - swagger 展示端口，如 `:3000`
+- `SITE_ADDR` - 站点运行的地址，如 `0.0.0.0:3000`
 
 ## 日志
 
