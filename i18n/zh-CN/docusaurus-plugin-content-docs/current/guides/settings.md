@@ -2,6 +2,6 @@
 slug: /settings
 ---
 
-# Settings
+# 设置
 
 TODO
