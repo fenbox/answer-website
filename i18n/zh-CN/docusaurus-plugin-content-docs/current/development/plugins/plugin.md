@@ -45,7 +45,7 @@ slug: /development/plugins
 
 :::info
 
-The **name** field in package.json is the name of the package we add dependencies to; do not use `_` to connect this field naming, please use `-`; for example:
+Package.json 中的 **name** 字段是我们添加依赖关系到的包名称，不使用 "_" 连接此字段命名，请使用 "-"；例如:
 
 "editor-chart" ✅\
 "editor_chart" ❌
@@ -190,7 +190,7 @@ type Connector interface {
 
 ### 实施配置接口
 
-For details on the description of each configuration item, please refer to [the documentation](/docs/development/plugins/plugin-config).
+关于每个配置项的详细描述，请参阅 [文档](/docs/development/plugin-config)。
 
 ```go
 type Config interface {
@@ -207,7 +207,7 @@ type Config interface {
 }
 ```
 
-### Register initialization function
+### 注册初始化函数
 
 ```go
 import "github.com/apache/incubator-answer/plugin"
@@ -294,7 +294,7 @@ author:
 
 ### 如何开发内置插件
 
-1. **熟悉目录结构** Go to the `ui/src/plugins/builtin` directory and create a directory, such as Demo. Then refer to the existing plugins to create the necessary files to start development.
+1. **熟悉目录结构** 进入 `ui/src/plugins` 目录并创建一个 React 组件，例如 Demo。 然后参考现有的插件来创建启动开发的必要文件。
 
 ```txt
 // ui/src/plugins/builtin
@@ -310,7 +310,7 @@ author:
       ├── services.ts (api)
 ```
 
-2. Export the plugins you have just defined in the plugins list file `plugins/builtin/index.ts`
+2. 导出您刚刚在插件列表文件 `plugins/builtin/index.ts` 中定义的插件
 
 ```ts
 import Demo from './Demo'
