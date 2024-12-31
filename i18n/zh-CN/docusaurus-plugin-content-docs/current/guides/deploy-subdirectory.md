@@ -19,13 +19,13 @@ Apache Answer 从1.3.5 版本开始支持以子目录的方式部署。 此配�
 1. 修改配置文件 `/configs/config.yaml` inchive.
 2. 运行命令 `make ui` `make build` 来构建项目。
 3. 运行命令 `INSTALL_PORT=80。 /answer init -C . /answer-data/` 来初始化项目, 注意你需要添加你的 base_url (http://localhost:80/{base_url}/install/) 来尝试访问你的路径以查看配置是否设置成功。
-4. Packaging into docker or releasing the above binary directly, see [here](/docs/plugins#build)
+4. 将其打包进 docker 或者直接运行上述的二进制, 可以参照 [这里](/docs/plugins#build)
 
 ### 配置文件介绍
 
-In order to unify the management of configuration-related variables, starting from v1.3.5, the environment variables in the ui directory are unified into `/configs/config.yaml` in the root directory, and the configurations here will be generated into `/ui/.env.production` by scripts, so as to realize the injection of environment variables.
+为了统一配置相关变量的管理，从 v1.3.5 开始，ui 目录中的环境变量被并入`/configs/config.yaml` 和这里的配置将由脚本生成到 `/ui/.env.production` ，以便实现环境变量注入。
 
-Note: This only affects variables in the production environment, for development mode please continue to refer [here](/docs/development). For more information on configuration files, please refer to [here](/docs/configfile).
+注意：这只会影响生产环境中的变量，因为开发模式请继续参考 [here](/docs/development)。 关于配置文件的更多信息，请参阅 [here](/docs/configfile)。
 
 ```
 ...
@@ -38,9 +38,9 @@ ui:
 
 ### base_url
 
-子目录的路径. The default value is `''`, which means it is deployed in the root directory. If the value is modified, for example ` base_url: '/foo''`, all access paths of the page will be added with this prefix.
+子目录的路径. 默认值是 `''`, 代表部署在根目录。 如果值被修改，例如将其修改为 `base_url: '/foo'`，页面的所有访问路径都将被添加到此前缀。
 
-Normally, if this value is modified, `public_url` should also remain consistent.
+通常情况下，如果此值被修改，`public_url` 也应该保持一致。
 
 ### public_url
 
