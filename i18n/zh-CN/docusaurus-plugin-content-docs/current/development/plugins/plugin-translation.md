@@ -76,14 +76,14 @@ plugin:
         description: Login with GitHub
 ```
 
-- The `plugin` is the root key of the translation file.
+- `plugin` 是翻译文件的根节点。
 - `github_connector` 是插件的名称。
-- `backend` 是后端的翻译。 The end of key like `other` is just for [go-i18n](https://github.com/nicksnyder/go-i18n) to recognize the translation file.
+- `backend` 是后端的翻译。 像 `other` 这样的密钥的末尾只是为了 [go-i18n](https://github.com/nicksnyder/go-i18n) 来识别翻译文件。
 - `ui` 是前端的翻译。
 
-You can use the key like `plugin.github_connector.backend.name` or `plugin.github_connector.ui.login.title` for translation.
+你可以使用类似于 `plugin.github_connector.backend.name` 或 `plugin.github_connector.ui.login.title` 的键进行翻译。
 
-Create a `i18n.go` file in the root directory of your plugin, and then add the following code:
+在插件的根目录中创建一个 `i18n.go` 文件，然后添加以下代码：
 
 ```go
 package i18n
@@ -99,7 +99,7 @@ const (
 )
 ```
 
-The `i18n.go` file is used to store the key of the translation file.
+`i18n.go` 文件用于存储翻译文件的键值。
 
 Finally, the directory structure of the plugin is as follows:
 
