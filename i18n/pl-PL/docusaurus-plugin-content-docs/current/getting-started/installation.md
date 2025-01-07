@@ -23,10 +23,10 @@ Jeśli używasz [Docker Desktop](https://www.docker.com/products/docker-desktop)
 :::  
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/apache/incubator-answer/main/docker-compose.yaml | docker compose -p answer -f - up
+curl -fsSL https://raw.githubusercontent.com/apache/answer/main/docker-compose.yaml | docker compose -p answer -f - up
 ```
 
-Domyślny port dla Apache Answer to `9080`. Można uzyskać dostęp do Answer wpisując a http://localhost:9080.
+The default port for Apache Answer is `9080`. Można uzyskać dostęp do Answer wpisując a http://localhost:9080.
 
   </TabItem>
   <TabItem value="docker" label="Docker">
@@ -48,7 +48,7 @@ Jeśli nie masz dostępu do strony instalacji, możesz użyć polecenia `docker 
   </TabItem>
   <TabItem value="binary" label="Binary">
 
-Tak jak projekt golang, Apache Answer może zostać skompilowany do pliku binarnego. Możesz pobrać plik binarny pasujący do systemu operacyjnego z [release page](https://github.com/apache/incubator-answer/releases).
+Tak jak projekt golang, Apache Answer może zostać skompilowany do pliku binarnego. You can download the binary file that matches your operating system from the [release page](https://github.com/apache/answer/releases).
 
 ```bash
 INSTALL_PORT=80 ./answer init -C ./answer-data/
