@@ -27,7 +27,7 @@ In this blog, we’ll guide you through the process of packing your Answer plugi
 2. editor-formula
 3. embed-basic (该插件 1.3.5版本后才有）
 
-更改的[commit id](https://github.com/apache/incubator-answer-plugins/commit/e224fee9b8a0b936e143e852050d9345aa249201), 需要将对应的插件的 `package.json` 文件中的插件名称的 '-' 替换成 '_'， 例如：
+更改的[commit id](https://github.com/apache/answer-plugins/commit/e224fee9b8a0b936e143e852050d9345aa249201), 需要将对应的插件的 `package.json` 文件中的插件名称的 '-' 替换成 '_'， 例如：
 ![image.png](01.webp) In its package.json files, the hyphens (-) in the plugin name with underscores (\_). For instance:
 ![image.png](01.webp)
 
@@ -53,10 +53,10 @@ Please keep local code up-to-date. The steps are as below:
 ### 1.添加所需插件
 
 ```
-github.com/apache/incubator-answer-plugins/connector-basic@latest
-github.com/apache/incubator-answer-plugins/reviewer-basic@latest
-github.com/apache/incubator-answer-plugins/captcha-basic@latest
-github.com/apache/incubator-answer-plugins/editor-formula@latest
+github.com/apache/answer-plugins/connector-basic@latest
+github.com/apache/answer-plugins/reviewer-basic@latest
+github.com/apache/answer-plugins/captcha-basic@latest
+github.com/apache/answer-plugins/editor-formula@latest
 
 ```
 
@@ -76,11 +76,11 @@ docker run -d -p 9080:80 -v answer-data:/data --name answer101 answer-plugin
 
 After initialization, log in to the admin panel and see if the plugin runs correctly.
 
-管理后台
-![installed plugins](installed-plugins.webp)
-
 激活插件：
 ![active a plugin](active-plugin.webp)
+
+管理后台
+![installed plugins](installed-plugins.webp)
 
 确认对应插件（editor-formula）的是否正确运行：
 ![confirm formula plugin result](formula-res.webp)
@@ -92,7 +92,7 @@ After initialization, log in to the admin panel and see if the plugin runs corre
 ### Steps
 
 1. 构建基础二进制文件
-2. 部署该二进制
+2. 二：构建包含插件的二进制
 3. Verify
 4. Deploy
 
@@ -120,24 +120,24 @@ If you encounter errors related to Go dependency installation, you can try runni
 
 ```
 # answer build --with [plugin@plugin_version=[replacement]] --output [file]
-$ ./answer build --with github.com/apache/incubator-answer-plugins/connector-github
+$ ./answer build --with github.com/apache/answer-plugins/connector-github
 
 # build a new answer with github login plugin then output to ./new_answer.
-$ ./answer build --with github.com/apache/incubator-answer-plugins/connector-github@1.0.0 --output ./new_answer
+$ ./answer build --with github.com/apache/answer-plugins/connector-github@1.0.0 --output ./new_answer
 
 # with multiple plugins
 $ ./answer build \
---with github.com/apache/incubator-answer-plugins/connector-github \
---with github.com/apache/incubator-answer-plugins/connector-google
+--with github.com/apache/answer-plugins/connector-github \
+--with github.com/apache/answer-plugins/connector-google
 
 # with local plugins
-$ ./answer build --with github.com/apache/incubator-answer-plugins/connector-github@1.0.0=/my-local-space
+$ ./answer build --with github.com/apache/answer-plugins/connector-github@1.0.0=/my-local-space
 
 # cross compilation. Build a linux-amd64 binary in macos
-$ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 ./answer build --with github.com/apache/incubator-answer-plugins/connector-github
+$ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 ./answer build --with github.com/apache/answer-plugins/connector-github
 
 # specify the answer version using ANSWER_MODULE environment variable
-$ ANSWER_MODULE=github.com/apache/incubator-answer@v1.2.0-RC1 ./answer build --with github.com/apache/incubator-answer-plugins/connector-github
+$ ANSWER_MODULE=github.com/apache/answer@v1.2.0-RC1 ./answer build --with github.com/apache/answer-plugins/connector-github
 ```
 
 You can choose the required plugins according to the instructions in the documentation. Compiling plugins will rebuild the front-end static resources. Plugins may have special dependencies, so dependency installation and compilation will be performed again here. After successful compilation, the `new_answer` binary file will be generated in the dist directory.
@@ -147,7 +147,7 @@ eg:
 
 #### 2.1.打包单个插件
 
-`./answer build --with github.com/apache/incubator-answer-plugins/connector-github`
+`./answer build --with github.com/apache/answer-plugins/connector-github`
 
 效果：
 ![build progress](2.1.1.webp)
@@ -164,7 +164,7 @@ eg:
 
 如果需要调整插件的一些信息或者使用自己实现的私有插件来构建，需要使用 `with local plugins` 命令来构建，比如上面提到的 `editor-formula` 插件，并且使用的 Answer 代码版本是小于 1.3.5 的，所以需要调整插件的一些信息，这种情况就需要使用该命令来完成构建。 在最近的的社区反馈中，部分用户反馈在使用 Answer 插件的过程中，不知道如何将插件打包进入 Answer 系统中，[Answer 插件构建文档](https://answer.apache.org/docs/plugins/)中也没有提示正确结果的示例，所以对于一些非专业的开发者造成了一些困扰，所以本篇将作为一个详细教程，来手把手教会你正确打包 Answer 插件。 In this case, you can use the following command to build the plugin:
 
-`./answer build --with github.com/apache/incubator-answer-plugins/editor-formula@0.0.3=/Users/shuai/answer/plugins/editor-formula`
+`./answer build --with github.com/apache/answer-plugins/editor-formula@0.0.3=/Users/shuai/answer/plugins/editor-formula`
 
 结果：
 ![build progress](2.2.1.webp)
