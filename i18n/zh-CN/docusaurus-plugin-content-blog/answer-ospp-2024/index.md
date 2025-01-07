@@ -1,6 +1,6 @@
 ---
 date: 2024-05-09
-title: 深度参与到 Apache Answer 项目中，丰富项目实践经验
+title: Apache Answer 项目
 authors:
   - Anne
 category: Community
@@ -17,13 +17,13 @@ The Open Source Promotion Program (OSPP), initiated by the the Institute of Soft
 
 We made our debut and announced [2 projects](https://summer-ospp.ac.cn/org/orgdetail/6a467fc2-8a16-486d-9d85-ad7ebdf9fd4b?lang=en) for students all over the world! We want to invite students worldwide to apply our projects, and dive into the open-source world with us.
 
-## Hi! Apache Answer 项目
+## Hi! 关于 Apache Answer 社区
 
 Apache Answer 是一款问答社区软件，由中国领先的技术问答社区 SegmentFault 思否开发并开源。项目于 2022 年 10 月上线并开源，并于 2023 年进入 Apache 软件基金孵化器。目前，我们收获了 400+ PR，60k+ 下载量，平均每月一次发版，并构建起了一个小型的活跃社区。今年 1 月，我们在 GitHub 上解锁了 10k+ Stars，你可以通过[视频](https://www.bilibili.com/video/BV1KT421171S/)了解了解更多关于社区和项目相关的内容。 Launched in October 2022, entered Apache Software Foundation in 2023, Apache Answer has received over 400 PRs, 60,000+ downloads, and carried an average monthly release. In January 2024, we’ve achieved 10,000 GitHub Stars.
 
 Find out more about us with the links below:\
 [Homepage](https://answer.apache.org/)\
-[GitHub](https://github.com/apache/incubator-answer)\
+[GitHub](https://github.com/apache/answer)\
 [Blog: Why Open Source Matters to Answer](https://answer.apache.org/blog/why-open-source-is-the-essence-of-answer)
 
 ## Our Projects for OSPP 2024
@@ -50,7 +50,7 @@ We strike to build easy-to-start and good-to-go Q&A platform software for every 
 [立即申请](https://summer-ospp.ac.cn/org/prodetail/246a40172?list=org\&navpage=org) and integrate it into Apache Answer with plugin to allow users log in and bind accounts, receive notification reminders from Answer, and directly `ask` questions through `keywords/ask` and search content through keywords/search. etc,. There’s no need for users to leave current workflow to ask or answer a question.\
 学生可通过[活动官网](https://summer-ospp.ac.cn/)首页的学生登录入口注册学生账号、登录系统，并按活动要求填写提交个人资料，资料经组委会审核通过即报名成功。你也可以阅读[学生指南](https://summer-ospp.ac.cn/help/student/)，更好地了解活动流程和其他注意事项。
 
-If you are interested or having questions about the project, we encourage you to reach out to the mentor directly via email. We are more than happy to address your inquiries and provide assistance. 对项目感兴趣或者有疑问的同学，我们鼓励你通过导师邮箱，与导师及时联系沟通，我们非常乐意解答和帮助你。我们非常欢迎你浏览我们的 [GitHub](https://github.com/apache/incubator-answer) 库和[官方文档](https://answer.apache.org/docs)，这会帮助你更好地了解产品。
+If you are interested or having questions about the project, we encourage you to reach out to the mentor directly via email. We are more than happy to address your inquiries and provide assistance. 对项目感兴趣或者有疑问的同学，我们鼓励你通过导师邮箱，与导师及时联系沟通，我们非常乐意解答和帮助你。我们非常欢迎你浏览我们的 [GitHub](https://github.com/apache/answer) 库和[官方文档](https://answer.apache.org/docs)，这会帮助你更好地了解产品。
 
 ## What You Can Get
 
@@ -76,5 +76,5 @@ Upon successful registration, you can choose the projects and communicate with t
 [Apache Answer 项目页面](https://summer-ospp.ac.cn/org/orgdetail/6a467fc2-8a16-486d-9d85-ad7ebdf9fd4b?lang=zh)\
 [Apache Answer 官方网站](https://answer.apache.org/)
 [官方文档](https://answer.apache.org/docs)
-[GitHub 库](https://github.com/apache/incubator-answer)\
+[GitHub 库](https://github.com/apache/answer)\
 [为 Apache Answer 做贡献](https://answer.apache.org/community/contributing)
