@@ -8,7 +8,7 @@ Plugins are a way to extend the functionality of the Answer project. You can cre
 
 :::tip
 
-Viewing the [**official plugin code**](https://github.com/apache/incubator-answer-plugins) will make you to quickly understand and learn plugin development.
+Viewing the [**official plugin code**](https://github.com/apache/answer-plugins) will make you to quickly understand and learn plugin development.
 
 :::
 
@@ -72,17 +72,17 @@ npx create-answer-plugin <pluginName>
 
    ```go
    import (
-     answercmd "github.com/apache/incubator-answer/cmd"
+     answercmd "github.com/apache/answer/cmd"
 
      // Import the plugins
-     _ "github.com/apache/incubator-answer-plugins/my-plugin"
+     _ "github.com/apache/answer-plugins/my-plugin"
    )
    ```
 
 3. Use `go mod edit` to add the plugin to the `go.mod` file.
 
    ```shell
-   go mod edit -replace=github.com/apache/incubator-answer-plugins/my-plugin=./ui/src/plugins/my-plugin
+   go mod edit -replace=github.com/apache/answer-plugins/my-plugin=./ui/src/plugins/my-plugin
    ```
 
 4. Update the dependencies.
@@ -210,7 +210,7 @@ type Config interface {
 ### Register initialization function
 
 ```go
-import "github.com/apache/incubator-answer/plugin"
+import "github.com/apache/answer/plugin"
 
 func init() {
     plugin.Register(&GitHubConnector{
@@ -256,7 +256,7 @@ Currently the front end supports the following types of plugins:
 
 ### Editor plugin
 
-Refer to [editor-chart](https://github.com/apache/incubator-answer-plugins/tree/main/editor-chart) for details.
+Refer to [editor-chart](https://github.com/apache/answer-plugins/tree/main/editor-chart) for details.
 
 ### Route plugin
 
@@ -289,7 +289,7 @@ export default {
 
 ### Captcha plugin
 
-Refer to [captcha-basic](https://github.com/apache/incubator-answer-plugins/tree/main/captcha-basic) for details.
+Refer to [captcha-basic](https://github.com/apache/answer-plugins/tree/main/captcha-basic) for details.
 
 ## Builtin plugin Development
 
