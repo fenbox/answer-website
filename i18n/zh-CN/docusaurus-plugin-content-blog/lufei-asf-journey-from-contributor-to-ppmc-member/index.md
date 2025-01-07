@@ -20,9 +20,9 @@ We invite Lu Fei to share his journey with Apache Answer and we hope that his st
 
 I actually had a chance to join the SegmentFault team before Answer was even open-sourced, but things didn't work out. Looking back, I kind of kicked myself for missing out on this opportunity!
 
-On October 24th 2022, Answer was launched and open sourced. When I saw that news, I jumped right in and checked on the repo. Then, I submitted my first [PR](https://github.com/apache/incubator-answer/pull/2): `doc: update install`. Answer is built with Go and Node.js while I’m a more of a PHP person, so I was swaying away from it.
+On October 24th 2022, Answer was launched and open sourced. When I saw that news, I jumped right in and checked on the repo. Then, I submitted my first [PR](https://github.com/apache/answer/pull/2): `doc: update install`. Answer is built with Go and Node.js while I’m a more of a PHP person, so I was swaying away from it.
 
-The following year, Answer passed the vote and joined the ASF incubator. 次年，恰逢开源一周年，Answer 社区发布公告宣布项目已顺利通过投票，正式进入 Apache 软件基金会（ASF）孵化器，而我在这个时候也提交了我的第二个 [PR](https://github.com/apache/incubator-answer/pull/577): `fix: typo`。
+The following year, Answer passed the vote and joined the ASF incubator. My second [PR](https://github.com/apache/answer/pull/577): `fix: typo` was submitted by that time.
 
 ![Answer Enters Incubator](ASF.png)
 
@@ -68,7 +68,7 @@ Just a week later, on July 8th, I was added to the Apache Answer Committer list.
 
 ## From Committer to PPMC Member
 
-Becoming a Committer made me even more invested in Apache Answer. Beyond active participation in mailing lists and voting on releases, I started diving into issues, tackling bug fixes and feature enhancements. 除此之外，我也参考了其他 Apache Answer 的插件，[提交新的插件](https://github.com/apache/incubator-answer-plugins/pulls?q=is%3Apr+author%3Asy-records+is%3Aclosed)，丰富插件市场：[腾讯云对象存储 COS](https://github.com/apache/incubator-answer-plugins/tree/main/storage-tencentyuncos)、[钉钉通知](https://github.com/apache/incubator-answer-plugins/tree/main/notification-dingtalk)和[百度内容审核插件](https://github.com/apache/incubator-answer-plugins/tree/main/reviewer-baidu)。
+Becoming a Committer made me even more invested in Apache Answer. Beyond active participation in mailing lists and voting on releases, I started diving into issues, tackling bug fixes and feature enhancements. 除此之外，我也参考了其他 Apache Answer 的插件，[提交新的插件](https://github.com/apache/answer-plugins/pulls?q=is%3Apr+author%3Asy-records+is%3Aclosed)，丰富插件市场：[腾讯云对象存储 COS](https://github.com/apache/answer-plugins/tree/main/storage-tencentyuncos)、[钉钉通知](https://github.com/apache/answer-plugins/tree/main/notification-dingtalk)和[百度内容审核插件](https://github.com/apache/answer-plugins/tree/main/reviewer-baidu)。
 
 Being nominated for PPMC was both exciting and humbling. As a PPMC member, I’ll be working closely with the community to guide the project's direction, ensure we're following the Apache Way, and attract more developers. It's a big responsibility, but I'm thrilled to be a part of it.
 
