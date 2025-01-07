@@ -8,7 +8,7 @@ slug: /development/plugins
 
 :::tip
 
-查看[**官方插件代码**](https://github.com/apache/incubator-answer-plugins)将使您能够快速理解和学习插件开发。
+Viewing the [**official plugin code**](https://github.com/apache/answer-plugins) will make you to quickly understand and learn plugin development.
 
 :::
 
@@ -72,17 +72,17 @@ npx create-answer-plugin <pluginName>
 
    ```go
    import (
-     answercmd "github.com/apache/incubator-answer/cmd"
+     answercmd "github.com/apache/answer/cmd"
 
      // Import the plugins
-     _ "github.com/apache/incubator-answer/ui/src/plugins/my-plugin"
+     _ "github.com/apache/answer/ui/src/plugins/my-plugin"
    )
    ```
 
 3. 使用 `go mod edit` 将插件添加到 "go.mod" 文件。
 
    ```shell
-   go mod edit -replace=github.com/apache/incubator-answer/ui/src/plugins/my-plugin=../ui/src/plugins/my-plugin
+   go mod edit -replace=github.com/apache/answer/ui/src/plugins/my-plugin=../ui/src/plugins/my-plugin
    ```
 
 4. 更新依赖项
@@ -210,7 +210,7 @@ type Config interface {
 ### 注册初始化函数
 
 ```go
-import "github.com/apache/incubator-answer/plugin"
+import "github.com/apache/answer/plugin"
 
 func init() {
     plugin.Register(&GitHubConnector{
@@ -256,7 +256,7 @@ export default {
 
 ### 编辑器插件
 
-请参阅 [editor-chart](https://github.com/apache/incubator-answer-plugins/tree/main/editor-chart) 了解详情。
+Refer to [editor-chart](https://github.com/apache/answer-plugins/tree/main/editor-chart) for details.
 
 ### 路由插件
 
@@ -282,7 +282,7 @@ author:
 
 ### 验证码插件（Captcha plugin）
 
-请参阅 [editor-chart](https://github.com/apache/incubator-answer-plugins/tree/main/captcha-basic) 了解详情。
+Refer to [captcha-basic](https://github.com/apache/answer-plugins/tree/main/captcha-basic) for details.
 
 ## 内置插件开发
 
