@@ -9,7 +9,7 @@ image: 2024-02-20-cover@4x.png
 description: "Answer supports dark mode and plugin notification. UI improvement and reputation system customization are also joining the lift. "
 ---
 
-Spring is coming, and our monthly update is finally here! In this update, you’ll enjoy the coming community nights with Dark Mode, and manage third-party plugins' notification. There are new changes for better using and management experience, and we’re glad that they are ready for the stage. Check out [what’s new in Answer V1.2.5](https://github.com/apache/incubator-answer/releases/tag/v1.2.5) and the tutorials in this blog.
+Spring is coming, and our monthly update is finally here! In this update, you’ll enjoy the coming community nights with Dark Mode, and manage third-party plugins' notification. There are new changes for better using and management experience, and we’re glad that they are ready for the stage. Check out [what’s new in Answer V1.2.5](https://github.com/apache/answer/releases/tag/v1.2.5) and the tutorials in this blog.
 
 ## Turn the Dark Mode On
 
@@ -68,4 +68,4 @@ Raise your glass to [hgaol](https://github.com/hgaol), [sy-records](https://gith
 
 ## We’d love to hear from you
 
-What do you think of the releases? Anything you think it should be added to the roadmap?  What does your Answer look like? We’d love to hear from you about this release or anything else on your mind. Hit us on [X](https://twitter.com/answerdev), [Discord](https://discord.gg/a6PZZbfnFx), [GitHub](https://github.com/apache/incubator-answer), [Meta Answer](https://meta.answer.dev/), or the [mailing list](https://answer.apache.org/community/support).
+What do you think of the releases? Anything you think it should be added to the roadmap?  What does your Answer look like? We’d love to hear from you about this release or anything else on your mind. Hit us on [X](https://twitter.com/answerdev), [Discord](https://discord.gg/a6PZZbfnFx), [GitHub](https://github.com/apache/answer), [Meta Answer](https://meta.answer.dev/), or the [mailing list](https://answer.apache.org/community/support).
