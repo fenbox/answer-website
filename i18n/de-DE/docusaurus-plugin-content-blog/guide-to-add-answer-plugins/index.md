@@ -15,7 +15,7 @@ Plugins are like a set of building blocks that you can freely combine to create 
 
 ## Download Plugins
 
-1. Click [here](https://github.com/apache/incubator-answer-plugins/tree/main) to download the desired plugin from the official Apache Answer plugin repository.
+1. Click [here](https://github.com/apache/answer-plugins/tree/main) to download the desired plugin from the official Apache Answer plugin repository.
 2. Place the Plugin: Move the downloaded plugin files into the `./ui/src/plugins` directory of your project.
 3. Plugin Type Reference: https://answer.apache.org/docs/development/plugins
 
@@ -40,9 +40,9 @@ _Important: The folder should be named "plugins," not "plugin."_
 
 ```
 import (
-    answercmd "github.com/apache/incubator-answer/cmd"
+    answercmd "github.com/apache/answer/cmd"
     // Import the plugins
-    _ "github.com/apache/incubator-answer-plugins/my-plugin"
+    _ "github.com/apache/answer-plugins/my-plugin"
 )
 ```
 
@@ -52,13 +52,13 @@ The image below shows examples with the editor-chart, editor-formula, and embed-
 3. Update go.mod: Navigate back to the project root directory by running `cd ..`. Use `go mod edit` to add the plugin to the go.mod file:
 
 ```
-go mod edit -replace=github.com/apache/incubator-answer-plugins/my-plugin=./ui/src/plugins/my-plugin
+go mod edit -replace=github.com/apache/answer-plugins/my-plugin=./ui/src/plugins/my-plugin
 ```
 
 Note: Windows users need to use double quotes, as shown below:
 
 ```
-go mod edit -replace="github.com/apache/incubator-answer-plugins/my-plugin"="./ui/src/plugins/my-plugin"
+go mod edit -replace="github.com/apache/answer-plugins/my-plugin"="./ui/src/plugins/my-plugin"
 ```
 
 Example with the editor-chart, editor-formula, and embed-basic plugins.
