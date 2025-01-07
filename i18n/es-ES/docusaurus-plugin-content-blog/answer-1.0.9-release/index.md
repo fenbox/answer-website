@@ -22,4 +22,4 @@ Fijar y Deslistar ayuda a diseñar tu propia comunidad de conocimiento, mientras
 Hemos hecho algunos ajustes para cambiar los problemas de visualización de etiquetas, la caja de comentarios y preguntas eliminadas tediosas. También hemos eliminado ambigüedades contextuales con una traducción optimizada.
 
 
-Te recomendamos fuertemente construir y gestionar una plataforma de Q&A [Answer v1.0.9](https://github.com/apache/incubator-answer/releases/tag/v1.0.9). Siempre serás bienvenido a contribuir con tus ideas (sugerencias, o encontrar fallos) en [https://meta.answer.dev/](https://meta.answer.dev/). Entonces... ¿Cuál será el primer fijado?
+We strongly recommend you to build and manage a Q&A platform [Answer v1.0.9](https://github.com/apache/answer/releases/tag/v1.0.9). Siempre serás bienvenido a contribuir con tus ideas (sugerencias, o encontrar fallos) en [https://meta.answer.dev/](https://meta.answer.dev/). Entonces... ¿Cuál será el primer fijado?
