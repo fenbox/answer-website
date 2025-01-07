@@ -22,4 +22,4 @@ description: 深入了解如何利用 Answer v1.0.9 有效地管理问题。
 我们做了一些调整来修复标签显示问题、评论表单和难以删除的问题， 我们还通过优化翻译消除了上下文歧义。
 
 
-我们强烈推荐您构建并管理一个 Q&A 平台 —— Answer v1.0.9。 非常欢迎您在 https://meta.answer.dev/ 上提出您的想法（比如新的功能需求或是寻找 bug）。 那么，您会首先置顶哪个问题呢？
+We strongly recommend you to build and manage a Q&A platform [Answer v1.0.9](https://github.com/apache/answer/releases/tag/v1.0.9). You are always welcome to contribute your ideas (feature requests, or hunt a but) in [https://meta.answer.dev/](https://meta.answer.dev/). So what will you pin first? 非常欢迎您在 https://meta.answer.dev/ 上提出您的想法（比如新的功能需求或是寻找 bug）。 那么，您会首先置顶哪个问题呢？
