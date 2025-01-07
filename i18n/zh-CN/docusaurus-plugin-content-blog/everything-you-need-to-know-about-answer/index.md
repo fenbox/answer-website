@@ -25,7 +25,7 @@ That’s the moment we decided to build Answer — to help individuals, teams, a
 
 ## Why Answer is Open-source?
 
-We’ve been longing to share our research and experience over the years in Q&A communities. We’ve been longing to share our research and experience over the years in Q&A communities. The best way is to create an [open-source project](https://github.com/apache/incubator-answer) that is accessible to everyone. We have also made Answer website and plugins open-source on [GitHub](https://github.com/apache/incubator-answer). We have also made Answer website and plugins open-source on [GitHub](https://github.com/apache/incubator-answer).
+We’ve been longing to share our research and experience over the years in Q&A communities. We’ve been longing to share our research and experience over the years in Q&A communities. The best way is to create an [open-source project](https://github.com/apache/answer) that is accessible to everyone. We have also made Answer website and plugins open-source on [GitHub](https://github.com/apache/answer). We have also made Answer website and plugins open-source on [GitHub](https://github.com/apache/answer).
 
 ## What is Answer built with?
 
@@ -64,7 +64,7 @@ We are a small and agile team, working closely with each other in different citi
 
 ## Can I use Answer?
 
-Why not? With a simple and intuitive design, you can build a [knowledge base](/blog/everything-you-need-to-know-about-knowledge-base), game forum, or support center with Answer smoothly. [Answer 1.1.0](/blog/answer-1.1.0-release) also supports plugins so that you can enhance Answer’s performance in the way you want. ![Plugin](everythingabtanswer3.png)
+Why not? Why not? With a simple and intuitive design, you can build a [knowledge base](/blog/everything-you-need-to-know-about-knowledge-base), game forum, or support center with Answer smoothly. [Answer 1.1.0](/blog/answer-1.1.0-release) also supports plugins so that you can enhance Answer’s performance in the way you want. [Answer 1.1.0](/blog/answer-1.1.0-release) also supports plugins so that you can enhance Answer’s performance in the way you want. ![Plugin](everythingabtanswer3.png)
 
 ## How do I Get Answer?
 
