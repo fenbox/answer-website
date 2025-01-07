@@ -15,7 +15,7 @@ To back up data means that you have the option to roll back even if the upgrade 
 
 :::
 
-<Tabs>
+<Tabs queryString="method">
   <TabItem value="docker-compose" label="Docker Compose" default>
 
 If you use docker-compose to install answer, it is very easy to upgrade.
@@ -43,7 +43,7 @@ docker run -d -p 9080:80 -v answer-data:/data --name answer apache/answer:latest
 
 Wenn du eine binäre Installation von Answer verwendest, sind die Upgrade-Schritte wie folgt.
 
-1. Lade die [neueste Binärversion](https://github.com/apache/incubator-answer/releases) für dein System herunter.
+1. Download the [latest binary version](https://github.com/apache/answer/releases) for your system.
 2. Stop old version
 3. Führe den Upgrade-Befehl `./answer upgrade -C ./answer-data/`
 4 aus. Führe die neueste Version `./answer run -C ./answer-data/` aus.
