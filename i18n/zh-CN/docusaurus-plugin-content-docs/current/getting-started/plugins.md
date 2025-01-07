@@ -14,7 +14,7 @@ slug: /plugins
 
 ### 官方插件
 
-你可以在[这里](https://github.com/apache/incubator-answer-plugins)找到 Apache Answer 官方支持的插件列表。
+你可以在[这里](https://github.com/apache/answer-plugins)找到 Apache Answer 官方支持的插件列表。
 
 ## 构建
 
@@ -43,22 +43,22 @@ Apache Answer 的二进制文件支持将不同的所需插件打包到二进制
 
 ```shell
 # 构建包含 GitHub 连接器插件的 Answer
-$ ./answer build --with github.com/apache/incubator-answer-plugins/connector-github
+$ ./answer build --with github.com/apache/answer-plugins/connector-github
 ```
 
 你还可以指定插件版本：
 
 ```shell
 # 构建包含 GitHub 连接器插件版本 1.0.0 的 Answer
-$ ./answer build --with github.com/apache/incubator-answer-plugins/connector-github@1.0.0 --output ./new_answer
+$ ./answer build --with github.com/apache/answer-plugins/connector-github@1.0.0 --output ./new_answer
 ```
 
 你可以同时使用多个插件：
 
 ```shell
 $ ./answer build \
---with github.com/apache/incubator-answer-plugins/connector-github \
---with github.com/apache/incubator-answer-plugins/connector-google
+--with github.com/apache/answer-plugins/connector-github \
+--with github.com/apache/answer-plugins/connector-google
 ```
 
 #### 使用本地插件
@@ -66,7 +66,7 @@ $ ./answer build \
 如果你需要使用本地插件，可以使用以下命令：
 
 ```shell
-$ ./answer build --with github.com/apache/incubator-answer-plugins/connector-github@1.0.0=/my-local-space
+$ ./answer build --with github.com/apache/answer-plugins/connector-github@1.0.0=/my-local-space
 ```
 
 #### 交叉编译
@@ -74,7 +74,7 @@ $ ./answer build --with github.com/apache/incubator-answer-plugins/connector-git
 你可以使用以下命令在 macOS 上构建 Linux-amd64 二进制文件：
 
 ```shell
-$ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 ./answer build --with github.com/apache/incubator-answer-plugins/connector-github
+$ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 ./answer build --with github.com/apache/answer-plugins/connector-github
 ```
 
 #### 指定 Answer 版本
@@ -82,7 +82,7 @@ $ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 ./answer build --with github.com/apache/
 你可以使用 `ANSWER_MODULE` 环境变量来指定 Answer 版本：
 
 ```shell
-$ ANSWER_MODULE=github.com/apache/incubator-answer@v1.2.0-RC1 ./answer build --with github.com/apache/incubator-answer-plugins/connector-github
+$ ANSWER_MODULE=github.com/apache/answer@v1.2.0-RC1 ./answer build --with github.com/apache/answer-plugins/connector-github
 ```
 
 :::tip
@@ -115,9 +115,9 @@ RUN apk --no-cache add \
     npm install -g pnpm@8.9.2
 
 RUN answer build \
-    --with github.com/apache/incubator-answer-plugins/connector-basic \
-    --with github.com/apache/incubator-answer-plugins/storage-s3 \
-    --with github.com/apache/incubator-answer-plugins/search-elasticsearch \
+    --with github.com/apache/answer-plugins/connector-basic \
+    --with github.com/apache/answer-plugins/storage-s3 \
+    --with github.com/apache/answer-plugins/search-elasticsearch \
     --output /usr/bin/new_answer
 
 FROM alpine
@@ -165,10 +165,10 @@ $ docker run -d -p 9080:80 -v answer-data:/data --name answer answer-with-plugin
 2. **添加所需插件**：将你需要的插件仓库添加到根目录的 `/script/plugin_list` 文件中，每行一个。
 
 ```
-github.com/apache/incubator-answer-plugins/connector-basic@latest  
-github.com/apache/incubator-answer-plugins/reviewer-basic@latest  
-github.com/apache/incubator-answer-plugins/captcha-basic@latest  
-github.com/apache/incubator-answer-plugins/editor_formula@latest
+github.com/apache/answer-plugins/connector-basic@latest  
+github.com/apache/answer-plugins/reviewer-basic@latest  
+github.com/apache/answer-plugins/captcha-basic@latest  
+github.com/apache/answer-plugins/editor_formula@latest
 ```
 
 3. **构建 Docker 镜像**：运行 `docker build -t <name[:tag]> . ` 命令开始构建镜像。
@@ -194,7 +194,7 @@ github.com/apache/incubator-answer-plugins/editor_formula@latest
 
 :::tip
 
-我们推荐使用[官方插件](https://github.com/apache/incubator-answer-plugins)。 如果你想使用第三方插件，请参考以下内容。
+我们推荐使用[官方插件](https://github.com/apache/answer-plugins)。如果你想使用第三方插件，请参考以下内容。 如果你想使用第三方插件，请参考以下内容。
 
 :::
 
@@ -207,4 +207,4 @@ github.com/apache/incubator-answer-plugins/editor_formula@latest
 
 ## 设计与原理
 
-因为 Go 是静态语言，因此没有友好的插件机制。 我们不得不采用重新编译的方式来进行部署，而非动态方式部署。 详情请参考[博客](/blog/2023/07/22/why-the-answer-plugin-system-was-designed-this-way)。
+由于 Go 是静态语言，没有友好的插件机制。我们采用重新编译的方式来进行部署，而非动态方式。详情请参考[博客](/blog/why-the-answer-plugin-system-was-designed-this-way)。 我们不得不采用重新编译的方式来进行部署，而非动态方式部署。 Please refer to [the blog](/blog/why-the-answer-plugin-system-was-designed-this-way) for details.
