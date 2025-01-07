@@ -30,7 +30,7 @@ type ConfigField struct {
 
 ```go
 import (
-    "github.com/apache/incubator-answer/plugin"
+    "github.com/apache/answer/plugin"
 )
 
 plugin.MakeTranslator("plugin.github_connector.backend.name")
@@ -126,6 +126,7 @@ go run ./cmd/answer/main.go i18n -s $PLUGIN_PATH -t $ANSWER_DATA_PATH
 示例：
 
 ```bash
+go run ./cmd/answer/main.go i18n -s ../answer-plugins/ -t ./answer-data/i18n/
 ```
 
 ## 后端翻译
