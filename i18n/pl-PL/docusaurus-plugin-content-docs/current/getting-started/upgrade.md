@@ -15,7 +15,7 @@ Tworzenie kopii zapasowej danych oznacza, że masz możliwość wycofania zmian,
 
 :::
 
-<Tabs>
+<Tabs queryString="method">
   <TabItem value="docker-compose" label="Docker Compose" default>
 
 Jeśli używasz docker-compose do instalacji Answer to aktualizacja jest bardzo prosta.
@@ -43,7 +43,7 @@ docker run -d -p 9080:80 -v answer-data:/data --name answer apache/answer:latest
 
 Jeśli używasz do instalacji Answer pliku binarnego, etapy aktualizacji są następujące.
 
-1. Pobierz [najnowszą wersję binarną](https://github.com/apache/inubator-answer/releases) dla Twojego systemu.
+1. Download the [latest binary version](https://github.com/apache/answer/releases) for your system.
 2. Zatrzymaj starszą wersję
 3. Wykonaj polecenie aktualizacji `./answer upgrade -C ./answer-data/`
 4. Uruchom najnowszą wersję `./answer run -C ./answer-data/`
