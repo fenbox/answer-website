@@ -24,7 +24,7 @@ import TabItem from '@theme/TabItem';
 :::  
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/apache/incubator-answer/main/docker-compose.yaml | docker compose -p answer -f - up
+curl -fsSL https://raw.githubusercontent.com/apache/answer/main/docker-compose.yaml | docker compose -p answer -f - up
 ```
 
 Apache Answer 的默认端口是 `9080`，你可以通过 http://localhost:9080 访问它。
@@ -68,7 +68,7 @@ docker run -d -p 9080:80 -v answer-data:/data --name answer apache/answer:latest
   </TabItem>
   <TabItem value="binary" label="Binary">
 
-作为一个 Go 项目，Apache Answer 可以编译为二进制文件。 你可以从[发布页面](https://github.com/apache/incubator-answer/releases)下载与你的操作系统匹配的二进制文件。
+作为一个 Go 项目，Apache Answer 可以编译为二进制文件。 你可以从[发布页面](https://github.com/apache/answer/releases)下载与你的操作系统匹配的二进制文件。
 
 ```bash
 INSTALL_PORT=80 ./answer init -C ./answer-data/
@@ -95,37 +95,43 @@ INSTALL_PORT=80 ./answer init -C ./answer-data/
 
 若要在 aaPanel上安装 Apache Answer，您需要先安装 aPanel。 访问 [aaPanel](https://www.aapanel.com/new/download.html?r=dk_answer) 官方网站，下载并安装脚本。
 
-安装完成后，请点击左边的菜单栏 `Docker` 登录。 输入 `On-Click Install`，搜索 `Apache Answer`，点击安装配置：
+安装完成后，登录宝塔面板，点击左侧菜单栏的 `Docker`，进入应用商店，搜索 `Apache Answer`，点击安装进行配置：
 
-![Search Apache Answer](/img/docs/aapanel-install.png)
+![应用商店搜索安装](/img/docs/baota-install.png)
 
 :::tip
 
- 当你首次登录时，你将被提示安装 `Docker` 和 `Docker Compose` 服务。 点击立即安装。 如果您已经安装了它，请忽略它。
+首次会提示安装 `Docker` 和 `Docker Compose` 服务，点击立即安装，若已安装请忽略。 点击立即安装。 如果您已经安装了它，请忽略它。
 
-![安装 Docker 服务](/img/docs/aapanel-init-docker.png)
+![安装Docker服务](/img/docs/baota-init-docker.png)
 
-:::
-:::
+:::  
 
-你需要填写以下信息才能完成基本的配置初始化:
+需要填写以下内容用于完成基本配置的初始化：
 
-- 名称: 应用程序名称 默认为 `answer_random characters`
-- 版本选择：默认 'latest'
-- 允许外部访问：如果您需要直接通过 `IP+Port` 访问权限，请检查它。 如果您已经设置了域名，不需要在此处检查
+- 名称：应用名称，默认 `answer_随机字符`
+- 版本选择：默认 `latest`
+- 允许外部访问：如你需通过 `IP+Port` 直接访问，请勾选，如你已经设置了域名，请不要勾选此处
+- 端口：默认 `9080`，可自行修改
+- 网站名称：站点名称，如 `Apache Answer`
+- 访问地址：安装后将用来访问 Apache Answer 的浏览器地址
+- 联系邮箱：负责本网站的主要联系人的电子邮件地址
+- 管理员账号：管理员用户名
+- 管理员密码：管理员密码
+- 管理员邮箱：管理员邮箱。 如果您已经设置了域名，不需要在此处检查
 - 端口: 默认是 `9080` 你可以将其修改成为你想设置的
 - 站点名称: 站点名称 例如 `Apache Answer`
 - 网站地址：安装后您将使用浏览器地址访问 Apache Answer
 - 联系电子邮件：负责此网站的主要联系人的电子邮件地址
 - 管理员名称：管理员用户名
 - 管理员密码：管理员密码
-- 管理员电子邮件: 管理员电子邮件。 你需要邮件登录，所以请确保你可以记住管理员的邮箱和密码
+- 管理员电子邮件: 管理员电子邮件。 您需要此电子邮件才能登录，请务必记住管理员的邮箱和密码
 
-![Install configuration information](/img/docs/aapanel-install-config.png)
+![安装配置信息](/img/docs/baota-install-config.png)
 
-在填写完成信息之后， 点击确定来提交 当你点击确定提交后，面板将自动初始化应用程序。 您无需操作下面的安装步骤。 等待初始化完成，您可以通过您刚刚设置的 **站点URL** 访问它。
+点击确定提交后面板会自动进行应用初始化，不需要操作下文的安装步骤，等待初始化完成后即可通过刚才设置的**访问地址**进行访问。 当你点击确定提交后，面板将自动初始化应用程序。 您无需操作下面的安装步骤。 等待初始化完成，您可以通过您刚刚设置的 **站点URL** 访问它。
 
-恭喜，开始您的 Apache Answer 的旅程！
+恭喜你！ 开始你的 Apache Answer 之旅吧！
 
   </TabItem>
 </Tabs>
