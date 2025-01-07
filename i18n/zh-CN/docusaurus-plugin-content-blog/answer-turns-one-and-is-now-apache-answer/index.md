@@ -36,7 +36,7 @@ For the past year, we’ve released 19 versions, and formed a compact but powerf
 Behind the GitHub stars, we are honored to be the companion to help more teams unleash collective wisdom.
 
 ## Proudly Incubated at Apache Incubator
-We realized that a long-term healthy community is important for an open-source project, and becoming an [Apache project](https://answer.apache.org/blog/answer-enters-apache-incubator/) will guide us there. Nurtured in the Apache Way, we will build a fair, diverse and inclusive community, while ship great features with the community.
+We realized that a long-term healthy community is important for an open-source project, and becoming an [Apache project](https://answer.apache.org/blog/answer-enters-apache-incubator/) will guide us there. Nurtured in the Apache Way, we will build a fair, diverse and inclusive community, while ship great features with the community. Nurtured in the Apache Way, we will build a fair, diverse and inclusive community, while ship great features with the community.
 
 
 ## Big Thanks and Big Hugs
@@ -44,6 +44,6 @@ We are truly thankful to contributors and volunteers for their time and effort s
 
 Working with the community that consists of a group of product users, lovers, and helpers is wonderful, we cannot tell how amazing it is. Gear up, here comes a new episode. Gear up, here comes a new episode.
 
-We’re always open for feedback and advice, so please let us know if you’re coming up with something, on [Twitter](https://twitter.com/AnswerDev), [Discord](https://discord.gg/c537sFxu), or [Meta Answer](https://meta.answer.dev/). If you loved to join our Apache journey, check on our repository [here](https://github.com/apache/incubator-answer). If you loved to join our Apache journey, check on our repository [here](https://github.com/apache/incubator-answer).
+We’re always open for feedback and advice, so please let us know if you’re coming up with something, on [Twitter](https://twitter.com/AnswerDev), [Discord](https://discord.gg/c537sFxu), or [Meta Answer](https://meta.answer.dev/). If you loved to join our Apache journey, check on our repository [here](https://github.com/apache/answer). If you loved to join our Apache journey, check on our repository [here](https://github.com/apache/answer).
 
 Shout out to everyone, and thanks for making the past year a lovely memory. Stay tuned, and there will be new stuff coming. Stay tuned, and there will be new stuff coming. 
