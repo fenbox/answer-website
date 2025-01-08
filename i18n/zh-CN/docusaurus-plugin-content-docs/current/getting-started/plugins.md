@@ -66,7 +66,7 @@ $ ./answer build \
 如果你需要使用本地插件，可以使用以下命令：
 
 ```shell
-$ ./answer build --with github.com/apache/answer-plugins/connector-github@1.0.0=/my-local-space
+Using Local Plugins
 ```
 
 #### 交叉编译
@@ -207,4 +207,4 @@ github.com/apache/answer-plugins/editor_formula@latest
 
 ## 设计与原理
 
-由于 Go 是静态语言，没有友好的插件机制。我们采用重新编译的方式来进行部署，而非动态方式。详情请参考[博客](/blog/why-the-answer-plugin-system-was-designed-this-way)。 我们不得不采用重新编译的方式来进行部署，而非动态方式部署。 Please refer to [the blog](/blog/why-the-answer-plugin-system-was-designed-this-way) for details.
+由于 Go 是静态语言，没有友好的插件机制。我们采用重新编译的方式来进行部署，而非动态方式。详情请参考[博客](/blog/why-the-answer-plugin-system-was-designed-this-way)。 我们不得不采用重新编译的方式来进行部署，而非动态方式部署。 详情请参考[博客](/blog/why-the-answer-plugin-system-was-designed-this-way)。
