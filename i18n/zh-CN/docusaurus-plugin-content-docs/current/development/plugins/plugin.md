@@ -8,7 +8,7 @@ slug: /development/plugins
 
 :::tip
 
-Viewing the [**official plugin code**](https://github.com/apache/answer-plugins) will make you to quickly understand and learn plugin development.
+查看[**官方插件代码**](https://github.com/apache/answer-plugins)将使您能够快速理解和学习插件开发。
 
 :::
 
@@ -256,7 +256,7 @@ export default {
 
 ### 编辑器插件
 
-Refer to [editor-chart](https://github.com/apache/answer-plugins/tree/main/editor-chart) for details.
+请参考 [editor-chart](https://github.com/apache/answer-plugins/tree/main/editor-chartt) 了解详情。
 
 ### 路由插件
 
@@ -282,7 +282,7 @@ author:
 
 ### 验证码插件（Captcha plugin）
 
-Refer to [captcha-basic](https://github.com/apache/answer-plugins/tree/main/captcha-basic) for details.
+请参考 [captcha-basic](https://github.com/apache/answer-plugins/tree/main/captcha-basic) 了解详情。
 
 ## 内置插件开发
 
