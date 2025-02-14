@@ -1,7 +1,7 @@
 [
   {
     "title": "Podling PMC",
-    "type": "ppmc",
+    "type": "pmc",
     "users": [
       {
         "name": "chrisdutz",
