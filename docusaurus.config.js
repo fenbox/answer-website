@@ -145,7 +145,7 @@ const config = {
                 to: 'community/security',
               },
               {
-                label: 'SecurityModel',
+                label: 'Security Model',
                 to: 'community/security-model',
               },
               {

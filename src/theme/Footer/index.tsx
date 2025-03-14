@@ -19,7 +19,7 @@ const Footer: FC = () => {
               <div className="my-3">
                 <span>Copyright © 2023 - {year} The Apache Software Foundation, Licensed under the Apache License, Version 2.0.</span>
                 <br />
-                <span>Apache, the names of Apache projects, and the feather logo are either registered trademarks or trademarks of the Apache Software Foundation in the United States and/or other countries.</span>
+                <span>Apache, Apache Answer, the feather logo and the Apache Answer logo are either registered trademarks or trademarks of the Apache Software Foundation in the United States and/or other countries.</span>
               </div>
 
               <span>
