@@ -9,10 +9,14 @@ slug: /how-to-release
 ## 发布流程
 
 1. 如果没有 GPG 密钥,请创建一个。
-3. 将发布物料上传到 svn 仓库。
+2. 在 git 仓库中创建 RC 标签并编写发布说明。
+3. 将发布物料上传到 dev Apache SVN。
 4. 验证发布物料。
 5. 开始投票。
-6. 宣布投票结果和发布。
+6. 将候选版本迁移到 release Apache SVN。
+7. 创建发布。
+8. 更新下载页面。
+9. 宣布投票结果和发布。
 
 ## 创建 GPG 密钥
 
@@ -34,14 +38,28 @@ $ (gpg --list-sigs xxx@apache.org && gpg --export --armor xxx@apache.org) >> KEY
 $ svn ci -m "add gpg key" 
 ```
 
-## 将发布物料上传到 svn 仓库
+## 将发布物料上传到 dev Apache SVN
 
-### 准备所有发布物料
+### 创建 RC 标签
 
-1. 在 git 仓库中创建 RC 标签并编写发布说明。
-   1. 注意 1: 请记住在点击"发布版本"之前选择"设置为预发布"。
-   2. 注意 2: 发布说明应选择非分支的标签,例如 `v1.2.0-RC1`。
-3. 构建发布物料(捆绑包、源代码归档等)。
+当你想要发布新版本时，首先需要在 git 仓库中创建一个新的 RC 标签。标签名称应为 `v{release-version}-RC{rc-version}`。这样可以避免删除标签。
+
+* release-version: 你想要发布的版本，例如 1.2.0。
+* rc-version: 发布候选版本，例如 RC1。
+
+```shell
+$ git tag -a v{release-version}-RC{rc-version} -m "Release Apache Answer {release-version}"
+$ git push origin v{release-version}-RC{rc-version}
+```
+
+推送 RC 标签后，CI 将根据标签自动生成发布页面。在发布页面中编写发布说明。记住在点击"发布版本"之前选择"设置为预发布"。
+
+![release page](/img/community/img-1.jpg)
+
+
+发布说明应选择非分支的标签，例如 `v1.2.0-RC1`。
+
+![release notes](/img/community/img-2.png)
 
 ### 签名发布物料
 
@@ -95,7 +113,7 @@ $ for i in *.tar.gz; do echo $i; sha512sum  $i > $i.sha512 ; done
 ### 如何验证签名
 ```shell
 # 下载 KEYS
-$ curl https://dist.apache.org/repos/dist/release/answer/KEYS > KEYS
+$ curl https://downloads.apache.org/answer/KEYS > KEYS
 
 # 导入 KEYS 并信任密钥,请将电子邮件地址替换为您想要信任的地址。
 $ gpg --import KEYS
@@ -124,21 +142,13 @@ $ for i in *.tar.gz; do echo $i; sha512sum --check  $i.sha512; done
 
 > Apache Answer 已经孵化毕业，只需要进行社区投票
 
-1. Apache Answer 社区投票后，请发送一封投票邮件至 `dev@answer.apache.org`。PMC在投票前需要根据文档检查版本的正确性。
-2. 经过**至少 72 小时**并统计到 3 个 +1 PMC member票后，即可进入下一阶段。 
-3. 宣布投票结果，发起投票结果邮件到 `dev@answer.apache.org`。
+1. Apache Answer 社区投票，发送投票邮件至 `dev@answer.apache.org`。PMC 需要在投票前根据文档检查版本的正确性。
+2. 经过至少 72 小时并统计到 3 个 +1 PMC member 票后，即可进入下一阶段。
+3. 宣布投票结果，发送投票结果邮件至 `dev@answer.apache.org`。请参考下面的投票结果邮件模板。
 
-### 投票电子邮件模板
+### 开发邮件列表投票模板
 
-**注意！**直接复制电子邮件内容将导致格式不正确。建议将电子邮件复制到 `.txt` 文件。写完内容后，将其复制到您正在使用的电子邮件工具中。在开发的第一轮投票中，不需要 `The vote tread` 和 `Vote Result` 。
-
-如何获取投票的链接地址：
-1. 从 Apache 邮件列表中找到你发送的电子邮件。
-2. 单击电子邮件下方的链接按钮以获取你需要的链接地址。
-
-![vote thread link](/img/community/vote-tread-link.jpeg)
-
-```text
+```
 [VOTE] Release Apache Answer {release-version}
 
 Hello Apache Answer Community,
@@ -189,7 +199,79 @@ Thanks,
 <YOUR NAME>
 ```
 
-### 宣布投票结果的电子邮件模板
+### 投票结果邮件模板
+
+投票结束后（经过至少 72 小时并获得至少 3 个 +1 PMC member 票），发送以下邮件至 `dev@answer.apache.org` 以宣布投票结果：
+
+```
+[RESULT][VOTE] Release Apache Answer {release-version}-RC{rc-version}
+
+Hello everyone,
+
+The vote closes now with the following results:
+
+{total-votes} (+1 binding) votes
+- {voter-1-name}
+- {voter-2-name}
+- {voter-3-name}
+{... additional voters if any ...}
+
+The vote has passed successfully. We will proceed with migrating the release artifacts and creating the final release.
+
+Thanks to everyone who participated in the vote.
+
+Best regards,
+<YOUR NAME>
+```
+
+> **重要提示**：将 `{release-version}` 替换为实际发布版本（例如 `1.7.0`），将 `{rc-version}` 替换为 RC 版本（例如 `RC1`）。列出所有投出 +1 binding 票的投票者。总票数应与收到的 +1 binding 票数一致。
+
+## 投票超时情况
+
+如果投票超过 72 小时仍未达到所需票数，你可以向 dev@answer.apache.org 发送以下提醒邮件：
+
+```
+Dear PMC Members,
+
+Apache Answer version {release-version} has been pending for voting for more
+than 72 hours. If any PMC member is available, please help us get the
+ballot completed. Currently, we are still missing +1 binding vote to
+finalize the process.
+
+https://lists.apache.org/thread/{thread-id}
+
+Best regards,
+<YOUR NAME>
+```
+
+如果提醒邮件发送到 dev 邮件列表后仍然没有响应，你应该向项目导师发送私人邮件请求他们的投票。这有助于确保及时处理发布投票。
+
+## 将候选版本迁移到 release Apache SVN
+
+在宣布投票结果之前，你需要将发布物料从 dev Apache SVN 迁移到 release Apache SVN。发布物料应上传到 `https://dist.apache.org/repos/dist/release/answer/{release-version}` 目录。
+
+```shell
+$ svn mv https://dist.apache.org/repos/dist/dev/answer/{release-version} https://dist.apache.org/repos/dist/release/answer/{release-version} -m "transfer packages for answer {release-version}"
+```
+
+## 创建发布
+
+投票通过后，创建一个不带 RC 的标签，CI 将根据标签自动生成发布页面。
+
+```shell
+$ git tag -a v{release-version} -m "Release Apache Answer {release-version}"
+$ git push origin v{release-version}
+```
+
+## 更新下载页面
+
+使用新发布版本更新下载页面。下载页面位于 `src/pages/download.tsx` 文件中。
+
+## 宣布投票结果和发布
+
+投票通过后，发送邮件至 announce@apache.org 并抄送 dev@answer.apache.org 以宣布投票结果和发布。
+
+### 邮件模板
 
 ```text
 [ANNOUNCE] Apache Answer {release-version} available
@@ -214,17 +296,3 @@ Resources:
 Thanks,
 <YOUR NAME>
 ```
-
-## 将发布物料迁移到 Apache SVN release
-
-在宣布投票结果之前，你需要将发布物料从 Apache SVN dev 迁移到 Apache SVN release。发布物料应上传到 `https://dist.apache.org/repos/dist/release/answer/{release-version}` 目录。
-
-```shell
-$ svn mv https://dist.apache.org/repos/dist/dev/answer/{release-version} https://dist.apache.org/repos/dist/release/answer/{release-version} -m "transfer packages for answer {release-version}"
-```
-
-## 注意
-### RC 标签
-当你想发布新版本时，你需要先在 git 存储库中创建一个新的 RC 标签。标签名称应该是`v{release-version}-rc{rc-version}`。
-
-例如，如果你想发布 `1.2.0` 版本，则需要创建一个名为 `v1.2.0-RC1` 的标签。RC 的意思是候选。发布投票通过后，你需要根据RC标签创建一个名为 `v1.2.0` 的新标签。但是，如果投票未通过，你可以解决问题，并创建一个新的RC标签，如 `v1.2.0-RC2`，然后开始新的投票。

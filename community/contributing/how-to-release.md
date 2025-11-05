@@ -150,7 +150,7 @@ $ for i in *.tar.gz; do echo $i; sha512sum --check  $i.sha512; done
 
 1. The Apache Answer community votes, send a voting email to `dev@answer.apache.org`. PMC needs to check the correctness of the version according to the document before voting. 
 2. After at least 72 hours and counting 3 +1 PMC member votes, you can enter the next stage.
-3. Announce the voting result, and send the voting result email to `dev@answer.apache.org`.
+3. Announce the voting result, and send the voting result email to `dev@answer.apache.org`. See the vote result email template below.
 
 ### Dev Mailing List Vote Template
 
@@ -204,6 +204,33 @@ Hello Apache Answer Community,
 Thanks,
 <YOUR NAME>
 ```
+
+### Vote Result Email Template
+
+After the vote closes (after at least 72 hours and with at least 3 +1 PMC member votes), send the following email to `dev@answer.apache.org` to announce the voting result:
+
+```
+[RESULT][VOTE] Release Apache Answer {release-version}-RC{rc-version}
+
+Hello everyone,
+
+The vote closes now with the following results:
+
+{total-votes} (+1 binding) votes
+- {voter-1-name}
+- {voter-2-name}
+- {voter-3-name}
+{... additional voters if any ...}
+
+The vote has passed successfully. We will proceed with migrating the release artifacts and creating the final release.
+
+Thanks to everyone who participated in the vote.
+
+Best regards,
+<YOUR NAME>
+```
+
+> **IMPORTANT**: Replace `{release-version}` with the actual release version (e.g., `1.7.0`) and `{rc-version}` with the RC version (e.g., `RC1`). List all voters who cast +1 binding votes. The total number should match the count of +1 binding votes received.
 
 ## Voting Timeout Situation
 
