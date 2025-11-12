@@ -4,7 +4,7 @@ title: "Apache Answer 1.7.0: Quicklinks 插件与布局改进"
 authors: [Robin]
 category: Release
 featured: true
-image: 2025-11-05-cover.png
+image: 2025-11-05-cover@4x.png
 description: "Answer 1.7.0 引入了 Quicklinks 插件、布局改进、schemaForm 增强、响应式优化以及重要的错误修复。"
 ---
 
