@@ -4,7 +4,7 @@ title: "Apache Answer 1.7.0: Quicklinks Plugin & Layout Improvements"
 authors: [Robin]
 category: Release
 featured: true
-image: 2025-11-05-cover.png
+image: 2025-11-05-cover@4x.png
 description: "Answer 1.7.0 introduces Quicklinks plugin, layout improvements, schemaForm enhancements, responsive optimizations, and important bug fixes."
 ---
 
