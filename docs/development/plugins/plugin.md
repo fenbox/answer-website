@@ -13,6 +13,12 @@ Viewing the [**official plugin code**](https://github.com/apache/answer-plugins)
 
 :::
 
+:::info
+
+**Recommended**: Use the official scaffolding tool [`create-answer-plugin`](https://www.npmjs.com/package/create-answer-plugin) to create and manage plugins. It automates most of the setup process, including file generation, Go module configuration, and plugin installation.
+
+:::
+
 ## Introduction
 
 ### Plugin template types
@@ -52,66 +58,252 @@ The **name** field in package.json is the name of the package we add dependencie
 
 :::
 
-1. Go to the `ui > src > plugin` directory of the project.
+### Using the Scaffolding Tool (Recommended)
 
-2. Execute the following commands in that directory:
+The easiest way to create a plugin is using the official scaffolding tool:
 
 ```shell
-npx create-answer-plugin <pluginName>
+# Install the tool globally (optional)
+npm install -g create-answer-plugin
+# or
+pnpm add -g create-answer-plugin
+
+# Or use npx directly (recommended)
+npx create-answer-plugin create <pluginName>
+# or use the alias
+npx answer-plugin create <pluginName>
+# or use the simplified form
+npx answer-plugin <pluginName>
 ```
 
-3. Select the type of plugin you want to create.
+**Note**: The package name is `create-answer-plugin`, but you can use either `create-answer-plugin` or `answer-plugin` as the command (both work!).
+
+The tool will:
+1. Guide you through an interactive wizard to select the plugin type
+2. Generate all required files with the correct structure
+3. Create the Go wrapper file (required for Backend plugins)
+4. Set up proper `go.mod` with all dependencies
+5. Generate i18n files with the correct structure
+
+**Options:**
+- `pluginName` (optional): Pre-fill the plugin name
+- `--path, -p`: Path to Answer project (root directory). If not specified, defaults to current directory.
+
+**Example:**
+```shell
+# Navigate to your Answer project root
+cd /path/to/answer
+
+# Create a plugin
+npx create-answer-plugin create my-plugin
+# or with path option
+npx create-answer-plugin create my-plugin --path /path/to/answer
+# Select: Standard UI Plugin → Route
+# Enter route path: /hello
+```
+
+The plugin will be created in `ui/src/plugins/my-plugin/` (note: `plugins` is plural).
+
+### Manual Creation
+
+If you prefer to create plugins manually:
+
+1. Go to the `ui > src > plugins` directory of the project (note: `plugins` is plural).
+
+2. Create your plugin directory and files following the structure of existing plugins.
 
 
 
 ## Run the Plugin
 
+### Install Plugin (Automated - Recommended)
+
+The easiest way to install a plugin is using the scaffolding tool's `install` command:
+
+```shell
+# Navigate to your Answer project root
+cd /path/to/answer
+
+# Install a specific plugin (automatically handles registration)
+npx create-answer-plugin install my-plugin
+# or
+npx answer-plugin install my-plugin
+# or with path option
+npx answer-plugin install my-plugin --path /path/to/answer
+
+# Install all not installed plugins
+npx create-answer-plugin install
+```
+
+**Options:**
+- `plugins` (optional): Plugin names to install (defaults to all not installed plugins)
+- `--path, -p`: Path to Answer project (defaults to current directory)
+
+The `install` command automatically:
+- ✅ Adds plugin import to `cmd/answer/main.go`
+- ✅ Adds `replace` directive to `go.mod`
+- ✅ Runs `go mod tidy`
+- ✅ Merges i18n resources using `go run ./cmd/answer/main.go i18n`
+
+### List Plugins
+
+List all plugins in the Answer project:
+
+```shell
+# List all plugins
+npx create-answer-plugin list
+# or
+npx answer-plugin list
+# or with path option
+npx answer-plugin list /path/to/answer
+```
+
+**Options:**
+- `path` (optional): Path to Answer project (defaults to current directory)
+
+### Uninstall Plugins
+
+Uninstall plugins from the Answer project:
+
+```shell
+# Uninstall all installed plugins
+npx create-answer-plugin uninstall
+# or
+npx answer-plugin uninstall
+
+# Uninstall specific plugins
+npx create-answer-plugin uninstall my-plugin another-plugin
+# or with path option
+npx answer-plugin uninstall my-plugin --path /path/to/answer
+```
+
+**Options:**
+- `plugins` (optional): Plugin names to uninstall (defaults to all installed plugins)
+- `--path, -p`: Path to Answer project (defaults to current directory)
+
+The `uninstall` command automatically:
+- ✅ Removes plugin import from `cmd/answer/main.go`
+- ✅ Removes `replace` directive from `go.mod`
+- ✅ Runs `go mod tidy`
+- ✅ Updates i18n resources
+
 ### Run the Backend Plugin
 
-1. First, execute `make ui` to compile the front-end code.
-2. In the `cmd > answer > main.go` file, import your plugin.
+#### Using the Scaffolding Tool (Recommended)
 
-    ```go
-    import (
-      answercmd "github.com/apache/answer/cmd"
+1. Install the plugin using the scaffolding tool (see above).
 
-      // Import the plugins
-      _ "github.com/apache/answer-plugins/my-plugin"
-    )
-    ```
-3. Use `go mod edit` to add the plugin to the `go.mod` file.
+2. Build the frontend:
+   ```shell
+   cd ui
+   pnpm pre-install
+   pnpm build
+   cd ..
+   ```
 
-    ```shell
-    go mod edit -replace=github.com/apache/answer-plugins/my-plugin=./ui/src/plugins/my-plugin
-    ```
-4. Update the dependencies.
+3. Merge i18n resources (if not done automatically):
+   ```shell
+   go run ./cmd/answer/main.go i18n
+   ```
 
-    ```shell
-    go mod tidy
-    ```
+4. Start the project:
+   ```shell
+   go run cmd/answer/main.go run -C ./answer-data
+   ```
 
-5. Start the project.
+#### Manual Installation
 
-    ```shell
-    go run cmd/answer/main.go run -C ./answer-data
-    ```
+If you prefer to install manually:
+
+1. First, build the frontend:
+   ```shell
+   cd ui
+   pnpm pre-install
+   pnpm build
+   cd ..
+   ```
+
+2. In the `cmd > answer > main.go` file, import your plugin:
+   ```go
+   import (
+     answercmd "github.com/apache/answer/cmd"
+
+     // Import the plugins
+     _ "github.com/apache/answer/ui/src/plugins/my-plugin"
+   )
+   ```
+
+3. Use `go mod edit` to add the plugin to the `go.mod` file:
+   ```shell
+   go mod edit -replace=github.com/apache/answer/ui/src/plugins/my-plugin=./ui/src/plugins/my-plugin
+   ```
+
+4. Update the dependencies:
+   ```shell
+   go mod tidy
+   ```
+
+5. Merge i18n resources:
+   ```shell
+   go run ./cmd/answer/main.go i18n
+   ```
+
+6. Start the project:
+   ```shell
+   go run cmd/answer/main.go run -C ./answer-data
+   ```
 
 ### Run the Standard UI Plugin
 
+#### Using the Scaffolding Tool (Recommended)
+
+1. Install the plugin using the scaffolding tool:
+   ```shell
+   cd /path/to/answer
+   npx create-answer-plugin install my-plugin
+   ```
+
+2. Go to the `ui` directory and install dependencies:
+   ```shell
+   cd ui
+   pnpm pre-install
+   ```
+
+3. Build the frontend:
+   ```shell
+   pnpm build
+   ```
+
+4. For development, start the dev server:
+   ```shell
+   pnpm start
+   ```
+
+5. Merge i18n resources (if not done automatically):
+   ```shell
+   cd ..
+   go run ./cmd/answer/main.go i18n
+   ```
+
+#### Manual Installation
+
 1. Go to the `ui` directory.
-2. Install the dependencies.
+2. Install the dependencies:
+   ```shell
+   pnpm pre-install
+   ```
 
-    ```shell
-    pnpm pre-install
-    ```
+3. Build the frontend:
+   ```shell
+   pnpm build
+   ```
 
-3. Start the project.
+4. For development, start the dev server:
+   ```shell
+   pnpm start
+   ```
 
-    ```shell
-    pnpm start
-    ```
-
-4. Refer to the [Run the Backend Plugin](/docs/development/plugins#debugging-plugins) and add the plugin to the project.
+5. Refer to the [Run the Backend Plugin](/docs/development/plugins#run-the-backend-plugin) section and manually add the plugin to the project (import in `main.go`, add `replace` directive, etc.).
 
 ## Backend Plugin Development
 
