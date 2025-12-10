@@ -1,7 +1,6 @@
 ---
 date: 2025-11-12
 title: "Best Stack Internal Alternatives in 2025"
-authors: [fenbox]
 category: Insights
 # featured: true
 image: 2025-11-12-cover@4x.png
