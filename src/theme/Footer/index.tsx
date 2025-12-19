@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 const ApacheSvg = require('@site/static/img/apache/apache.svg').default;
 
