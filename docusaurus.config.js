@@ -82,20 +82,19 @@ const config = {
     ({
       metadata: [
         {name: 'keywords', content: 'Free, Open-source, Q&A Platform, Knowledge Sharing Platform, Community Forum, Knowledge Base, Developer Hub, Support Center'},
-        {name: 'algolia-site-verification', content: '3A471B5511A7A6CD'},
       ],
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
-      algolia: {
-        appId: '3HYC7VUYNM',
-        apiKey: 'a5ab35036f4ec013766e0d65f4f9a1ad',
-        indexName: 'answer_apache_org_3hyc7vuynm_pages',
-        contextualSearch: true,
-        debug: true
-      },
+      // algolia: {
+      //   appId: '3HYC7VUYNM',
+      //   apiKey: 'a5ab35036f4ec013766e0d65f4f9a1ad',
+      //   indexName: 'answer_apache_org_3hyc7vuynm_pages',
+      //   contextualSearch: true,
+      //   debug: true
+      // },
       navbar: {
         logo: {
           alt: 'Answer Logo',
@@ -183,10 +182,6 @@ const config = {
             position: 'right',
             className: 'bi bi-github navbar-icon-link',
           },
-          {
-            type: 'search',
-            position: 'right',
-          },
         ],
       },
       prism: {
@@ -194,7 +189,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       image: 'img/head-icon.png',
-      themes: ['@docusaurus/theme-search-algolia'],
     }),
 
   stylesheets: [
