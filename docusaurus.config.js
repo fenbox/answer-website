@@ -90,10 +90,10 @@ const config = {
         respectPrefersColorScheme: false,
       },
       algolia: {
-        appId: 'ALIEPVY5A0',
-        apiKey: 'a7f83132b511548fc8fbc44f83239bf9',
-        indexName: 'answer',
-        container: '### REPLACE ME WITH A CONTAINER (e.g. div) ###',
+        appId: '3HYC7VUYNM',
+        apiKey: 'a5ab35036f4ec013766e0d65f4f9a1ad',
+        indexName: 'answer_apache_org_3hyc7vuynm_pages',
+        contextualSearch: true,
         debug: true
       },
       navbar: {
@@ -151,7 +151,7 @@ const config = {
               {
                 label: 'Roadmap',
                 to: 'https://github.com/apache/answer/projects',
-              },
+              }
             ],
           },
           {
@@ -183,6 +183,10 @@ const config = {
             position: 'right',
             className: 'bi bi-github navbar-icon-link',
           },
+          {
+            type: 'search',
+            position: 'right',
+          },
         ],
       },
       prism: {
@@ -190,6 +194,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       image: 'img/head-icon.png',
+      themes: ['@docusaurus/theme-search-algolia'],
     }),
 
   stylesheets: [
