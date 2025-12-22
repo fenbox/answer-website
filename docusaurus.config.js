@@ -238,6 +238,7 @@ const config = {
         redirects: redirectPaths,
       },
     ],
+    // local search plugin
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       ({
