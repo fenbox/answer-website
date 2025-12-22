@@ -82,6 +82,7 @@ const config = {
     ({
       metadata: [
         {name: 'keywords', content: 'Free, Open-source, Q&A Platform, Knowledge Sharing Platform, Community Forum, Knowledge Base, Developer Hub, Support Center'},
+        {name: 'algolia-site-verification', content: '3A471B5511A7A6CD'},
       ],
       colorMode: {
         defaultMode: 'light',
